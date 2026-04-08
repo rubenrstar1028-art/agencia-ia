@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Canina VIP - Relajación y Estilo para tu Mejor Amigo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4; /* Color de fondo suave */
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .hero-section {
+            background-image: url('https://images.unsplash.com/photo-1549441624-e132528b435d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Imagen de perro feliz recibiendo mimos */
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Oscurece la imagen para mejorar legibilidad */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .section {
+            padding: 60px 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .cta-button {
+            background-color: #ff6b6b; /* Color principal, vibrante */
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #e05a5a; /* Color secundario al pasar el ratón */
+            transform: scale(1.05);
+        }
+        .testimonial-card {
+            background-color: #f8f9fa; /* Fondo ligeramente diferente */
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        /* Animaciones */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate__animated animate__fadeInDown">Spa Canina VIP</h1>
+            <p class="text-xl md:text-2xl mb-8 animate__animated animate__fadeInUp">El santuario de bienestar para tu peludo compañero.</p>
+            <a href="#servicios" class="cta-button animate__animated animate__zoomIn">Descubre nuestros servicios</a>
+        </div>
+    </header>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="section bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl text-center mb-12">Nuestros Servicios Exclusivos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card fade-in">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7342?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Perro recibiendo un baño relajante">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Baños de Lujo</h3>
+                        <p class="text-gray-700">Champús premium y técnicas de masaje para una limpieza profunda y relajante.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <img src="https://images.unsplash.com/photo-1592110522932-30a5f7f2579c?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Perro siendo peinado profesionalmente">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Cortes de Estilo</h3>
+                        <p class="text-gray-700">Estilos modernos y clásicos adaptados a la raza y preferencias de tu mascota.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <img src="https://images.unsplash.com/photo-1588745031483-e47682201163?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Perro relajándose en una cama suave">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Sesiones de Relajación</h3>
+                        <p class="text-gray-700">Terapias de aromaterapia y masajes para reducir el estrés y mejorar el bienestar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section class="section bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-4xl text-center mb-12">Nuestros Clientes Felices</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="rounded-lg overflow-hidden shadow-lg fade-in-gallery">
+                    <img src="https://images.unsplash.com/photo-1561037404-61cd46aa49c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Perro pequeño sonriendo">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg fade-in-gallery">
+                    <img src="https://images.unsplash.com/photo-1598135182638-4e00b7728647?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Golden retriever en un salón">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg fade-in-gallery">
+                    <img src="https://images.unsplash.com/photo-1546232300-155c226092f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Pug sonriendo">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg fade-in-gallery">
+                    <img src="https://images.unsplash.com/photo-1518756212211-1995d1428344?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Pastor alemán feliz">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section class="section bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl text-center mb-12">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="testimonial-card fade-in-testimonial">
+                    <p class="text-lg italic mb-4">"Mi 'Max' sale del Spa Canina VIP como un nuevo perro. ¡El corte es impecable y se nota más relajado que nunca!"</p>
+                    <p class="font-bold">- Ana G.</p>
+                </div>
+                <div class="testimonial-card fade-in-testimonial">
+                    <p class="text-lg italic mb-4">"La atención al detalle y el cariño que le dan a 'Luna' es incomparable. ¡Recomendado al 100%!"</p>
+                    <p class="font-bold">- Carlos M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="section bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">¡Haz que tu mejor amigo luzca y se sienta como una estrella!</h2>
+            <p class="text-xl mb-8">Contáctanos hoy mismo para reservar una cita o consultar nuestros paquetes.</p>
+            <a href="tel:+1234567890" class="cta-button bg-white text-gray-800 hover:bg-gray-300">Llámanos ahora</a>
+            <p class="mt-6 text-lg">O visítanos en: [Dirección del Spa]</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Spa Canina VIP. Todos los derechos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="mx-2">Términos de Servicio</a> |
+                <a href="#" class="mx-2">Política de Privacidad</a>
+            </div>
+            <div class="mt-4">
+                <a href="#" aria-label="Facebook">
+                    <svg class="w-6 h-6 inline-block mx-2 fill-current hover:text-blue-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12.066c0 5.483-4.355 9.934-9.734 9.934H12.067V12.066h3.485l.522-3.485h-3.987V6.984c0-.955.775-1.72 1.72-1.72h2.755V1.891h-3.486C9.288 1.891 5.266 5.913 5.266 12.066v6.053H1.89v3.485h3.376v7.318C7.197 24 11.057 24 12.067 24h7.207c5.483 0 9.734-4.451 9.734-9.934v-9.934z" fill-rule="evenodd" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg class="w-6 h-6 inline-block mx-2 fill-current hover:text-pink-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.203 0 3.585.01 4.86.063.129.537.563 1.532 1.245 2.194.683.661 1.677.954 2.734 1.038.96.072 1.278.097 4.86.097.001 0 12 0 12 0s0-12-0-12c0 0 0-4.86-.063-4.86-.074-.396-.222-.78-.428-1.13-.204-.353-.457-.658-.752-.953-.307-.307-.63-.524-.985-.68-.448-.202-1.217-.312-2.335-.366-.87-.044-1.171-.063-4.86-.063zm0 1.822c-3.198 0-3.585-.01-4.86-.062-.097-.001-.17-.002-.257-.002-1.087 0-1.846.075-2.516.243-.54.135-.969.393-1.355.779-.385.385-.644.814-.779 1.355-.167.67-.242 1.429-.242 2.516 0 .087-.001.161-.002.257-.001.871-.003 1.668-.003 4.86 0 3.198 0 3.585.01 4.86.062.097.001.17.002.257.002.987 0 1.746-.075 2.416-.243.54-.135.969-.393 1.355-.779.385-.385.644-.814.779-1.355.167-.67.242-1.429.242-2.516 0-.087.001-.161.002-.257.001-.871.003-1.668.003-4.86 0-3.198 0-3.585-.01-4.86-.062-.097-.001-.17-.002-.257-.002-.987 0-1.746.075-2.416.243-.54.135-.969.393-1.355.779-.385.385-.644.814-.779 1.355-.167.67-.242 1.429-.242 2.516 0 .087-.001.161-.002.257-.001.871-.003 1.668-.003 4.86zm0 3.131c-2.192 0-2.425-.009-3.304-.046-.804-.035-1.365-.137-1.87-.338-.547-.219-.99-.485-1.398-.893-.408-.408-.674-.851-.893-1.398-.201-.505-.303-.998-.338-1.87-.037-.879-.046-1.112-.046-3.304 0-2.192.009-2.425.046-3.304.035-.804.137-1.365.338-1.87.219-.547.485-.99.893-1.398.408-.408.851-.674 1.398-.893.505-.201.998-.303 1.87-.338.879-.037 1.112-.046 3.304-.046 2.192 0 2.425.009 3.304.046.804.035 1.365.137 1.87.338.547.219.99.485 1.398.893.408.408.674.851.893 1.398.201.505.303.998.338 1.87.037.879.046 1.112.046 3.304 0 2.192-.009 2.425-.046 3.304-.035.804-.137 1.365-.338 1.87-.219.547-.485.99-.893 1.398-.408.408-.851.674-1.398.893-.505.201-.998.303-1.87.338-.879.037-1.112.046-3.304.046zM12 15.657c-1.898 0-3.437-1.539-3.437-3.437s1.539-3.437 3.437-3.437 3.437 1.539 3.437 3.437-1.539 3.437-3.437 3.437zm0-1.822c1.006 0 1.822-.816 1.822-1.822s-.816-1.822-1.822-1.822-1.822.816-1.822 1.822.816 1.822 1.822 1.822zm3.823-5.973c.501 0 .906-.405.906-.906s-.405-.906-.906-.906-.906.405-.906.906.405.906.906.906z" fill-rule="evenodd" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Fade-in animations on scroll
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            const fadeInGalleryElements = document.querySelectorAll('.fade-in-gallery');
+            const fadeInTestimonialElements = document.querySelectorAll('.fade-in-testimonial');
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            fadeInElements.forEach(el => observer.observe(el));
+            fadeInGalleryElements.forEach((el, index) => {
+                // Staggered animation for gallery
+                setTimeout(() => {
+                    observer.observe(el);
+                }, index * 100); // 100ms delay between each gallery item
+            });
+            fadeInTestimonialElements.forEach((el, index) => {
+                // Staggered animation for testimonials
+                setTimeout(() => {
+                    observer.observe(el);
+                }, index * 150); // 150ms delay between each testimonial
+            });
+
+            // Hero animation (assuming it's already in HTML with classes)
+            // If you need to dynamically add classes to hero elements, you'd do it here.
+            // For this example, I've added animate.css classes directly.
+
+        });
+    </script>
+</body>
+</html>
