@@ -1,0 +1,388 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D STAR10 - Impresión 3D de Vanguardia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; /* Brand Dark */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0284c7; /* Brand Blue */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #22d3ee; /* Accent Cyan */
+        }
+
+        /* Hero Section Gradient */
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 50%, rgba(15, 23, 42, 0.9) 100%), url('https://images.unsplash.com/photo-1554114368-5a3f74147c7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Section Backgrounds */
+        .bg-brand-dark { background-color: #0f172a; }
+        .bg-brand-secondary { background-color: #1e293b; }
+        .bg-brand-secondary-opacity { background: rgba(15, 23, 42, 0.85); }
+
+        /* Text Colors */
+        .text-brand-primary { color: #0284c7; }
+        .text-brand-secondary { color: #ef4444; }
+        .text-primary { color: #f8fafc; } /* slate-50 */
+        .text-secondary { color: #cbd5e1; } /* slate-300 */
+        .text-tertiary { color: #94a3b8; } /* slate-400 */
+        .text-accent { color: #22d3ee; } /* Accent Cyan */
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: #0284c7; /* Brand Blue */
+            color: #f8fafc; /* slate-50 */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #22d3ee; /* Accent Cyan */
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: #ef4444; /* Brand Red */
+            color: #f8fafc; /* slate-50 */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #f87171; /* Lighter Red */
+            transform: translateY(-2px);
+        }
+
+        /* Card Hover Effect */
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        /* Section Scroll Reveal */
+        .section-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .section-reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-secondary font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 py-4 bg-brand-dark bg-opacity-90 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://www.svgrepo.com/show/498940/star-outline.svg" alt="3D STAR10 Logo" class="h-8 w-auto mr-3 text-accent">
+                <span class="text-2xl font-bold text-primary tracking-tight">3D STAR10</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-primary hover:text-accent transition duration-300">Nosotros</a>
+                <a href="#services" class="text-primary hover:text-accent transition duration-300">Servicios</a>
+                <a href="#gallery" class="text-primary hover:text-accent transition duration-300">Proyectos</a>
+                <a href="#contact" class="text-primary hover:text-accent transition duration-300">Contacto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark bg-opacity-95 w-full px-6 py-4 space-y-2">
+            <a href="#about" class="block text-primary py-2 hover:text-accent transition duration-300">Nosotros</a>
+            <a href="#services" class="block text-primary py-2 hover:text-accent transition duration-300">Servicios</a>
+            <a href="#gallery" class="block text-primary py-2 hover:text-accent transition duration-300">Proyectos</a>
+            <a href="#contact" class="block text-primary py-2 hover:text-accent transition duration-300">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative hero-gradient h-screen flex items-center text-center overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-primary leading-tight animate-fade-in mb-4">
+                Da Vida a tus Ideas
+                <span class="text-accent">con Impresión 3D</span>
+            </h1>
+            <p class="text-lg md:text-xl text-tertiary animate-fade-in delay-500 mb-8 max-w-3xl mx-auto">
+                En 3D STAR10, transformamos tus conceptos en objetos físicos tangibles con la más alta precisión y calidad. Innovación, diseño y tecnología a tu alcance.
+            </p>
+            <div class="animate-fade-in delay-700">
+                <a href="#services" class="btn-primary px-8 py-3 rounded-lg text-lg font-semibold mr-4 shadow-lg hover:shadow-2xl">Descubre Nuestros Servicios</a>
+                <a href="#contact" class="btn-secondary px-8 py-3 rounded-lg text-lg font-semibold shadow-lg hover:shadow-2xl">Cotiza Tu Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-brand-dark py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="section-reveal">
+                    <img src="https://images.unsplash.com/photo-1573165907786-66945e28b667?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Impresora 3D profesional" class="rounded-lg shadow-xl w-full h-auto animate-float">
+                </div>
+                <div class="section-reveal delay-300">
+                    <h2 class="text-4xl font-bold text-primary mb-6">Tu Visión, Nuestra Realidad Digital</h2>
+                    <p class="text-secondary mb-4 leading-relaxed">
+                        Somos 3D STAR10, un equipo apasionado por la impresión 3D y la innovación. Nos dedicamos a ofrecer soluciones personalizadas para particulares, diseñadores, ingenieros y empresas. Desde prototipos funcionales hasta piezas de arte y decoración, llevamos tus ideas del plano digital al mundo físico con una dedicación inquebrantable a la calidad y el detalle.
+                    </p>
+                    <p class="text-tertiary leading-relaxed">
+                        Utilizamos tecnología de punta y materiales de alta calidad para garantizar resultados que superen tus expectativas. Creemos que la impresión 3D es una herramienta poderosa para la creación y la resolución de problemas, y estamos aquí para ayudarte a explorarla.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-brand-secondary py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-primary mb-12 section-reveal">Nuestros Servicios de Impresión 3D</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-brand-secondary-opacity p-8 rounded-lg shadow-lg section-reveal delay-300">
+                    <img src="https://www.svgrepo.com/show/507112/design-pencil.svg" alt="Diseño y Prototipado" class="h-16 w-16 mx-auto mb-6 text-accent">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Diseño y Prototipado</h3>
+                    <p class="text-tertiary leading-relaxed">
+                        Convierte tus bocetos y diseños CAD en prototipos físicos para validación y pruebas.
+                    </p>
+                </div>
+                <div class="card-hover bg-brand-secondary-opacity p-8 rounded-lg shadow-lg section-reveal delay-500">
+                    <img src="https://www.svgrepo.com/show/413838/factory-gear-manufacturing.svg" alt="Fabricación de Piezas" class="h-16 w-16 mx-auto mb-6 text-accent">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Fabricación de Piezas</h3>
+                    <p class="text-tertiary leading-relaxed">
+                        Producción de piezas funcionales, repuestos y componentes personalizados a pequeña y mediana escala.
+                    </p>
+                </div>
+                <div class="card-hover bg-brand-secondary-opacity p-8 rounded-lg shadow-lg section-reveal delay-700">
+                    <img src="https://www.svgrepo.com/show/413823/palette-art-paint.svg" alt="Arte y Decoración" class="h-16 w-16 mx-auto mb-6 text-accent">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Arte y Decoración</h3>
+                    <p class="text-tertiary leading-relaxed">
+                        Creación de objetos decorativos únicos, esculturas y elementos personalizados para tu espacio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-brand-dark py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-primary text-center mb-12 section-reveal">Nuestros Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-brand-secondary-opacity rounded-lg shadow-lg overflow-hidden card-hover section-reveal delay-300">
+                    <img src="https://images.unsplash.com/photo-1598128558397-f5c99f9197b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Modelo impreso en 3D" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Prototipo Mecánico</h3>
+                        <p class="text-tertiary text-sm">Detalle preciso para validación funcional de un nuevo componente.</p>
+                    </div>
+                </div>
+                <div class="bg-brand-secondary-opacity rounded-lg shadow-lg overflow-hidden card-hover section-reveal delay-500">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c32b59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Figura decorativa impresa en 3D" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Figura Decorativa</h3>
+                        <p class="text-tertiary text-sm">Diseño personalizado para añadir un toque único a interiores.</p>
+                    </div>
+                </div>
+                <div class="bg-brand-secondary-opacity rounded-lg shadow-lg overflow-hidden card-hover section-reveal delay-700">
+                    <img src="https://images.unsplash.com/photo-1589421684139-e078d45508c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Pieza de ingeniería impresa en 3D" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Pieza de Ingeniería</h3>
+                        <p class="text-tertiary text-sm">Fabricación de componentes complejos con alta resistencia.</p>
+                    </div>
+                </div>
+                <div class="bg-brand-secondary-opacity rounded-lg shadow-lg overflow-hidden card-hover section-reveal delay-900">
+                    <img src="https://images.unsplash.com/photo-1517430816048-7724011f8202?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Maqueta arquitectónica impresa en 3D" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Maqueta Arquitectónica</h3>
+                        <p class="text-tertiary text-sm">Representación detallada de proyectos arquitectónicos.</p>
+                    </div>
+                </div>
+                <div class="bg-brand-secondary-opacity rounded-lg shadow-lg overflow-hidden card-hover section-reveal delay-1100">
+                    <img src="https://images.unsplash.com/photo-1604910441148-82632f90e73a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Diseño artístico impreso en 3D" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Diseño Artístico</h3>
+                        <p class="text-tertiary text-sm">Creaciones únicas que fusionan arte y tecnología de impresión 3D.</p>
+                    </div>
+                </div>
+                <div class="bg-brand-secondary-opacity rounded-lg shadow-lg overflow-hidden card-hover section-reveal delay-1300">
+                    <img src="https://images.unsplash.com/photo-1554114368-5a3f74147c7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Pieza de electrónica impresa en 3D" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">Carcasa Electrónica</h3>
+                        <p class="text-tertiary text-sm">Soluciones de carcasa a medida para dispositivos electrónicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-brand-red py-16 md:py-24 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-primary mb-6">¿Listo para dar vida a tu próxima gran idea?</h2>
+            <p class="text-lg text-primary opacity-80 mb-8 max-w-2xl mx-auto">
+                No importa cuán complejo sea tu proyecto, nuestro equipo está listo para ayudarte a alcanzar tus metas con la impresión 3D.
+            </p>
+            <a href="#contact" class="btn-primary px-10 py-4 rounded-lg text-lg font-semibold shadow-xl hover:shadow-2xl transition duration-300">Solicita tu Presupuesto Gratuito</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-brand-dark py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-primary text-center mb-12 section-reveal">Contáctanos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="section-reveal">
+                    <h3 class="text-3xl font-bold text-primary mb-6">Hablemos de tu Proyecto</h3>
+                    <p class="text-secondary mb-6 leading-relaxed">
+                        Estamos aquí para responder todas tus preguntas y guiarte en cada paso. Envíanos un mensaje y te responderemos a la brevedad.
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-6 w-6 mr-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.468 4.398a1 1 0 00.948.684h5.468c.385 0 .744.218.948.684l1.468 4.398a1 1 0 00.948.684H20a2 2 0 012 2v4a2 2 0 01-2 2h-1M6 18a2 2 0 00-2 2v2a2 2 0 002 2h12a2 2 0 002-2v-2a2 2 0 00-2-2H6z"></path></svg>
+                        <p class="text-secondary">info@3dstar10.com (Ejemplo)</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-6 w-6 mr-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314-11.314z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <p class="text-secondary">Tu Ciudad, Tu País</p>
+                    </div>
+                    <div class="flex items-center space-x-4 mt-6">
+                        <a href="https://www.youtube.com/@3dstar10?si=1N7ihqEIeGyXyj0L" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-accent transition duration-300">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.58 7.19c0-.85-.3-1.65-.85-2.33-.85-.85-1.65-1.18-2.57-1.18-3.75 0-7.49 0-11.24 0-.85 0-1.65.33-2.5.1.18-2.37-1.18-3.75-2.57-3.75-.85 0-1.65.33-2.5 1.18-.85.68-1.18 1.48-1.18 2.33 0 .85.3 1.65.85 2.33.85.85 1.65 1.18 2.5 1.18 3.75 0 7.49 0 11.24 0 .85 0 1.65-.33 2.5-.1.18 2.37 1.18 3.75 2.57 3.75.85 0 1.65-.33 2.5-1.18.85-.68 1.18-1.48 1.18-2.33.3-3.75.3-7.49.3-11.24zM9.6 7.07v9.86c0 .54.24.77.68.77.54 0 1.08 0 1.62 0 .37 0 .54-.13.54-.54V7.07c0-.37-.13-.54-.54-.54-.54 0-1.08 0-1.62 0-.37 0-.54.17-.54.54z"></path></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@3d.star10" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-accent transition duration-300">
+                             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.58 7.19c0-.85-.3-1.65-.85-2.33-.85-.85-1.65-1.18-2.57-1.18-3.75 0-7.49 0-11.24 0-.85 0-1.65.33-2.5.1.18-2.37-1.18-3.75-2.57-3.75-.85 0-1.65.33-2.5 1.18-.85.68-1.18 1.48-1.18 2.33 0 .85.3 1.65.85 2.33.85.85 1.65 1.18 2.5 1.18 3.75 0 7.49 0 11.24 0 .85 0 1.65-.33 2.5-.1.18 2.37 1.18 3.75 2.57 3.75.85 0 1.65-.33 2.5-1.18.85-.68 1.18-1.48 1.18-2.33.3-3.75.3-7.49.3-11.24zM9.6 7.07v9.86c0 .54.24.77.68.77.54 0 1.08 0 1.62 0 .37 0 .54-.13.54-.54V7.07c0-.37-.13-.54-.54-.54-.54 0-1.08 0-1.62 0-.37 0-.54.17-.54.54z"></path></svg>
+                        </a>
+                        <a href="https://www.facebook.com/3d.star10" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-accent transition duration-300">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.71 3.44 8.63 8 9.72v-6.72H8v-3h4V9c0-2.08 1.4-3.74 3.25-3.74.77 0 1.47.06 1.96.09v3.73h-2.75c-1.79 0-2.25 1.09-2.25 2.18v1.72h4l-.59 3.54c-.29 1.82-1.09 3.54-2.76 3.54h-2.24v6.72c4.56-1.09 8-4.99 8-9.72z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-reveal delay-300">
+                    <form id="contact-form" class="bg-brand-secondary-opacity p-8 rounded-lg shadow-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-primary text-lg font-semibold mb-2">Nombre</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-slate-700 focus:ring-accent focus:border-accent text-primary placeholder-slate-400" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-primary text-lg font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-slate-700 focus:ring-accent focus:border-accent text-primary placeholder-slate-400" placeholder="tu.email@ejemplo.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-primary text-lg font-semibold mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-slate-700 focus:ring-accent focus:border-accent text-primary placeholder-slate-400" placeholder="Describe tu proyecto o consulta" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full px-6 py-3 rounded-lg text-lg font-semibold shadow-lg hover:shadow-2xl">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-400 text-sm">&copy; 2023 3D STAR10. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://www.youtube.com/@3dstar10?si=1N7ihqEIeGyXyj0L" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-accent transition duration-300">YouTube</a>
+                <a href="https://www.tiktok.com/@3d.star10" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-accent transition duration-300">TikTok</a>
+                <a href="https://www.facebook.com/3d.star10" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-accent transition duration-300">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Smooth Scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Scroll Reveal Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        // Optionally, unobserve after animation to prevent re-triggering
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            const sectionReveals = document.querySelectorAll('.section-reveal');
+            sectionReveals.forEach(el => observer.observe(el));
+
+            // Simulate form submission for demonstration
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+                    // In a real application, you would send this data to a server
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+```
