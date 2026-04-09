@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dibujo3d - Modelado 3D y Planos de Construcción de Vanguardia</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta de Colores Personalizada */
+        .bg-moss-green {
+            background-color: #8A9A5B;
+        }
+        .text-moss-green {
+            color: #8A9A5B;
+        }
+        .bg-rust-orange {
+            background-color: #D2691E;
+        }
+        .text-rust-orange {
+            color: #D2691E;
+        }
+        .border-moss-green {
+            border-color: #8A9A5B;
+        }
+        .border-rust-orange {
+            border-color: #D2691E;
+        }
+
+        /* Tipografía Moderna */
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Sombras y Bordes Redondeados */
+        .card-shadow {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .rounded-lg-custom {
+            border-radius: 12px;
+        }
+        .rounded-xl-custom {
+            border-radius: 16px;
+        }
+
+        /* Botones Personalizados */
+        .btn-primary {
+            @apply px-8 py-3 rounded-xl-custom font-bold text-white transition duration-300 ease-in-out transform hover:scale-105;
+            background-color: #D2691E; /* Naranja óxido */
+            box-shadow: 0 4px 10px rgba(210, 105, 30, 0.4);
+        }
+        .btn-secondary {
+            @apply px-8 py-3 rounded-xl-custom font-bold text-white transition duration-300 ease-in-out transform hover:scale-105;
+            background-color: #8A9A5B; /* Verde musgo */
+            box-shadow: 0 4px 10px rgba(138, 154, 91, 0.4);
+        }
+        .btn-outline-primary {
+            @apply px-8 py-3 rounded-xl-custom font-bold transition duration-300 ease-in-out transform hover:scale-105;
+            border: 2px solid #D2691E; /* Naranja óxido */
+            color: #D2691E;
+        }
+        .btn-outline-primary:hover {
+            background-color: #D2691E;
+            color: white;
+        }
+        .btn-outline-secondary {
+            @apply px-8 py-3 rounded-xl-custom font-bold transition duration-300 ease-in-out transform hover:scale-105;
+            border: 2px solid #8A9A5B; /* Verde musgo */
+            color: #8A9A5B;
+        }
+        .btn-outline-secondary:hover {
+            background-color: #8A9A5B;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-moss-green text-white py-6 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-4xl font-bold tracking-tight">dibujo3d</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#services" class="hover:text-rust-orange transition duration-300">Servicios</a></li>
+                    <li><a href="#portfolio" class="hover:text-rust-orange transition duration-300">Portafolio</a></li>
+                    <li><a href="#about" class="hover:text-rust-orange transition duration-300">Sobre Nosotros</a></li>
+                    <li><a href="#contact" class="hover:text-rust-orange transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-moss-green to-rust-orange text-white py-24 md:py-32">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-16">
+                <h2 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">Transformamos tus Ideas en Realidad Tridimensional</h2>
+                <p class="text-xl mb-8 leading-relaxed">En dibujo3d, creamos modelos 3D fotorrealistas y planos de construcción precisos para que visualices y construyas tus proyectos con total confianza y detalle.</p>
+                <div class="flex space-x-6">
+                    <a href="#services" class="btn-primary">Descubre Nuestros Servicios</a>
+                    <a href="#contact" class="btn-outline-primary">Solicita una Consulta</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img src="https://via.placeholder.com/800x500?text=Visualización+3D+Impresionante" alt="Visualización 3D de un proyecto" class="rounded-xl-custom shadow-xl w-full max-w-lg object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl text-center font-bold mb-16 text-moss-green">Nuestros Servicios Profesionales</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                <div class="bg-white p-8 rounded-xl-custom card-shadow text-center hover:shadow-2xl transition duration-300">
+                    <div class="mb-6">
+                        <svg class="w-16 h-16 mx-auto text-rust-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M12 15a3 3 0 100-6 3 3 0 000 6zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-gray-800">Modelado 3D Arquitectónico</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Creamos modelos tridimensionales detallados de edificaciones, interiores y exteriores. Perfectos para presentaciones a clientes, visualización conceptual y marketing inmobiliario.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl-custom card-shadow text-center hover:shadow-2xl transition duration-300">
+                    <div class="mb-6">
+                        <svg class="w-16 h-16 mx-auto text-rust-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-gray-800">Planos de Construcción Profesionales</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Desarrollamos planos técnicos precisos y a escala para todo tipo de proyectos de construcción, garantizando la viabilidad y el cumplimiento normativo.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl-custom card-shadow text-center hover:shadow-2xl transition duration-300">
+                    <div class="mb-6">
+                        <svg class="w-16 h-16 mx-auto text-rust-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.936a2 2 0 001.752-.558L9 3H21a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14a6 6 0 00-6 6"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-gray-800">Visualización Arquitectónica</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Ofrecemos renders fotorrealistas y recorridos virtuales que dan vida a tus diseños antes de que la primera piedra sea colocada.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl text-center font-bold mb-16 text-rust-orange">Nuestro Portafolio Destacado</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-xl-custom card-shadow overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/800x500?text=Proyecto+Residencial+Moderno" alt="Proyecto Residencial Moderno" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-3 text-moss-green">Residencial Contemporáneo</h4>
+                        <p class="text-gray-600 leading-relaxed mb-4">Un concepto residencial que fusiona líneas limpias con la calidez de los materiales, pensado para el confort y la estética.</p>
+                        <a href="#" class="btn-outline-secondary inline-block">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl-custom card-shadow overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/800x500?text=Edificio+Comercial+Innovador" alt="Edificio Comercial Innovador" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-3 text-moss-green">Centro Comercial Vanguardista</h4>
+                        <p class="text-gray-600 leading-relaxed mb-4">Diseño innovador para espacios comerciales que atraen y generan experiencias únicas para los visitantes.</p>
+                        <a href="#" class="btn-outline-secondary inline-block">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl-custom card-shadow overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/800x500?text=Diseño+Interior+Elegante" alt="Diseño Interior Elegante" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-3 text-moss-green">Espacio Interior Sofisticado</h4>
+                        <p class="text-gray-600 leading-relaxed mb-4">Creación de ambientes interiores que combinan funcionalidad, estética y el último diseño, adaptados a cada necesidad.</p>
+                        <a href="#" class="btn-outline-secondary inline-block">Ver Detalles</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-16">
+                <a href="#" class="btn-primary">Ver Portafolio Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-16">
+                <img src="https://via.placeholder.com/800x600?text=Equipo+Profesional" alt="Nuestro Equipo" class="rounded-xl-custom shadow-xl w-full object-cover">
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="text-4xl font-bold mb-6 text-moss-green">Expertos Apasionados por la Arquitectura 3D</h3>
+                <p class="text-xl text-gray-700 leading-relaxed mb-6">En dibujo3d, somos un equipo de arquitectos, diseñadores y técnicos apasionados por llevar la visión de nuestros clientes a un nivel tridimensional. Combinamos creatividad, precisión técnica y un profundo conocimiento del sector para ofrecer resultados excepcionales.</p>
+                <p class="text-xl text-gray-700 leading-relaxed">Nuestro compromiso es con la calidad, la innovación y la satisfacción total de nuestros clientes, asegurando que cada proyecto sea una obra maestra.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-rust-orange to-moss-green text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-6">¿Listo para Darle Vida a Tu Proyecto?</h3>
+            <p class="text-xl mb-12 leading-relaxed">Contáctanos hoy mismo para discutir tus necesidades de modelado 3D o planos de construcción. ¡Estamos listos para ayudarte a construir el futuro!</p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+                <a href="tel:+123456789" class="btn-outline-primary border-white text-white hover:bg-white hover:text-rust-orange">Llamar Ahora</a>
+                <a href="mailto:info@dibujo3d.com" class="btn-outline-primary border-white text-white hover:bg-white hover:text-rust-orange">Enviar Correo</a>
+                <a href="#" class="btn-outline-primary border-white text-white hover:bg-white hover:text-rust-orange">Solicitar Presupuesto</a>
+            </div>
+
+            <div class="mt-16 flex justify-center space-x-8">
+                <a href="#" aria-label="Facebook">
+                    <svg class="w-8 h-8 fill-current text-white hover:text-gray-300 transition duration-300" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.477 3.108 8.225 7.351 9.207v-6.525H7.525v-2.681h2.826V10.65c0-2.799 1.698-4.328 4.171-4.328 1.201 0 2.473.217 2.473.217v2.627H15.11c-1.456 0-1.777.909-1.777 1.755v2.033h3.224l-.415 2.681h-2.809v6.644c4.244-0.974 7.351-4.73 7.351-9.207z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg class="w-8 h-8 fill-current text-white hover:text-gray-300 transition duration-300" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm4-13h-4.899c-.448 0-.899.208-.899.727v3.273h4.899c.448 0 .899-.208.899-.727v-2.546zm1.899 5.727v3.273c0 .448-.208.899-.727.899h-6.899v-5.727h5.727c.448 0 .899.208.899.727v2.546h1.172zm-9.899-5.727c0-.448.208-.899.727-.899h4.899v5.727h-5.727c-.448 0-.727-.208-.727-.727v-5zm-5.727 1.172h3.273v4.899h-3.273v-4.899z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg class="w-8 h-8 fill-current text-white hover:text-gray-300 transition duration-300" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm0-7.591c0 1.015-.798 1.909-1.875 1.909-1.077 0-1.875-.894-1.875-1.909s.798-1.909 1.875-1.909 1.875.894 1.875 1.909zm0 1.591h4v6h-4v-6zM14 16h-4v-6h4v6z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 dibujo3d. Todos los derechos reservados.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-white transition duration-300">Política de Privacidad</a>
+                <span class="text-gray-500">|</span>
+                <a href="#" class="hover:text-white transition duration-300">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
