@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes la Esquinita - Tu Tienda de Confianza</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Clases personalizadas para la paleta de colores */
+        .bg-primary-blue {
+            background-color: #1565C0; /* Azul profundo */
+        }
+        .text-primary-blue {
+            color: #1565C0; /* Azul profundo */
+        }
+        .bg-white-pure {
+            background-color: #FFFFFF; /* Blanco puro */
+        }
+        .text-white-pure {
+            color: #FFFFFF; /* Blanco puro */
+        }
+        .bg-accent-gold {
+            background-color: #FFD600; /* Amarillo dorado */
+        }
+        .text-accent-gold {
+            color: #FFD600; /* Amarillo dorado */
+        }
+        .hover-text-accent-gold:hover {
+            color: #FFD600; /* Amarillo dorado */
+        }
+        .shadow-custom {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .rounded-card {
+            border-radius: 12px;
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .font-opensans {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-opensans bg-white-pure">
+
+    <!-- Sección Hero -->
+    <section class="bg-primary-blue text-white-pure py-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+                <h1 class="text-5xl font-montserrat font-bold mb-4 leading-tight">
+                    Abarrotes la Esquinita: <br> Tus Favoritos, a tu Alcance.
+                </h1>
+                <p class="text-xl mb-6">
+                    Desde ese antojo de Coca-Cola hasta los productos de higiene que necesitas, encuentra todo en un solo lugar. Calidad, variedad y la amabilidad que te mereces.
+                </p>
+                <a href="#productos" class="inline-block bg-accent-gold text-primary-blue font-bold py-3 px-8 rounded-full shadow-custom hover:bg-yellow-400 transition duration-300 ease-in-out font-montserrat">
+                    Descubre Nuestros Productos
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/600x400?text=Imagen+Representativa+Abarrotes" alt="Imagen representativa de Abarrotes la Esquinita" class="rounded-lg shadow-custom w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-montserrat font-bold text-primary-blue mb-6">
+                ¿Por qué elegir Abarrotes la Esquinita?
+            </h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+                Somos más que una tienda; somos tu vecino de confianza. Nos dedicamos a ofrecerte una experiencia de compra cómoda y eficiente, seleccionando cuidadosamente los productos que más te gustan y necesitas para tu día a día.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-white-pure rounded-card shadow-custom p-8">
+                    <h3 class="text-2xl font-montserrat font-bold text-primary-blue mb-3">Variedad Inigualable</h3>
+                    <p class="text-gray-700">
+                        Desde bebidas refrescantes, pan dulce recién horneado hasta los artículos esenciales de higiene personal.
+                    </p>
+                </div>
+                <div class="bg-white-pure rounded-card shadow-custom p-8">
+                    <h3 class="text-2xl font-montserrat font-bold text-primary-blue mb-3">Calidad Garantizada</h3>
+                    <p class="text-gray-700">
+                        Trabajamos con las mejores marcas y productos frescos para asegurar tu satisfacción en cada compra.
+                    </p>
+                </div>
+                <div class="bg-white-pure rounded-card shadow-custom p-8">
+                    <h3 class="text-2xl font-montserrat font-bold text-primary-blue mb-3">Atención Personalizada</h3>
+                    <p class="text-gray-700">
+                        Nuestro equipo está listo para ayudarte a encontrar lo que buscas con una sonrisa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos Destacados -->
+    <section id="productos" class="bg-primary-blue text-white-pure py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-montserrat font-bold mb-6">
+                Nuestros Productos Estrella
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="rounded-card shadow-custom overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300?text=Coca-Cola" alt="Coca-Cola" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-montserrat font-bold mb-2">Refrescos y Bebidas</h3>
+                        <p class="text-sm mb-4">
+                            Tu sed saciada con las mejores marcas.
+                        </p>
+                        <span class="text-lg font-bold text-accent-gold">¡Siempre disponibles!</span>
+                    </div>
+                </div>
+                <div class="rounded-card shadow-custom overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300?text=Pan+Dulce" alt="Pan de Dulce" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-montserrat font-bold mb-2">Panadería Fresca</h3>
+                        <p class="text-sm mb-4">
+                            El aroma y sabor del pan dulce para tus mañanas.
+                        </p>
+                        <span class="text-lg font-bold text-accent-gold">¡Cada día!</span>
+                    </div>
+                </div>
+                <div class="rounded-card shadow-custom overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300?text=Papas+Sabritas" alt="Papas y Snacks" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-montserrat font-bold mb-2">Snacks y Botanas</h3>
+                        <p class="text-sm mb-4">
+                            Las papas y snacks perfectos para cualquier momento.
+                        </p>
+                        <span class="text-lg font-bold text-accent-gold">¡Para compartir!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="https://maps.app.goo.gl/GeH9hQyp3FD3VtYRA" target="_blank" class="inline-block bg-accent-gold text-primary-blue font-bold py-3 px-8 rounded-full shadow-custom hover:bg-yellow-400 transition duration-300 ease-in-out font-montserrat">
+                    Visítanos y Descubre Más
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Ubicación y Contacto -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-montserrat font-bold text-primary-blue mb-6">
+                Encuéntranos Fácilmente
+            </h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+                Estamos ubicados en el corazón de tu colonia, listos para atenderte. ¡Ven a conocernos o llámanos para resolver tus dudas!
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-around">
+                <div class="md:w-1/2 mb-8 md:mb-0 text-left">
+                    <h3 class="text-3xl font-montserrat font-bold text-primary-blue mb-4">¿Tienes una pregunta?</h3>
+                    <p class="text-xl text-gray-700 mb-6">
+                        No dudes en contactarnos. Te esperamos con la mejor disposición.
+                    </p>
+                    <a href="tel:+5215512345678" class="inline-block bg-accent-gold text-primary-blue font-bold py-3 px-8 rounded-full shadow-custom hover:bg-yellow-400 transition duration-300 ease-in-out font-montserrat mr-4">
+                        Llámanos Ahora
+                    </a>
+                    <a href="https://maps.app.goo.gl/GeH9hQyp3FD3VtYRA" target="_blank" class="inline-block bg-primary-blue text-white-pure font-bold py-3 px-8 rounded-full shadow-custom hover:bg-blue-700 transition duration-300 ease-in-out font-montserrat">
+                        Ver en Mapa
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.370553564791!2d-99.17456629999999!3d19.3950282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9c9a5e0e1e1%3A0x7f2f5a0d2c6a4c3b!2sAbarrotes%20la%20Esquinita!5e0!3m2!1ses!2smx!4v1678886400000!5m2!1ses!2smx" width="600" height="450" style="border:0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-blue text-white-pure py-8">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-sm">
+                &copy; 2023 Abarrotes la Esquinita. Todos los derechos reservados.
+            </p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="hover-text-accent-gold transition duration-300">Facebook</a>
+                <a href="#" class="hover-text-accent-gold transition duration-300">Instagram</a>
+                <a href="#" class="hover-text-accent-gold transition duration-300">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
