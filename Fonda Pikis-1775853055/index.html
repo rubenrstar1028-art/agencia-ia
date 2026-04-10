@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonda Pikys | Sabor Casero Tradicional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ef6d6d;
+            --primary-dark: #d65a5a;
+            --secondary: #fdf2f2;
+            --accent: #4a5d23;
+            --text-dark: #2d2d2d;
+            --text-light: #666666;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: var(--text-dark);
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-primary { background-color: var(--primary); }
+        .text-primary { color: var(--primary); }
+        .border-primary { border-color: var(--primary); }
+        .hover-bg-primary:hover { background-color: var(--primary-dark); }
+
+        .menu-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(239, 109, 109, 0.1);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(239, 109, 109, 0.2);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+        }
+
+        .divider {
+            height: 2px;
+            width: 60px;
+            background-color: var(--primary);
+            margin: 1rem auto;
+        }
+
+        .header-glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full z-50 header-glass shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-3xl font-serif font-bold text-primary italic">Fonda Pikys</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
+                <a href="#inicio" class="hover:text-primary transition">Inicio</a>
+                <a href="#menu" class="hover:text-primary transition">Nuestro Menú</a>
+                <a href="#nosotros" class="hover:text-primary transition">Nosotros</a>
+                <a href="#contacto" class="hover:text-primary transition">Contacto</a>
+            </nav>
+            <a href="https://maps.app.goo.gl/KJ5xAsvWTAnLQZi79" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full font-bold text-sm hover:shadow-lg transition transform hover:-translate-y-1">
+                ¿CÓMO LLEGAR?
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=1600&auto=format&fit=crop" alt="Comida Casera" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center px-4">
+            <h2 class="text-white text-xl md:text-2xl mb-4 font-light tracking-widest uppercase">El sazón de hogar que amas</h2>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif italic text-white mb-8">Fonda Pikys</h1>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#menu" class="bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-xl">
+                    Ver Menú de Hoy
+                </a>
+                <a href="tel:5540138817" class="border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition">
+                    Pedir a Domicilio
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-primary text-lg font-bold tracking-widest uppercase mb-2">Delicioso y Fresco</h2>
+                <h3 class="text-4xl md:text-5xl font-serif italic text-gray-800">Nuestro Menú del Día</h3>
+                <div class="divider"></div>
+                <p class="text-text-light max-w-2xl mx-auto mt-4 italic">Cada platillo es preparado al momento con ingredientes seleccionados para brindarte la experiencia de una comida corrida gourmet.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Entradas / Sopas -->
+                <div class="menu-card bg-white p-8 rounded-2xl">
+                    <div class="flex justify-between items-center mb-6">
+                        <h4 class="text-2xl font-serif italic text-primary">Sopas</h4>
+                        <span class="text-2xl">🍲</span>
+                    </div>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span>Sopa de Pasta</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span>Arroz Tradicional</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-2">
+                            <span>Consomé de Pollo</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span>Ensalada de la Casa</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Platos Fuertes -->
+                <div class="menu-card bg-white p-8 rounded-2xl lg:col-span-2">
+                    <div class="flex justify-between items-center mb-6">
+                        <h4 class="text-2xl font-serif italic text-primary">Guisados del Día</h4>
+                        <span class="text-2xl">🍗</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-center space-x-2 border-b border-gray-100 pb-2">
+                                <span class="text-primary">✦</span>
+                                <span>Pechuga Rellena</span>
+                            </li>
+                            <li class="flex items-center space-x-2 border-b border-gray-100 pb-2">
+                                <span class="text-primary">✦</span>
+                                <span>Huazontle Especial</span>
+                            </li>
+                            <li class="flex items-center space-x-2 border-b border-gray-100 pb-2">
+                                <span class="text-primary">✦</span>
+                                <span>Tacos Dorados Crujientes</span>
+                            </li>
+                        </ul>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-center space-x-2 border-b border-gray-100 pb-2">
+                                <span class="text-primary">✦</span>
+                                <span>Pechuga Asada / Empanizada</span>
+                            </li>
+                            <li class="flex items-center space-x-2 border-b border-gray-100 pb-2">
+                                <span class="text-primary">✦</span>
+                                <span>Chilaquiles con Pollo</span>
+                            </li>
+                            <li class="italic text-sm text-gray-500 mt-4">Incluye guarnición del día.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Complementos -->
+                <div class="menu-card bg-white p-8 rounded-2xl">
+                    <div class="flex justify-between items-center mb-6">
+                        <h4 class="text-2xl font-serif italic text-primary">Para Cerrar</h4>
+                        <span class="text-2xl">🍮</span>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h5 class="font-bold text-gray-800 text-sm uppercase tracking-tighter mb-2">Bebida</h5>
+                            <p class="text-gray-600">Agua de Fruta Natural (250ml)</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-gray-800 text-sm uppercase tracking-tighter mb-2">Postre</h5>
+                            <p class="text-gray-600">Postre del día hecho en casa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="text-xl font-serif italic text-gray-600 mb-6">¡Gracias por su preferencia!</p>
+                <a href="https://maps.app.goo.gl/KJ5xAsvWTAnLQZi79" target="_blank" class="inline-block border-b-2 border-primary text-primary font-bold pb-1 hover:text-primary-dark transition">Ver ubicación detallada</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosostros / Experiencia -->
+    <section id="nosotros" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" alt="Cocinando" class="rounded-3xl shadow-2xl">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-primary font-bold uppercase tracking-widest mb-2">Nuestra Esencia</h2>
+                    <h3 class="text-4xl font-serif italic mb-6">Más que una fonda, somos tu cocina familiar</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        En <strong>Fonda Pikys</strong>, creemos que la hora de la comida es sagrada. Nos dedicamos a rescatar los sabores tradicionales de México con procesos artesanales. Desde nuestro famoso Huazontle hasta nuestras pechugas rellenas, cada plato lleva el amor y el sazón de una auténtica comida en casa.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-3">
+                            <span class="bg-primary text-white rounded-full p-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            </span>
+                            <span class="font-semibold">Ingredientes frescos del día</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="bg-primary text-white rounded-full p-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            </span>
+                            <span class="font-semibold">Menú variado cada día</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contacto" class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div>
+                    <h4 class="text-3xl font-serif italic text-primary mb-6">Fonda Pikys</h4>
+                    <p class="text-gray-400 leading-relaxed">
+                        Llevando el sabor tradicional de la cocina mexicana a tu mesa desde 2018. Calidad, higiene y sazón inigualable.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold mb-6">Contacto</h5>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-center space-x-3">
+                            <span>📞</span>
+                            <a href="tel:5540138817" class="hover:text-primary transition">55 4013 8817</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span>📍</span>
+                            <a href="https://maps.app.goo.gl/KJ5xAsvWTAnLQZi79" target="_blank" class="hover:text-primary transition">Visítanos en Google Maps</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span>⏰</span>
+                            <span>Lunes a Viernes: 12:00 PM - 5:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold mb-6">Síguenos</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition">FB</a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition">IG</a>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://maps.app.goo.gl/KJ5xAsvWTAnLQZi79" target="_blank">
+                            <img src="https://via.placeholder.com/400x150?text=Haz+click+para+ver+ubicación" alt="Mapa" class="rounded-lg opacity-70 hover:opacity-100 transition border border-gray-700">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 Fonda Pikys. Todos los derechos reservados. Diseñado para el mejor sabor.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html></html>
