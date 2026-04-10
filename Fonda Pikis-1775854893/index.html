@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonda Pikys | Sabor Casero y Tradición</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pikys-coral: #E67E7E;
+            --pikys-dark: #4A4A4A;
+            --pikys-green: #6B8E23;
+            --pikys-cream: #FFF9F5;
+            --pikys-gold: #D4A373;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--pikys-cream);
+            color: var(--pikys-dark);
+        }
+
+        .font-heading {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-coral { background-color: var(--pikys-coral); }
+        .text-coral { color: var(--pikys-coral); }
+        .border-coral { border-color: var(--pikys-coral); }
+        
+        .menu-card {
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(230, 126, 126, 0.1);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1585445497204-9474e218ee51?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-shape-divider {
+            fill: var(--pikys-cream);
+        }
+
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+
+        .btn-hover:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-heading text-2xl font-black text-coral italic">Fonda Pikys</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 font-bold">
+                        <a href="#inicio" class="hover:text-coral transition-colors">Inicio</a>
+                        <a href="#menu" class="hover:text-coral transition-colors">Menú del Día</a>
+                        <a href="#contacto" class="hover:text-coral transition-colors">Ubicación</a>
+                        <a href="tel:5540138817" class="bg-coral text-white px-6 py-2 rounded-full btn-hover shadow-lg">Pedir ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient h-screen flex items-center justify-center text-center px-4 relative">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-heading text-white mb-6 leading-tight">El auténtico sazón de hogar</h1>
+            <p class="text-xl text-white/90 mb-10 font-light italic">Comida corrida con amor, frescura y la tradición que tu paladar merece.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#menu" class="bg-coral text-white px-8 py-4 rounded-full text-lg font-bold btn-hover shadow-xl">Ver Menú de Hoy</a>
+                <a href="https://maps.app.goo.gl/KJ5xAsvWTAnLQZi79" target="_blank" class="bg-white text-coral px-8 py-4 rounded-full text-lg font-bold btn-hover shadow-xl">Cómo llegar</a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-12" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="custom-shape-divider"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-coral font-bold tracking-widest uppercase text-sm">Nuestra Propuesta</span>
+            <h2 class="text-4xl md:text-5xl font-heading mt-2">Menú del Día</h2>
+            <div class="w-24 h-1 bg-coral mx-auto mt-4 rounded-full"></div>
+            <p class="mt-6 text-gray-500 max-w-2xl mx-auto">Disfruta de una comida completa y balanceada, preparada cada mañana con los mejores ingredientes del mercado.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- SOPAS -->
+            <div class="menu-card p-8 flex flex-col items-center text-center border-t-4 border-coral">
+                <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-3xl">🍲</span>
+                </div>
+                <h3 class="font-heading text-2xl mb-4">Primer Tiempo</h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="font-bold text-gray-800">Sopa de pasta</li>
+                    <li class="font-bold text-gray-800">Arroz</li>
+                    <li class="font-bold text-gray-800">Consomé</li>
+                    <li class="font-bold text-gray-800">Ensalada</li>
+                </ul>
+            </div>
+
+            <!-- GUISADOS -->
+            <div class="menu-card p-8 flex flex-col items-center text-center border-t-4 border-coral lg:col-span-2">
+                <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-3xl">🍗</span>
+                </div>
+                <h3 class="font-heading text-2xl mb-4">Platos Fuertes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 w-full">
+                    <div class="bg-coral/5 p-3 rounded-lg font-bold text-coral">Pechuga rellena</div>
+                    <div class="bg-coral/5 p-3 rounded-lg font-bold text-coral">Huazontle especial</div>
+                    <div class="bg-coral/5 p-3 rounded-lg font-bold text-coral">Tacos dorados</div>
+                    <div class="bg-coral/5 p-3 rounded-lg font-bold text-coral">Pechuga (asada/empanizada)</div>
+                    <div class="bg-coral/5 p-3 rounded-lg font-bold text-coral md:col-span-2">Chilaquiles de la casa</div>
+                </div>
+            </div>
+
+            <!-- EXTRAS -->
+            <div class="menu-card p-8 flex flex-col items-center text-center border-t-4 border-coral">
+                <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-6">
+                    <span class="text-3xl">🍮</span>
+                </div>
+                <h3 class="font-heading text-2xl mb-4">Complementos</h3>
+                <ul class="space-y-4">
+                    <li>
+                        <span class="block text-xs uppercase tracking-widest text-gray-400">Bebida</span>
+                        <span class="font-bold text-lg">Agua de Fruta Natural</span>
+                    </li>
+                    <li>
+                        <span class="block text-xs uppercase tracking-widest text-gray-400">Final Dulce</span>
+                        <span class="font-bold text-lg">Postre del día</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Image Gallery/Promotion -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="rounded-3xl overflow-hidden shadow-2xl">
+                <img src="https://via.placeholder.com/800x600?text=Huazontle+Tradicional+Fonda+Pikys" alt="Platillo típico" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h2 class="text-4xl font-heading mb-6 italic">¿Por qué elegirnos?</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="text-coral">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Ingredientes de Primera</h4>
+                            <p class="text-gray-500">Seleccionamos lo mejor del día para asegurar un sabor inigualable.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-coral">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Higiene y Cuidado</h4>
+                            <p class="text-gray-500">Protocolos estrictos de limpieza en cada etapa de preparación.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-coral">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Rapidez y Servicio</h4>
+                            <p class="text-gray-500">Ideal para tu hora de comida laboral, sin esperas largas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contacto" class="py-20 bg-coral text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-heading mb-8">¡Te esperamos para comer!</h2>
+                    <p class="text-xl mb-8 opacity-90">Estamos ubicados en una zona accesible para que tu hora de comida sea el mejor momento del día.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-white/20 p-3 rounded-full">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm uppercase opacity-70">Llámanos</p>
+                                <a href="tel:5540138817" class="text-2xl font-bold hover:underline">5540138817</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-white/20 p-3 rounded-full">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm uppercase opacity-70">Visítanos</p>
+                                <p class="text-xl font-bold italic">Fonda Pikys, tu casa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/KJ5xAsvWTAnLQZi79" target="_blank" class="mt-10 inline-block bg-white text-coral px-10 py-4 rounded-full font-black btn-hover shadow-2xl">VER EN GOOGLE MAPS</a>
+                </div>
+                
+                <div class="h-96 rounded-3xl overflow-hidden shadow-2xl border-8 border-white/10">
+                    <img src="https://via.placeholder.com/800x800?text=Mapa+Ubicacion+Fonda+Pikys" alt="Ubicación" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center border-t border-gray-100">
+        <p class="font-heading text-2xl text-coral italic mb-4">Fonda Pikys</p>
+        <p class="text-gray-400 text-sm">© 2024 - Sabor Real, Cocina Tradicional Mexicana.</p>
+        <p class="text-gray-400 text-xs mt-2 italic">¡Gracias por su preferencia!</p>
+    </footer>
+
+    <a href="https://wa.me/5540138817" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 btn-hover">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.852c1.856 1.088 3.329 1.522 5.252 1.523 5.411 0 9.813-4.403 9.816-9.813.001-2.621-1.021-5.085-2.877-6.94s-4.319-2.878-6.94-2.879c-5.411 0-9.815 4.403-9.817 9.813-.001 2.062.56 3.616 1.642 5.242l-.893 3.257 3.317-.869z"/></svg>
+    </a>
+
+</body>
+</html></html>
