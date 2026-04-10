@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonda Pikis - Sabor Casero que Te Encanta</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #FF6B6B; /* Rojo Vibrante */
+            --color-secondary: #4ECDC4; /* Verde Azulado Refrescante */
+            --color-accent: #FFDA63; /* Amarillo Soleado */
+            --color-text-dark: #2D3748; /* Gris Oscuro para Texto Principal */
+            --color-text-light: #F7FAFC; /* Blanco Roto para Texto Claro */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-text-dark);
+            background-color: #f8f9fa; /* Fondo general suave */
+        }
+
+        .font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+
+        .bg-secondary {
+            background-color: var(--color-secondary);
+        }
+
+        .bg-accent {
+            background-color: var(--color-accent);
+        }
+
+        .text-primary {
+            color: var(--color-primary);
+        }
+
+        .text-secondary {
+            color: var(--color-secondary);
+        }
+
+        .text-accent {
+            color: var(--color-accent);
+        }
+
+        .text-dark-custom {
+            color: var(--color-text-dark);
+        }
+
+        .text-light-custom {
+            color: var(--color-text-light);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #e05c5c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: var(--color-secondary);
+            color: var(--color-text-dark);
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(78, 205, 196, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background-color: #3fae9d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(78, 205, 196, 0.4);
+        }
+
+        .card-menu {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-menu:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-gradient {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+        }
+
+        .section-divider {
+            position: relative;
+            height: 60px; /* Altura para la onda */
+            background-color: #f8f9fa; /* Color de fondo para la sección siguiente */
+            overflow: hidden;
+        }
+
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 60px; /* Altura de la onda */
+            background-color: #f8f9fa; /* Mismo color de fondo que la sección siguiente */
+            border-radius: 50%;
+            bottom: -30px; /* Ajusta para la posición de la onda */
+        }
+        .section-divider.top::before {
+            top: -30px; /* Ajusta para la posición de la onda */
+            background-color: white; /* Color de la onda arriba de la primera sección */
+            transform: rotate(180deg); /* Invierte la onda */
+        }
+
+         .section-divider.bottom::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 60px; /* Altura de la onda */
+            background-color: white; /* Color de fondo de la sección donde se ancla */
+            border-radius: 50%;
+            bottom: -30px; /* Ajusta para la posición de la onda */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Sección Header -->
+    <header class="header-gradient text-light-custom py-20 px-4 md:px-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-8 md:mb-0">
+                <h1 class="font-pacifico text-6xl md:text-7xl mb-4">Fonda Pikis</h1>
+                <p class="text-xl md:text-2xl font-light">El Sabor Casero que Te Consiente Cada Día.</p>
+            </div>
+            <div class="text-center md:text-right">
+                <a href="tel:5540238817" class="btn-primary text-lg inline-block mr-4">¡Llámanos!</a>
+                <a href="https://maps.app.goo.gl/KJ5xAsvWTAnLQZi79" target="_blank" class="btn-secondary text-lg inline-block">Ver Ubicación</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Divisor de Sección -->
+    <div class="section-divider bottom"></div>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="bg-white py-20 px-4 md:px-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl font-bold mb-6 text-primary">¿Quiénes Somos?</h2>
+                <p class="text-lg leading-relaxed mb-4">En Fonda Pikis, cocinamos con el corazón y los secretos mejor guardados de la abuela. Creemos que la comida casera es un abrazo al alma, por eso seleccionamos los ingredientes más frescos y preparamos cada platillo con el mismo cariño que si fuera para nuestra familia.</p>
+                <p class="text-lg leading-relaxed">Desde hace años, somos el rincón favorito para quienes buscan un menú del día delicioso, variado y a un precio justo. Ven y descubre por qué nuestro sabor te hará volver una y otra vez.</p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://via.placeholder.com/600x400?text=Chef+Preparando+Comida" alt="Chef preparando comida en Fonda Pikis" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisor de Sección -->
+    <div class="section-divider top"></div>
+
+    <!-- Sección Menú -->
+    <section id="menu" class="bg-white py-20 px-4 md:px-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-secondary">Nuestro Menú Diario</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="card-menu">
+                    <img src="https://via.placeholder.com/400x300?text=Platillo+Principal+1" alt="Imagen de Platillo Principal 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">Bistec a la Mexicana</h3>
+                        <p class="text-gray-700 mb-4">Un clásico irresistible con jitomate, cebolla y chile serrano, servido con arroz blanco y frijoles refritos.</p>
+                        <p class="text-2xl font-bold text-secondary">$85.00</p>
+                    </div>
+                </div>
+
+                <div class="card-menu">
+                    <img src="https://via.placeholder.com/400x300?text=Platillo+Principal+2" alt="Imagen de Platillo Principal 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">Pechuga Rellena</h3>
+                        <p class="text-gray-700 mb-4">Jugosa pechuga de pollo rellena de jamón y queso, bañada en una ligera salsa de champiñones.</p>
+                        <p class="text-2xl font-bold text-secondary">$90.00</p>
+                    </div>
+                </div>
+
+                <div class="card-menu">
+                    <img src="https://via.placeholder.com/400x300?text=Platillo+Principal+3" alt="Imagen de Platillo Principal 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">Enchiladas Verdes</h3>
+                        <p class="text-gray-700 mb-4">Totopos bañados en nuestra auténtica salsa verde, rellenos de pollo deshebrado y acompañados de crema y queso.</p>
+                        <p class="text-2xl font-bold text-secondary">$80.00</p>
+                    </div>
+                </div>
+
+                <div class="card-menu">
+                    <img src="https://via.placeholder.com/400x300?text=Sopa+o+Crema+1" alt="Imagen de Sopa o Crema 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">Sopa de Lentejas</h3>
+                        <p class="text-gray-700 mb-4">Nutritiva y reconfortante sopa de lentejas con verduras frescas.</p>
+                        <p class="text-2xl font-bold text-secondary">$45.00</p>
+                    </div>
+                </div>
+
+                <div class="card-menu">
+                    <img src="https://via.placeholder.com/400x300?text=Sopa+o+Crema+2" alt="Imagen de Sopa o Crema 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">Crema de Verduras</h3>
+                        <p class="text-gray-700 mb-4">Delicada crema de temporada, suave y llena de sabor natural.</p>
+                        <p class="text-2xl font-bold text-secondary">$40.00</p>
+                    </div>
+                </div>
+
+                <div class="card-menu">
+                    <img src="https://via.placeholder.com/400x300?text=Bebida+o+Postre" alt="Imagen de Bebida o Postre" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">Agua Fresca del Día</h3>
+                        <p class="text-gray-700 mb-4">Refrescantes aguas frescas preparadas al momento (jamaica, horchata, limón).</p>
+                        <p class="text-2xl font-bold text-secondary">$25.00</p>
+                    </div>
+                </div>
+
+            </div>
+            <p class="text-xl mt-12 text-gray-600">¡Pregunta por nuestro menú completo y las especialidades del día!</p>
+        </div>
+    </section>
+
+    <!-- Divisor de Sección -->
+    <div class="section-divider bottom"></div>
+
+    <!-- Sección Galería (Opcional, pero útil para visuales) -->
+    <section id="galeria" class="bg-white py-20 px-4 md:px-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-primary">Saborea con la Vista</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <img src="https://via.placeholder.com/400x300?text=Comida+1" alt="Imagen de Comida 1" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105">
+                <img src="https://via.placeholder.com/400x300?text=Comida+2" alt="Imagen de Comida 2" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105">
+                <img src="https://via.placeholder.com/400x300?text=Comida+3" alt="Imagen de Comida 3" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105">
+                <img src="https://via.placeholder.com/400x300?text=Comida+4" alt="Imagen de Comida 4" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105">
+                <img src="https://via.placeholder.com/400x300?text=Comida+5" alt="Imagen de Comida 5" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105">
+                <img src="https://via.placeholder.com/400x300?text=Comida+6" alt="Imagen de Comida 6" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition duration-300 hover:scale-105">
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisor de Sección -->
+    <div class="section-divider top"></div>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="bg-white py-20 px-4 md:px-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl font-bold mb-6 text-secondary">¡Te Esperamos!</h2>
+                <p class="text-lg leading-relaxed mb-4">¿Listo para disfrutar de la mejor comida corrida de la zona? Ven a visitarnos, estamos ansiosos por atenderte y deleitarte con nuestros platillos.</p>
+                <p class="text-lg leading-relaxed mb-4"><strong>Dirección:</strong> [Tu Dirección Aquí, ejemplo: Calle Falsa 123, Colonia Centro, Ciudad]</p>
+                <p class="text-lg leading-relaxed mb-8"><strong>Horario:</strong> Lunes a Sábado de 8:00 AM a 6:00 PM</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:5540238817" class="btn-primary text-lg w-full text-center">¡Llámanos Ahora!</a>
+                    <a href="https://maps.app.goo.gl/KJ5xAsvWTAnLQZi79" target="_blank" class="btn-secondary text-lg w-full text-center">Ver en Mapa</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.149140416698!2d-99.16247782406572!3d19.41726528042615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f97742f32653%3A0x67b7e7c377d3f6a7!2sPlaza%20Garibaldi!5e0!3m2!1ses!2smx!4v1700843615807!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-xl shadow-2xl w-full h-auto"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-light-custom py-12 px-4 md:px-8">
+        <div class="container mx-auto text-center">
+            <div class="mb-6">
+                <h3 class="font-pacifico text-3xl mb-2">Fonda Pikis</h3>
+                <p class="text-sm opacity-80">&copy; 2023. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="#" aria-label="Facebook" class="hover:text-gray-300 transition duration-300"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <a href="#" aria-label="Instagram" class="hover:text-gray-300 transition duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="tel:5540238817" aria-label="WhatsApp" class="hover:text-gray-300 transition duration-300"><i class="fab fa-whatsapp text-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome CDN (para los iconos del footer) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
