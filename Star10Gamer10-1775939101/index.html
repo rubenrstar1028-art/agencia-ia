@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star10Gamer10 | Streaming & Content Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --brand-red: #ff3131;
+            --brand-blue: #00d2ff;
+            --brand-yellow: #fbbf24;
+            --brand-dark: #0a0a0a;
+            --brand-gray: #1a1a1a;
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--brand-dark);
+            color: #ffffff;
+        }
+        .font-heading { font-family: 'Space+Grotesk', sans-serif; }
+        .text-gradient-star {
+            background: linear-gradient(to right, var(--brand-red), #ff7b7b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-gamer {
+            background: linear-gradient(to right, var(--brand-blue), #80ebff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-glass {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .border-brand {
+            border-left: 4px solid var(--brand-yellow);
+        }
+        .btn-glow-red:hover { box-shadow: 0 0 20px rgba(255, 49, 49, 0.4); }
+        .btn-glow-blue:hover { box-shadow: 0 0 20px rgba(0, 210, 255, 0.4); }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="hero-pattern">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-glass top-0 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-black tracking-tighter">
+                    <span class="text-gradient-star">STAR10</span><span class="text-gradient-gamer">GAMER10</span>
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-yellow-400 transition">Inicio</a>
+                <a href="#plataformas" class="hover:text-yellow-400 transition">Canales</a>
+                <a href="#contenido" class="hover:text-yellow-400 transition">Contenido</a>
+                <a href="#comunidad" class="hover:text-yellow-400 transition">Comunidad</a>
+            </div>
+            <a href="https://www.youtube.com/@StarGamer-yk3dt" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-bold transition flex items-center gap-2 btn-glow-red">
+                <i class="fab fa-youtube text-lg"></i> Suscribirse
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden">
+        <div class="absolute top-20 right-[-10%] w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-10 left-[-5%] w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px]"></div>
+        
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <h1 class="text-6xl md:text-8xl font-black font-heading leading-none mb-6">
+                    EL NIVEL <span class="text-yellow-400">PRO</span> <br>
+                    DE LA PASIÓN <br>
+                    <span class="text-gradient-star">DEPORTIVA.</span>
+                </h1>
+                <p class="text-xl text-gray-400 mb-8 max-w-lg leading-relaxed">
+                    Bienvenido al epicentro del gaming y el fútbol digital. Un espacio creado para los fanáticos de la adrenalina, las jugadas maestras y el entretenimiento sin límites. ¡Únete a la legión de Star10Gamer10!
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://www.facebook.com/Star10Gamer10" target="_blank" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 card-hover btn-glow-blue">
+                        <i class="fab fa-facebook-f text-xl"></i> Ver En Vivo
+                    </a>
+                    <a href="https://www.tiktok.com/@star10gamer10?_r=1&_t=ZS-95STPUHE1pM" target="_blank" class="bg-white text-black px-8 py-4 rounded-xl font-bold flex items-center gap-3 card-hover transition-colors">
+                        <i class="fab fa-tiktok text-xl"></i> TikTok Clips
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://via.placeholder.com/800x800?text=Star10Gamer10+Setup" alt="Star10Gamer10 Setup" class="rounded-[2rem] shadow-2xl border-2 border-white/10 rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div class="absolute -bottom-6 -left-6 bg-yellow-400 text-black p-6 rounded-2xl shadow-xl font-black italic transform -rotate-3">
+                    LIVE MATCHES <br> EVERY DAY!
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Platforms (Menu Style) -->
+    <section id="plataformas" class="py-24 px-6 bg-[#0f0f0f]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4">NUESTRAS <span class="text-yellow-400">SECCIONES</span></h2>
+                <div class="h-1.5 w-24 bg-red-600 mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-400">Explora el universo de contenido que tenemos para ti en todas las redes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Facebook Card -->
+                <div class="bg-glass p-8 rounded-3xl card-hover border-t-4 border-blue-600 group">
+                    <div class="w-16 h-16 bg-blue-600/20 rounded-2xl flex items-center justify-center mb-6 text-blue-600 text-3xl group-hover:scale-110 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 italic">Transmisiones Live</h3>
+                    <p class="text-gray-400 mb-6">Partidos en directo, análisis de fútbol y la interacción más cercana con la comunidad gamer.</p>
+                    <a href="https://www.facebook.com/Star10Gamer10" target="_blank" class="text-blue-400 font-bold flex items-center gap-2 hover:gap-4 transition-all">Ir al canal <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- YouTube Card -->
+                <div class="bg-glass p-8 rounded-3xl card-hover border-t-4 border-red-600 group">
+                    <div class="w-16 h-16 bg-red-600/20 rounded-2xl flex items-center justify-center mb-6 text-red-600 text-3xl group-hover:scale-110 transition">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 italic">Mejores Jugadas</h3>
+                    <p class="text-gray-400 mb-6">Resúmenes de torneos, tutoriales exclusivos y vlogs sobre la cultura del fútbol digital.</p>
+                    <a href="www.youtube.com/@StarGamer-yk3dt" target="_blank" class="text-red-400 font-bold flex items-center gap-2 hover:gap-4 transition-all">Suscribirse <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- TikTok Card -->
+                <div class="bg-glass p-8 rounded-3xl card-hover border-t-4 border-white group">
+                    <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 text-white text-3xl group-hover:scale-110 transition">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 italic">Momentos Épicos</h3>
+                    <p class="text-gray-400 mb-6">Los clips más rápidos, divertidos y virales. Goles imposibles en menos de 60 segundos.</p>
+                    <a href="https://www.tiktok.com/@star10gamer10?_r=1&_t=ZS-95STPUHE1pM" target="_blank" class="text-white/80 font-bold flex items-center gap-2 hover:gap-4 transition-all">Seguir <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Instagram Card -->
+                <div class="bg-glass p-8 rounded-3xl card-hover border-t-4 border-pink-600 group">
+                    <div class="w-16 h-16 bg-pink-600/20 rounded-2xl flex items-center justify-center mb-6 text-pink-600 text-3xl group-hover:scale-110 transition">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 italic">Lifestyle Gamer</h3>
+                    <p class="text-gray-400 mb-6">Detrás de cámaras, historias exclusivas y fotos del setup y eventos especiales.</p>
+                    <a href="https://www.instagram.com/star10gamer10?igsh=NW5peHczMm85cnM1" target="_blank" class="text-pink-400 font-bold flex items-center gap-2 hover:gap-4 transition-all">Ver Perfil <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-yellow-400 text-black">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+            <div>
+                <span class="text-5xl font-black block mb-2">+10K</span>
+                <span class="text-xl font-bold uppercase">Seguidores Fieles</span>
+            </div>
+            <div>
+                <span class="text-5xl font-black block mb-2">24/7</span>
+                <span class="text-xl font-bold uppercase">Energía Gamer</span>
+            </div>
+            <div>
+                <span class="text-5xl font-black block mb-2">TOP</span>
+                <span class="text-xl font-bold uppercase">Contenido de Calidad</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Gallery -->
+    <section id="contenido" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-black">ÚLTIMOS <span class="text-gradient-star">ESTRENOS</span></h2>
+                    <p class="text-gray-400 mt-4">No te pierdas de lo más reciente en nuestro canal de YouTube.</p>
+                </div>
+                <a href="www.youtube.com/@StarGamer-yk3dt" class="bg-white/5 border border-white/10 px-8 py-3 rounded-full hover:bg-white/10 transition font-bold uppercase text-sm tracking-widest">Ver todo el catálogo</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="relative group cursor-pointer overflow-hidden rounded-3xl">
+                    <img src="https://via.placeholder.com/1200x675?text=Gameplay+Fifa+Star10" alt="Video Principal" class="w-full aspect-video object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex items-end p-8">
+                        <div>
+                            <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded mb-4 inline-block uppercase">Destacado</span>
+                            <h3 class="text-3xl font-bold">¡REMONTADA HISTÓRICA EN EL MINUTO 90!</h3>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center text-3xl pl-2 shadow-2xl">
+                            <i class="fas fa-play text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-rows-2 gap-8">
+                    <div class="bg-glass rounded-3xl flex overflow-hidden card-hover">
+                        <img src="https://via.placeholder.com/300x200?text=Tutorial+Skills" class="w-1/3 object-cover" alt="Thumbnail">
+                        <div class="p-6 flex flex-col justify-center">
+                            <h4 class="text-xl font-bold mb-2 uppercase">Tutorial: Las mejores Skills para 2024</h4>
+                            <p class="text-gray-400 text-sm">Domina el campo con estos 3 movimientos secretos.</p>
+                        </div>
+                    </div>
+                    <div class="bg-glass rounded-3xl flex overflow-hidden card-hover">
+                        <img src="https://via.placeholder.com/300x200?text=Setup+Tour" class="w-1/3 object-cover" alt="Thumbnail">
+                        <div class="p-6 flex flex-col justify-center">
+                            <h4 class="text-xl font-bold mb-2 uppercase">Mi Setup Gaming al detalle</h4>
+                            <p class="text-gray-400 text-sm">Todo lo que uso para crear contenido de calidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-20 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <span class="text-3xl font-black mb-6 block">
+                        <span class="text-gradient-star">STAR10</span><span class="text-gradient-gamer">GAMER10</span>
+                    </span>
+                    <p class="text-gray-500 max-w-sm mb-8 leading-relaxed">
+                        Redefiniendo el entretenimiento digital. Fútbol, videojuegos y comunidad en un solo lugar. Síguenos en todas nuestras redes para no perderte nada.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/Star10Gamer10" class="w-12 h-12 rounded-xl bg-glass flex items-center justify-center hover:bg-blue-600 transition hover:-translate-y-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/star10gamer10?igsh=NW5peHczMm85cnM1" class="w-12 h-12 rounded-xl bg-glass flex items-center justify-center hover:bg-pink-600 transition hover:-translate-y-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@star10gamer10?_r=1&_t=ZS-95STPUHE1pM" class="w-12 h-12 rounded-xl bg-glass flex items-center justify-center hover:bg-white hover:text-black transition hover:-translate-y-2"><i class="fab fa-tiktok"></i></a>
+                        <a href="www.youtube.com/@StarGamer-yk3dt" class="w-12 h-12 rounded-xl bg-glass flex items-center justify-center hover:bg-red-600 transition hover:-translate-y-2"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-widest mb-6">Navegación</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#inicio" class="hover:text-yellow-400 transition">Inicio</a></li>
+                        <li><a href="#plataformas" class="hover:text-yellow-400 transition">Canales</a></li>
+                        <li><a href="#contenido" class="hover:text-yellow-400 transition">Videos</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-widest mb-6">Newsletter</h4>
+                    <p class="text-gray-500 text-sm mb-4">Recibe avisos exclusivos sobre streams y sorteos.</p>
+                    <div class="flex bg-glass p-2 rounded-xl border border-white/5">
+                        <input type="email" placeholder="Tu email" class="bg-transparent border-none focus:ring-0 text-white flex-1 px-2 text-sm">
+                        <button class="bg-yellow-400 text-black px-4 py-2 rounded-lg font-bold text-sm">OK</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:row justify-between items-center gap-4">
+                <p class="text-gray-600 text-sm">© 2024 Star10Gamer10. Todos los derechos reservados.</p>
+                <div class="flex gap-6 text-xs text-gray-600 font-bold uppercase tracking-widest">
+                    <a href="#" class="hover:text-white transition">Privacidad</a>
+                    <a href="#" class="hover:text-white transition">Términos</a>
+                    <a href="#" class="hover:text-white transition">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html></html>
