@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star10Web IA Studio | Software & Automatización Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-bg: #05070a;
+            --card-bg: #0f1218;
+            --tech-blue: #007cf0;
+            --tech-blue-glow: rgba(0, 124, 240, 0.3);
+            --accent-red: #e11d48;
+            --accent-red-hover: #be123c;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, var(--tech-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(15, 18, 24, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            border-color: var(--tech-blue);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px -10px var(--tech-blue-glow);
+        }
+
+        .btn-primary {
+            background-color: var(--accent-red);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(225, 29, 72, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-red-hover);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(225, 29, 72, 0.6);
+        }
+
+        .tech-border {
+            position: relative;
+        }
+
+        .tech-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--tech-blue);
+        }
+
+        .hero-glow {
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--tech-blue-glow) 0%, rgba(5, 7, 10, 0) 70%);
+            z-index: -1;
+            filter: blur(60px);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--tech-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            background: rgba(5, 7, 10, 0.98);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full z-50 transition-all duration-300 bg-opacity-90 backdrop-blur-md border-b border-white/5">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-xl">S</div>
+                <span class="text-xl font-bold tracking-tighter">Star10Web <span class="text-blue-500">IA</span></span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#servicios" class="nav-link text-sm font-medium opacity-80 hover:opacity-100">Servicios</a>
+                <a href="#nosotros" class="nav-link text-sm font-medium opacity-80 hover:opacity-100">Por qué elegirnos</a>
+                <a href="https://wa.me/525586493887" class="btn-primary px-6 py-2 rounded-full text-sm font-bold">Contactar Ahora</a>
+            </div>
+
+            <button class="md:hidden text-white" id="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="hero-glow"></div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-block px-4 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest">
+                    Líderes en Automatización IA
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Escala tu Negocio con <span class="gradient-text">Inteligencia Digital</span>
+                </h1>
+                <p class="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed">
+                    En Star10Web IA Studio diseñamos ecosistemas de software de alto rendimiento y automatizaciones inteligentes que transforman procesos en resultados exponenciales.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/525586493887" class="btn-primary px-8 py-4 rounded-xl text-center font-bold text-lg">
+                        Iniciar Proyecto
+                    </a>
+                    <a href="#servicios" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 text-center font-bold text-lg transition-all">
+                        Ver Soluciones
+                    </a>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <img src="https://via.placeholder.com/800x800?text=IA+Studio+Interface" alt="IA Dashboard" class="rounded-2xl shadow-2xl border border-white/10">
+                <div class="absolute -bottom-6 -left-6 bg-blue-600 p-6 rounded-2xl shadow-xl glass-card">
+                    <p class="text-3xl font-bold">99.9%</p>
+                    <p class="text-xs uppercase tracking-wider opacity-70">Eficiencia Operativa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-[#080a0e]">
+        <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4">Nuestras Capacidades</h2>
+            <h3 class="text-4xl md:text-5xl font-bold">Servicios de Ingeniería de Software</h3>
+        </div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="glass-card p-8 rounded-3xl group">
+                <div class="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center mb-6 text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Software a Medida</h4>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Desarrollamos aplicaciones web y móviles robustas utilizando las tecnologías más avanzadas del mercado, garantizando escalabilidad y seguridad.
+                </p>
+                <div class="tech-border"></div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="glass-card p-8 rounded-3xl group">
+                <div class="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center mb-6 text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">IA & Automatización</h4>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Integramos modelos de Inteligencia Artificial para automatizar tareas repetitivas, optimizar el flujo de trabajo y reducir costos operativos.
+                </p>
+                <div class="tech-border"></div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="glass-card p-8 rounded-3xl group">
+                <div class="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center mb-6 text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Consultoría Digital</h4>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Asesoramiento estratégico para la modernización de infraestructuras tecnológicas y migración a la nube (Cloud Computing).
+                </p>
+                <div class="tech-border"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="nosotros" class="py-24 relative">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row gap-16 items-center">
+            <div class="md:w-1/2">
+                <img src="https://via.placeholder.com/600x700?text=Proceso+IA" alt="Tech Process" class="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="md:w-1/2 space-y-8">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight">Por qué Star10Web es tu <span class="text-blue-500">Socio Estratégico</span></h2>
+                <p class="text-gray-400 text-lg">No solo escribimos código; construimos los cimientos del futuro de tu empresa con tres pilares fundamentales:</p>
+                
+                <ul class="space-y-6">
+                    <li class="flex items-start space-x-4">
+                        <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-xs">✓</div>
+                        <div>
+                            <h5 class="text-xl font-bold">Enfoque Mobile-First</h5>
+                            <p class="text-gray-500">Diseños adaptados a la realidad del mercado actual, priorizando la experiencia del usuario móvil.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-4">
+                        <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-xs">✓</div>
+                        <div>
+                            <h5 class="text-xl font-bold">Arquitectura de Datos</h5>
+                            <p class="text-gray-500">Estructuras sólidas que permiten el análisis de información para la toma de decisiones basada en datos reales.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-4">
+                        <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-xs">✓</div>
+                        <div>
+                            <h5 class="text-xl font-bold">Soporte Continuo</h5>
+                            <p class="text-gray-500">Acompañamiento post-lanzamiento para asegurar que tu sistema evolucione con tu negocio.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="relative rounded-3xl overflow-hidden bg-gradient-to-r from-blue-900 to-black p-12 text-center border border-blue-500/20">
+                <div class="relative z-10 space-y-6">
+                    <h2 class="text-4xl md:text-6xl font-bold italic">¿Listo para el siguiente nivel?</h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                        Deja de perder tiempo en procesos manuales. Implementa hoy la tecnología que tu empresa merece.
+                    </p>
+                    <div class="pt-6">
+                        <a href="https://wa.me/525586493887" class="btn-primary inline-flex items-center space-x-3 px-10 py-5 rounded-2xl font-extrabold text-xl">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412 0 6.556-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.92c1.589.943 3.139 1.419 4.75 1.42h.005c5.454 0 9.893-4.438 9.893-9.891 0-2.646-1.03-5.132-2.9-7c-1.87-1.868-4.353-2.898-7-2.899-5.454 0-9.894 4.438-9.894 9.892 0 2.035.535 4.02 1.547 5.79l-1.014 3.703 3.793-.995z"/></svg>
+                            <span>WhatsApp Directo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#030508] pt-16 pb-8 border-t border-white/5">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+            <div class="col-span-2">
+                <div class="flex items-center space-x-2 mb-6">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-xl">S</div>
+                    <span class="text-2xl font-bold tracking-tighter">Star10Web <span class="text-blue-500">IA Studio</span></span>
+                </div>
+                <p class="text-gray-500 max-w-sm">
+                    Liderando la vanguardia tecnológica en México y Latinoamérica. Expertos en integración de ecosistemas inteligentes y desarrollo de software premium.
+                </p>
+            </div>
+            <div>
+                <h6 class="font-bold mb-6 uppercase tracking-widest text-xs text-blue-500">Navegación</h6>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Inicio</a></li>
+                    <li><a href="#servicios" class="hover:text-white transition">Servicios</a></li>
+                    <li><a href="#nosotros" class="hover:text-white transition">Experiencia</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="font-bold mb-6 uppercase tracking-widest text-xs text-blue-500">Contacto</h6>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex items-center space-x-2">
+                        <span>CDMX, México</span>
+                    </li>
+                    <li>
+                        <a href="tel:+525586493887" class="hover:text-white transition">+52 55 8649 3887</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-8 border-t border-white/5 text-center text-gray-600 text-sm">
+            <p>&copy; 2024 Star10Web IA Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'bg-[#05070a]');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2', 'bg-[#05070a]');
+                header.classList.add('py-4');
+            }
+        });
+    </script>
+</body>
+</html>
