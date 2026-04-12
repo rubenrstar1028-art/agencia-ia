@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendy Planner | Hermanas Isidro - Eventos de Ensueño</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="普及">
+    <style>
+        :root {
+            --quartz-pink: #F7CAC9;
+            --gold-metallic: #D4AF37;
+            --dark-charcoal: #333333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fffafb;
+        }
+
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-quartz { background-color: var(--quartz-pink); }
+        .text-quartz { color: var(--quartz-pink); }
+        .bg-gold { background-color: var(--gold-metallic); }
+        .text-gold { color: var(--gold-metallic); }
+        .border-gold { border-color: var(--gold-metallic); }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 50%, #B8860B 100%);
+        }
+
+        .text-shadow-premium {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(212, 175, 55, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .logo-container {
+            letter-spacing: 2px;
+        }
+
+        .line-accent {
+            width: 50px;
+            height: 2px;
+            background-color: var(--gold-metallic);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .btn-premium {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-premium:hover {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            letter-spacing: 1px;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 glass-effect border-b border-pink-100 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo-container">
+                <span class="text-2xl font-bold tracking-tighter text-gray-800">WEN<span class="text-gold italic font-serif">DY</span></span>
+                <div class="text-[10px] uppercase font-bold text-gray-500 tracking-[0.3em] mt-[-5px]">Planner <span class="text-gold">|</span> Hermanas Isidro</div>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#inicio" class="hover:text-gold transition">Inicio</a>
+                <a href="#nosotros" class="hover:text-gold transition">Nosotras</a>
+                <a href="#servicios" class="hover:text-gold transition">Servicios</a>
+                <a href="#galeria" class="hover:text-gold transition">Momentos</a>
+                <a href="https://wa.me/5560663392" class="text-gold border border-gold px-4 py-1 rounded-full hover:bg-gold hover:text-white transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="inicio" class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://loremflickr.com/1920/1080/luxury-wedding-decoration" alt="Wedding Luxury" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <span class="text-white text-lg tracking-[0.4em] uppercase mb-4 block">Haciendo realidad lo inimaginable</span>
+            <h1 class="text-5xl md:text-7xl text-white font-serif mb-6 leading-tight">La Elegancia de Tu Evento en Manos de Expertas</h1>
+            <p class="text-white/90 text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">Wendy Planner: La complicidad de tres hermanas Isidro dedicadas a crear experiencias sensoriales e inolvidables.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5560663392" class="bg-gold text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest btn-premium gold-gradient shadow-lg">Reserva tu fecha</a>
+                <a href="#servicios" class="bg-white/10 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-white hover:text-gray-900 transition">Ver servicios</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="absolute -top-6 -left-6 w-64 h-64 bg-quartz/30 rounded-full z-0"></div>
+                    <img src="https://loremflickr.com/800/1000/three-sisters-laughing" alt="Hermanas Isidro" class="relative z-10 rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+                    <div class="absolute -bottom-6 -right-6 bg-gold p-8 rounded-lg shadow-xl z-20 hidden md:block">
+                        <p class="text-white font-serif italic text-xl">"Nuestra familia organizando la tuya."</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="line-accent mb-4"></div>
+                    <h2 class="text-4xl md:text-5xl font-serif mb-6 italic">Un Legado de Detalle y Amor</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">Somos las Hermanas Isidro, tres mentes creativas unidas por la pasión de celebrar la vida. En Wendy Planner, no solo organizamos eventos; tejemos historias.</p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">Con una visión fresca y sofisticada, cada una aporta un pilar fundamental: Creatividad, Logística y Estética. Juntas, garantizamos que tu único trabajo sea disfrutar de tu momento especial.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3">
+                            <span class="text-gold text-xl">✦</span>
+                            <span class="font-semibold">Atención 100% personalizada por nosotras.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-gold text-xl">✦</span>
+                            <span class="font-semibold">Proveedores premium exclusivos.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-gold text-xl">✦</span>
+                            <span class="font-semibold">Gestión integral de principio a fin.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="servicios" class="py-20 bg-quartz/10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif italic mb-4">Servicios Exclusivos</h2>
+                <p class="text-gray-500 uppercase tracking-widest text-sm">Convertimos cualquier espacio en un escenario mágico</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Wedding -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover transition duration-500">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="https://loremflickr.com/600/800/wedding-dress" alt="Bodas" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-gold shadow-md">Premium</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-serif mb-4">Bodas</h3>
+                        <p class="text-gray-500 text-sm mb-6">Desde ceremonias íntimas hasta celebraciones majestuosas. Cuidamos cada pétalo y cada luz.</p>
+                        <a href="https://wa.me/5560663392" class="text-gold font-bold uppercase text-xs tracking-widest hover:underline decoration-2 underline-offset-8">Consultar →</a>
+                    </div>
+                </div>
+
+                <!-- 15 Years -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover transition duration-500">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="https://loremflickr.com/600/800/quinceanera-party" alt="XV Años" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-gold shadow-md">Trend</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-serif mb-4">XV Años</h3>
+                        <p class="text-gray-500 text-sm mb-6">El debut soñado. Creamos temáticas vanguardistas que reflejan la personalidad de la festejada.</p>
+                        <a href="https://wa.me/5560663392" class="text-gold font-bold uppercase text-xs tracking-widest hover:underline decoration-2 underline-offset-8">Consultar →</a>
+                    </div>
+                </div>
+
+                <!-- Birthdays -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover transition duration-500">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="https://loremflickr.com/600/800/birthday-cake" alt="Cumpleaños" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-serif mb-4">Cumpleaños</h3>
+                        <p class="text-gray-500 text-sm mb-6">Celebraciones vibrantes para todas las edades. Diseñamos la atmósfera perfecta para brindar.</p>
+                        <a href="https://wa.me/5560663392" class="text-gold font-bold uppercase text-xs tracking-widest hover:underline decoration-2 underline-offset-8">Consultar →</a>
+                    </div>
+                </div>
+
+                <!-- Baby Showers -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover transition duration-500">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="https://loremflickr.com/600/800/baby-shower-decor" alt="Baby Showers" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-serif mb-4">Baby Showers</h3>
+                        <p class="text-gray-500 text-sm mb-6">La dulce espera merece un evento lleno de ternura, detalles pasteles y alegría familiar.</p>
+                        <a href="https://wa.me/5560663392" class="text-gold font-bold uppercase text-xs tracking-widest hover:underline decoration-2 underline-offset-8">Consultar →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section id="galeria" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-serif italic mb-4">Galería de Momentos</h2>
+                    <p class="text-gray-600">Cada imagen cuenta una historia de éxito y felicidad orquestada por las Hermanas Isidro.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="space-y-4">
+                    <img src="https://loremflickr.com/500/700/event-table" class="rounded-2xl shadow-lg w-full object-cover h-64" alt="Detalle 1">
+                    <img src="https://loremflickr.com/500/400/champagne-toast" class="rounded-2xl shadow-lg w-full object-cover h-40" alt="Detalle 2">
+                </div>
+                <div class="space-y-4">
+                    <img src="https://loremflickr.com/500/400/party-balloons" class="rounded-2xl shadow-lg w-full object-cover h-40" alt="Detalle 3">
+                    <img src="https://loremflickr.com/500/700/wedding-flowers" class="rounded-2xl shadow-lg w-full object-cover h-64" alt="Detalle 4">
+                </div>
+                <div class="space-y-4">
+                    <img src="https://loremflickr.com/500/700/celebration-lights" class="rounded-2xl shadow-lg w-full object-cover h-64" alt="Detalle 5">
+                    <img src="https://loremflickr.com/500/400/dessert-table" class="rounded-2xl shadow-lg w-full object-cover h-40" alt="Detalle 6">
+                </div>
+                <div class="space-y-4">
+                    <img src="https://loremflickr.com/500/400/bridal-bouquet" class="rounded-2xl shadow-lg w-full object-cover h-40" alt="Detalle 7">
+                    <img src="https://loremflickr.com/500/700/event-entrance" class="rounded-2xl shadow-lg w-full object-cover h-64" alt="Detalle 8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-20 bg-quartz text-gray-900 overflow-hidden relative">
+        <div class="absolute top-0 right-0 opacity-10">
+            <span class="text-[15rem] font-serif italic -mr-20 -mt-20">"</span>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-serif italic mb-12 italic">Lo que dicen nuestras familias</h2>
+                <div class="bg-white/40 p-10 rounded-3xl backdrop-blur-sm border border-white/50">
+                    <p class="text-xl md:text-2xl font-light italic mb-8">"Wendy y sus hermanas hicieron que mi boda fuera un cuento de hadas. No me preocupé por nada, solo por ser feliz. Su atención al detalle en el rosa cuarzo y los toques dorados fue espectacular."</p>
+                    <div class="flex items-center justify-center gap-4">
+                        <div class="h-1 w-12 bg-gold"></div>
+                        <span class="font-bold uppercase tracking-widest text-sm">María Fernanda S.</span>
+                        <div class="h-1 w-12 bg-gold"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="gold-gradient p-1 md:p-2 rounded-[3rem] shadow-2xl">
+                <div class="bg-white rounded-[2.8rem] py-16 px-6 text-center">
+                    <h2 class="text-4xl md:text-5xl font-serif mb-6 italic text-gray-800">¿Lista para empezar a planear?</h2>
+                    <p class="text-gray-500 text-lg mb-10 max-w-xl mx-auto">Déjanos los detalles a nosotras y vive tu evento como una invitada más.</p>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                        <a href="https://wa.me/5560663392" class="bg-green-500 text-white px-10 py-5 rounded-full font-bold flex items-center gap-3 hover:bg-green-600 transition shadow-lg text-lg">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.52.909 3.197 1.389 4.904 1.39h.005c5.648 0 10.245-4.595 10.248-10.243.001-2.737-1.064-5.31-2.999-7.247-1.936-1.936-4.509-3.001-7.246-3.002-5.649 0-10.247 4.595-10.249 10.243-.001 1.861.502 3.678 1.455 5.247l-.951 3.475 3.559-.933zm11.238-7.618c-.301-.151-1.781-.878-2.057-.978-.275-.1-.476-.151-.675.151-.199.301-.771.978-.945 1.178-.175.2-.349.226-.65.075-.301-.151-1.272-.469-2.423-1.495-.895-.798-1.5-1.785-1.675-2.086-.175-.301-.019-.463.132-.613.135-.134.301-.351.451-.527.149-.175.199-.301.299-.502.1-.2.05-.376-.025-.527-.075-.151-.675-1.628-.925-2.231-.243-.586-.491-.508-.675-.517-.174-.009-.374-.01-.574-.01s-.525.075-.8.376c-.275.301-1.05 1.028-1.05 2.509s1.075 2.91 1.225 3.111c.15.2 2.115 3.229 5.123 4.527.716.309 1.274.494 1.709.633.72.228 1.375.196 1.892.119.577-.086 1.781-.728 2.031-1.43.25-.702.25-1.305.175-1.43-.075-.125-.275-.201-.575-.351z"/></svg>
+                            Chatea con Wendy Planner
+                        </a>
+                        <div class="text-left">
+                            <p class="text-xs uppercase tracking-widest text-gold font-bold">Llámanos</p>
+                            <p class="text-xl font-semibold text-gray-800">55 6066 3392</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <div class="text-2xl font-bold tracking-tighter mb-2">WEN<span class="text-gold italic font-serif">DY</span></div>
+                    <p class="text-gray-400 text-sm">Hermanas Isidro | © 2023 Todos los derechos reservados.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gold transition">Instagram</a>
+                    <a href="#" class="hover:text-gold transition">Facebook</a>
+                    <a href="#" class="hover:text-gold transition">Pinterest</a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm font-semibold italic font-serif">Diseño y Elegancia para momentos eternos.</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white/10 text-center text-[10px] text-gray-500 uppercase tracking-widest">
+                Ubicadas en México - Organización Nacional
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
