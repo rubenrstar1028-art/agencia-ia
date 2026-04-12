@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinicia Bazar | Ropa de Segunda Mano y Joyería Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1a2e26', // Inspirado en la elegancia de bazares sostenibles
+                            gold: '#c5a059', // Tono para joyería
+                            accent: '#7b8e7e', // Verde suave
+                            light: '#f9f7f2'  // Fondo premium
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(rgba(26, 46, 38, 0.8), rgba(26, 46, 38, 0.6)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1776024777/Star10Web_Assets/Reinicia%20Bazar-1776024772/Reinicia%20Bazar.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-brand-light text-brand-dark font-sans overflow-x-hidden">
+
+    <!-- Header / Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-brand-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776024777/Star10Web_Assets/Reinicia%20Bazar-1776024772/Reinicia%20Bazar.jpg" 
+                         alt="Reinicia Bazar Logo" 
+                         class="h-12 w-12 rounded-full object-cover border-2 border-brand-gold">
+                    <span class="font-serif text-2xl font-bold tracking-tighter text-brand-dark">Reinicia <span class="text-brand-gold">Bazar</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium uppercase text-xs tracking-widest">
+                    <a href="#ropa" class="hover:text-brand-gold transition-colors">Ropa</a>
+                    <a href="#joyeria" class="hover:text-brand-gold transition-colors">Joyería</a>
+                    <a href="#ofertas" class="hover:text-brand-gold transition-colors text-red-700">Ofertas</a>
+                    <a href="https://www.instagram.com/reinicia_bazar/" target="_blank" class="hover:text-brand-gold transition-colors">Instagram</a>
+                </div>
+                <button class="md:hidden text-brand-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776024777/Star10Web_Assets/Reinicia%20Bazar-1776024772/Reinicia%20Bazar.jpg" 
+                 alt="Main Hero Background" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-dark/50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="font-serif text-5xl md:text-7xl text-white mb-6 leading-tight italic">
+                Segunda Vida, <br> <span class="not-italic font-bold">Estilo Infinito</span>
+            </h1>
+            <p class="text-white/90 text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto">
+                Descubre tesoros curados en nuestra colección de ropa de segunda mano y la sofisticación de nuestra joyería exclusiva.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#ropa" class="bg-brand-gold hover:bg-white hover:text-brand-dark text-white px-8 py-4 rounded-full transition-all duration-300 font-bold uppercase tracking-widest text-sm shadow-xl">
+                    Ver Ropa
+                </a>
+                <a href="#joyeria" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full transition-all duration-300 font-bold uppercase tracking-widest text-sm">
+                    Ver Joyería
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Section: Clothing -->
+    <section id="ropa" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-brand-gold font-bold uppercase tracking-widest text-sm">Colección Textil</span>
+                    <h2 class="font-serif text-4xl md:text-5xl mt-2">Ropa con Historia</h2>
+                    <p class="mt-4 text-gray-600">Cada prenda ha sido seleccionada cuidadosamente por su calidad, diseño y potencial para transformar tu armario de forma sostenible.</p>
+                </div>
+                <a href="https://www.instagram.com/reinicia_bazar/" class="text-brand-dark border-b-2 border-brand-gold pb-1 font-bold hover:text-brand-gold transition-colors">Ver catálogo en Instagram &rarr;</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Product Card 1 -->
+                <div class="group card-hover transition-all duration-500">
+                    <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-gray-100">
+                        <img src="https://loremflickr.com/600/800/vintage,clothing" alt="Vintage Jacket" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-xl mb-1">Chaqueta Vintage Velvet</h3>
+                            <p class="text-gray-500 text-sm italic">Talla M - Única Pieza</p>
+                        </div>
+                        <span class="text-brand-dark font-bold text-xl">$450</span>
+                    </div>
+                    <button class="w-full mt-6 py-3 border border-brand-dark hover:bg-brand-dark hover:text-white transition-colors rounded-lg font-medium">Consultar Disponibilidad</button>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="group card-hover transition-all duration-500">
+                    <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-gray-100">
+                        <img src="https://loremflickr.com/600/800/boho,dress" alt="Boho Dress" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-xl mb-1">Vestido Floral Boho</h3>
+                            <p class="text-gray-500 text-sm italic">Talla S - Algodón Orgánico</p>
+                        </div>
+                        <span class="text-brand-dark font-bold text-xl">$380</span>
+                    </div>
+                    <button class="w-full mt-6 py-3 border border-brand-dark hover:bg-brand-dark hover:text-white transition-colors rounded-lg font-medium">Consultar Disponibilidad</button>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group card-hover transition-all duration-500">
+                    <div class="aspect-[3/4] overflow-hidden rounded-2xl mb-6 bg-gray-100 relative">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold z-10">OFERTA</div>
+                        <img src="https://loremflickr.com/600/800/modern,pants" alt="Modern Pants" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-xl mb-1">Pantalón Sastre Neutro</h3>
+                            <p class="text-gray-500 text-sm italic">Talla L - Excelente estado</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="block text-gray-400 line-through text-sm">$320</span>
+                            <span class="text-red-600 font-bold text-xl">$250</span>
+                        </div>
+                    </div>
+                    <button class="w-full mt-6 py-3 border border-brand-dark hover:bg-brand-dark hover:text-white transition-colors rounded-lg font-medium">Consultar Disponibilidad</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jewelry Section -->
+    <section id="joyeria" class="py-24 px-4 bg-brand-dark text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-[0.3em] text-sm">Destellos de Elegancia</span>
+                <h2 class="font-serif text-4xl md:text-6xl mt-4">Joyería & Accesorios</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Jewelry 1 -->
+                <div class="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm group">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-4">
+                        <img src="https://loremflickr.com/400/400/gold,jewelry,earrings" alt="Earrings" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <h3 class="font-serif text-lg text-brand-gold">Pendientes Gota de Oro</h3>
+                    <p class="text-gray-400 text-sm mt-2 mb-4">Chapado en oro de 18k con diseño artesanal.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">$890</span>
+                        <a href="https://www.facebook.com/reinicia.bazar" class="text-xs border-b border-brand-gold text-brand-gold uppercase tracking-tighter">Comprar</a>
+                    </div>
+                </div>
+
+                <!-- Jewelry 2 -->
+                <div class="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm group">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-4">
+                        <img src="https://loremflickr.com/400/400/necklace,jewelry" alt="Necklace" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <h3 class="font-serif text-lg text-brand-gold">Collar Perlas de Río</h3>
+                    <p class="text-gray-400 text-sm mt-2 mb-4">Elegancia atemporal con broche de plata.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">$1,250</span>
+                        <a href="https://www.facebook.com/reinicia.bazar" class="text-xs border-b border-brand-gold text-brand-gold uppercase tracking-tighter">Comprar</a>
+                    </div>
+                </div>
+
+                <!-- Jewelry 3 -->
+                <div class="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm group">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-4">
+                        <img src="https://loremflickr.com/400/400/ring,jewelry" alt="Ring" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <h3 class="font-serif text-lg text-brand-gold">Anillo Amatista Real</h3>
+                    <p class="text-gray-400 text-sm mt-2 mb-4">Piedra natural engastada en plata .925.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">$950</span>
+                        <a href="https://www.facebook.com/reinicia.bazar" class="text-xs border-b border-brand-gold text-brand-gold uppercase tracking-tighter">Comprar</a>
+                    </div>
+                </div>
+
+                <!-- Jewelry 4 -->
+                <div class="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm group">
+                    <div class="aspect-square overflow-hidden rounded-lg mb-4">
+                        <img src="https://loremflickr.com/400/400/bracelet,jewelry" alt="Bracelet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <h3 class="font-serif text-lg text-brand-gold">Brazalete Minimal</h3>
+                    <p class="text-gray-400 text-sm mt-2 mb-4">Diseño contemporáneo de acero inoxidable.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">$550</span>
+                        <a href="https://www.facebook.com/reinicia.bazar" class="text-xs border-b border-brand-gold text-brand-gold uppercase tracking-tighter">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section / Sales Pitch -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2">
+                <img src="https://loremflickr.com/800/1000/sustainable,fashion" alt="About Us" class="rounded-3xl shadow-2xl">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="font-serif text-4xl mb-6">¿Por qué Reiniciar?</h2>
+                <div class="space-y-6 text-gray-600 leading-relaxed">
+                    <p>En <strong>Reinicia Bazar</strong>, creemos que el estilo no tiene por qué comprometer al planeta. Nuestra misión es fomentar la economía circular ofreciendo piezas de moda que merecen una segunda oportunidad.</p>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-brand-gold/10 p-3 rounded-lg text-brand-gold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark">Calidad Curada</h4>
+                            <p class="text-sm">Cada artículo pasa por un riguroso control de calidad antes de llegar a ti.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-brand-gold/10 p-3 rounded-lg text-brand-gold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark">Envío Nacional</h4>
+                            <p class="text-sm">Llegamos a donde estés con empaques eco-friendly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social CTA -->
+    <section class="bg-brand-accent/20 py-20 px-4 text-center">
+        <h2 class="font-serif text-3xl md:text-4xl mb-8">Síguenos para Ventas Relámpago</h2>
+        <p class="mb-10 text-lg text-gray-700">Nuestras mejores piezas se agotan en minutos. ¡No te las pierdas!</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="https://www.instagram.com/reinicia_bazar/" target="_blank" class="flex items-center gap-2 bg-white px-8 py-4 rounded-full shadow-md hover:shadow-xl transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pink-600 group-hover:scale-110 transition-transform"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span class="font-bold">Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/reinicia.bazar" target="_blank" class="flex items-center gap-2 bg-white px-8 py-4 rounded-full shadow-md hover:shadow-xl transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-700 group-hover:scale-110 transition-transform"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                <span class="font-bold">Facebook</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white pt-20 pb-10 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776024777/Star10Web_Assets/Reinicia%20Bazar-1776024772/Reinicia%20Bazar.jpg" 
+                             alt="Reinicia Logo" 
+                             class="h-10 w-10 rounded-full">
+                        <span class="font-serif text-3xl font-bold">Reinicia Bazar</span>
+                    </div>
+                    <p class="text-gray-400 max-w-sm">Curaduría experta de moda de segunda mano y joyería fina. Redefiniendo el lujo a través de la sostenibilidad.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-widest text-brand-gold">Navegación</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#ropa" class="hover:text-white transition-colors">Ropa</a></li>
+                        <li><a href="#joyeria" class="hover:text-white transition-colors">Joyería</a></li>
+                        <li><a href="#ofertas" class="hover:text-white transition-colors">Ofertas Especiales</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-widest text-brand-gold">Contacto</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            hola@reiniciabazar.com
+                        </li>
+                        <li class="flex items-center gap-2 text-brand-gold font-bold">
+                            Ventas vía DM Directo
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-10 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 Reinicia Bazar. Todos los derechos reservados. Diseñado para amantes del estilo consciente.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
