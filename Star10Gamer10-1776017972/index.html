@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star10Gamer10 | Contenido Gamer de Alto Nivel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#6366f1',
+                            secondary: '#a855f7',
+                            accent: '#ec4899',
+                            dark: '#0f172a',
+                            surface: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, rgba(15, 23, 42, 1) 70%);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #818cf8, #c084fc, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-inter selection:bg-brand-primary selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776017976/Star10Web_Assets/Star10Gamer10-1776017972/Star10Gamer10.jpg" 
+                         alt="Star10Gamer10 Logo" 
+                         class="h-12 w-12 rounded-full border-2 border-brand-primary object-cover">
+                    <span class="font-orbitron font-black text-xl tracking-tighter italic">STAR10<span class="text-brand-primary">GAMER10</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#inicio" class="hover:text-brand-primary transition-colors">Inicio</a>
+                    <a href="#plataformas" class="hover:text-brand-primary transition-colors">Plataformas</a>
+                    <a href="#videos" class="hover:text-brand-primary transition-colors">Videos</a>
+                    <a href="#contacto" class="hover:text-brand-primary transition-colors">Comunidad</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.facebook.com/Star10Gamer10" target="_blank" class="bg-brand-primary hover:bg-indigo-500 px-6 py-2 rounded-full font-bold transition-all btn-glow text-sm">SEGUIR EN FB</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left space-y-8">
+                    <div class="inline-block px-4 py-1 rounded-full border border-brand-secondary/50 bg-brand-secondary/10 text-brand-secondary text-sm font-bold tracking-widest mb-4">
+                        CONTENT CREATOR & GAMER
+                    </div>
+                    <h1 class="font-orbitron text-5xl lg:text-7xl font-black leading-tight">
+                        EL SIGUIENTE <span class="text-gradient uppercase">NIVEL</span> DEL GAMING
+                    </h1>
+                    <p class="text-slate-400 text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Bienvenido al universo de Star10Gamer10. Aquí la pasión por los videojuegos se convierte en contenido épico. Únete a la comunidad más activa en Facebook, TikTok, YouTube e Instagram.
+                    </p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                        <a href="https://www.facebook.com/Star10Gamer10" target="_blank" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-bold transition-all transform hover:-translate-y-1">
+                            <i class="fab fa-facebook-f"></i> Facebook Gaming
+                        </a>
+                        <a href="#videos" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-8 py-4 rounded-xl font-bold transition-all transform hover:-translate-y-1">
+                            <i class="fas fa-play"></i> Ver Contenido
+                        </a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-brand-primary to-brand-accent rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                        <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776017976/Star10Web_Assets/Star10Gamer10-1776017972/Star10Gamer10.jpg" 
+                             alt="Star10Gamer10 Principal" 
+                             class="w-full aspect-square object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                            <p class="font-orbitron font-bold text-xl tracking-wide">Star10Gamer10 Official</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative elements -->
+        <div class="absolute top-1/4 -right-24 w-96 h-96 bg-brand-primary/20 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-0 -left-24 w-96 h-96 bg-brand-secondary/20 rounded-full blur-[120px] -z-10"></div>
+    </section>
+
+    <!-- SOCIAL PLATFORMS -->
+    <section id="plataformas" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-orbitron text-3xl md:text-4xl font-black mb-4">SÍGUEME EN <span class="text-brand-primary">MIS REDES</span></h2>
+                <p class="text-slate-400">No te pierdas ningún directo, reel o gameplay exclusivo.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Facebook Card -->
+                <a href="https://www.facebook.com/Star10Gamer10" target="_blank" class="group glass p-8 rounded-2xl text-center hover:bg-brand-primary/10 transition-all border-b-4 border-blue-500">
+                    <i class="fab fa-facebook text-4xl mb-4 text-blue-500 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-xl mb-1">Facebook</h3>
+                    <p class="text-sm text-slate-400">Streams y comunidad</p>
+                </a>
+                <!-- TikTok Card -->
+                <a href="https://www.tiktok.com/@star10gamer10?_r=1&_t=ZS-95STPUHE1pM" target="_blank" class="group glass p-8 rounded-2xl text-center hover:bg-brand-primary/10 transition-all border-b-4 border-slate-100">
+                    <i class="fab fa-tiktok text-4xl mb-4 text-white group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-xl mb-1">TikTok</h3>
+                    <p class="text-sm text-slate-400">Mejores momentos</p>
+                </a>
+                <!-- YouTube Card -->
+                <a href="https://www.youtube.com/@StarGamer-yk3dt" target="_blank" class="group glass p-8 rounded-2xl text-center hover:bg-brand-primary/10 transition-all border-b-4 border-red-600">
+                    <i class="fab fa-youtube text-4xl mb-4 text-red-600 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-xl mb-1">YouTube</h3>
+                    <p class="text-sm text-slate-400">Videos largos y guías</p>
+                </a>
+                <!-- Instagram Card -->
+                <a href="https://www.instagram.com/star10gamer10?igsh=NW5peHczMm85cnM1" target="_blank" class="group glass p-8 rounded-2xl text-center hover:bg-brand-primary/10 transition-all border-b-4 border-pink-500">
+                    <i class="fab fa-instagram text-4xl mb-4 text-pink-500 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold text-xl mb-1">Instagram</h3>
+                    <p class="text-sm text-slate-400">Detrás de cámaras</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT GALLERY -->
+    <section id="videos" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="font-orbitron text-3xl md:text-4xl font-black mb-4 italic">VIDEOS <span class="text-brand-secondary">DESTACADOS</span></h2>
+                    <p class="text-slate-400">Echa un vistazo a lo último en gaming y entretenimiento.</p>
+                </div>
+                <a href="https://www.youtube.com/@StarGamer-yk3dt" target="_blank" class="text-brand-primary font-bold flex items-center gap-2 hover:underline">
+                    VER TODO EL CANAL <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video Card 1 -->
+                <div class="group bg-brand-surface rounded-3xl overflow-hidden border border-white/5 hover:border-brand-primary/30 transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/gaming,setup" alt="Gaming Setup" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-brand-primary mb-2 block uppercase tracking-wider">Gameplay</span>
+                        <h3 class="font-bold text-xl mb-3 leading-tight">Misiones épicas y desafíos extremos en vivo.</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">No te pierdas las mejores jugadas de la semana con comentarios en directo y mucha acción.</p>
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i class="far fa-clock"></i> Hace 2 días
+                            <span class="mx-2">•</span>
+                            <i class="far fa-eye"></i> 15k vistas
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="group bg-brand-surface rounded-3xl overflow-hidden border border-white/5 hover:border-brand-primary/30 transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/controller,gamer" alt="Gamer Action" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-brand-secondary mb-2 block uppercase tracking-wider">Review</span>
+                        <h3 class="font-bold text-xl mb-3 leading-tight">Analizando los nuevos lanzamientos del mes.</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">¿Vale la pena comprarlo? Te cuento mi opinión sincera sobre lo último de la industria.</p>
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i class="far fa-clock"></i> Hace 5 días
+                            <span class="mx-2">•</span>
+                            <i class="far fa-eye"></i> 8.2k vistas
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="group bg-brand-surface rounded-3xl overflow-hidden border border-white/5 hover:border-brand-primary/30 transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://loremflickr.com/800/600/e-sports,arena" alt="Tournament" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-brand-accent mb-2 block uppercase tracking-wider">Highlights</span>
+                        <h3 class="font-bold text-xl mb-3 leading-tight">Compilación de momentos divertidos y fails.</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-2">Ríete un rato con los mejores clips de mis últimos streams en Facebook y TikTok.</p>
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <i class="far fa-clock"></i> Hace 1 semana
+                            <span class="mx-2">•</span>
+                            <i class="far fa-eye"></i> 22k vistas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN THE COMMUNITY CTA -->
+    <section id="contacto" class="py-20">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="relative overflow-hidden rounded-[3rem] p-10 lg:p-20 text-center">
+                <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 -z-10"></div>
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                
+                <h2 class="font-orbitron text-4xl lg:text-5xl font-black mb-8">ÚNETE A LA <span class="text-white">LEGIÓN STAR10</span></h2>
+                <p class="text-white/80 text-xl mb-12 max-w-2xl mx-auto italic">
+                    "Más que seguidores, somos una comunidad de apasionados por el gaming. ¡Te espero en el próximo directo!"
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="https://www.facebook.com/Star10Gamer10" target="_blank" class="bg-white text-brand-primary px-10 py-4 rounded-full font-black text-lg shadow-xl hover:scale-105 transition-transform">
+                        ¡SÍGUEME AHORA!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+                <div class="flex items-center gap-3">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776017976/Star10Web_Assets/Star10Gamer10-1776017972/Star10Gamer10.jpg" 
+                         alt="Logo" class="h-10 w-10 rounded-full grayscale hover:grayscale-0 transition-all">
+                    <span class="font-orbitron font-black text-lg tracking-tighter">STAR10<span class="text-brand-primary">GAMER10</span></span>
+                </div>
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/Star10Gamer10" class="text-slate-500 hover:text-white transition-colors text-2xl"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@star10gamer10" class="text-slate-500 hover:text-white transition-colors text-2xl"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@StarGamer-yk3dt" class="text-slate-500 hover:text-white transition-colors text-2xl"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/star10gamer10" class="text-slate-500 hover:text-white transition-colors text-2xl"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center text-slate-600 text-sm border-t border-white/5 pt-8">
+                <p>&copy; 2024 Star10Gamer10. Todos los derechos reservados. Diseñado para la comunidad gamer.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple reveal on scroll effect
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.glass');
+            elements.forEach(el => {
+                const position = el.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                if(position < screenPosition) {
+                    el.classList.add('opacity-100');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
