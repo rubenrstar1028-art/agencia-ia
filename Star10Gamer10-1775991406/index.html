@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star10Gamer10 | Official Gaming Content Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#6d28d9', // Deep Purple (Gaming vibe)
+                            secondary: '#ec4899', // Vibrant Pink
+                            dark: '#0f172a',
+                            accent: '#22d3ee' // Cyan
+                        }
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px #6d28d9, 0 0 10px #6d28d9' },
+                            '100%': { boxShadow: '0 0 20px #ec4899, 0 0 30px #ec4899' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; overflow-x: hidden; }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(109, 40, 217, 0.15) 0%, rgba(15, 23, 42, 1) 100%); }
+        .text-glow { text-shadow: 0 0 15px rgba(109, 40, 217, 0.6); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://drive.google.com/thumbnail?sz=w1000&id=" alt="Star10Gamer10 Logo" class="h-10 w-10 rounded-full border-2 border-brand-primary">
+                <span class="font-orbitron font-black text-xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-brand-accent">STAR10GAMER10</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
+                <a href="#hero" class="hover:text-brand-accent transition">Inicio</a>
+                <a href="#videos" class="hover:text-brand-accent transition">Videos</a>
+                <a href="#social" class="hover:text-brand-accent transition">Comunidad</a>
+            </div>
+            <a href="https://www.facebook.com/Star10Gamer10" target="_blank" class="bg-brand-primary hover:bg-brand-secondary px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg shadow-purple-500/20">
+                SEGUIR EN FB
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-20 hero-gradient overflow-hidden">
+        <div class="absolute top-20 -left-20 w-96 h-96 bg-brand-primary opacity-20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-20 -right-20 w-96 h-96 bg-brand-secondary opacity-10 blur-[120px] rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-8 order-2 md:order-1">
+                <h1 class="font-orbitron text-5xl md:text-7xl font-black leading-tight text-glow">
+                    NUEVA ERA DEL <span class="text-brand-accent">GAMING</span>
+                </h1>
+                <p class="text-xl text-slate-300 max-w-lg leading-relaxed">
+                    Explora el multiverso del entretenimiento con Star10Gamer10. Contenido exclusivo, gameplays épicos y la comunidad más grande de Facebook, TikTok e Instagram.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://www.facebook.com/Star10Gamer10" class="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-bold transition transform hover:-translate-y-1">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        <span>Facebook Gaming</span>
+                    </a>
+                    <a href="www.youtube.com/@StarGamer-yk3dt" class="flex items-center space-x-2 border border-slate-700 hover:border-brand-accent px-8 py-4 rounded-xl font-bold transition">
+                        <span>Ver en YouTube</span>
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-primary to-brand-accent rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+                    <div class="relative bg-slate-900 rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                        <img src="https://drive.google.com/thumbnail?sz=w1000&id=" alt="Star10Gamer10 Hero" class="w-full max-w-md h-auto transform transition duration-700 group-hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Platforms Section -->
+    <section class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-orbitron text-3xl md:text-5xl font-black mb-4">CONTENIDO MULTIPLATAFORMA</h2>
+                <div class="h-1.5 w-24 bg-brand-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Facebook Card -->
+                <div class="glass p-8 rounded-3xl hover:border-brand-accent transition group cursor-pointer">
+                    <div class="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center mb-6 text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Facebook Gaming</h3>
+                    <p class="text-slate-400 text-sm">Streams diarios, interacción en vivo y la comunidad oficial de Star10Gamer10.</p>
+                </div>
+
+                <!-- TikTok Card -->
+                <div class="glass p-8 rounded-3xl hover:border-brand-accent transition group cursor-pointer">
+                    <div class="w-14 h-14 bg-black rounded-2xl flex items-center justify-center mb-6 border border-white/10 group-hover:bg-white group-hover:text-black transition">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.3-.8.51-1.28 1.43-1.35 2.39-.06.8.1 1.61.55 2.27.7 1.07 1.93 1.55 3.14 1.4 1.15-.09 2.14-.84 2.67-1.85.25-.51.39-1.06.41-1.63V.02z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">TikTok Viral</h3>
+                    <p class="text-slate-400 text-sm">Los clips más épicos, fails divertidos y tendencias del mundo gaming en segundos.</p>
+                </div>
+
+                <!-- YouTube Card -->
+                <div class="glass p-8 rounded-3xl hover:border-brand-accent transition group cursor-pointer">
+                    <div class="w-14 h-14 bg-red-600/20 rounded-2xl flex items-center justify-center mb-6 text-red-500 group-hover:bg-red-600 group-hover:text-white transition">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">YouTube Hub</h3>
+                    <p class="text-slate-400 text-sm">Tutoriales, reviews de hardware y gameplays de larga duración en alta definición.</p>
+                </div>
+
+                <!-- Instagram Card -->
+                <div class="glass p-8 rounded-3xl hover:border-brand-accent transition group cursor-pointer">
+                    <div class="w-14 h-14 bg-pink-600/20 rounded-2xl flex items-center justify-center mb-6 text-pink-500 group-hover:bg-pink-600 group-hover:text-white transition">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.981 1.28.058 1.688.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estilo de Vida</h3>
+                    <p class="text-slate-400 text-sm">Detrás de cámaras, setups y el día a día de un creador apasionado por los videojuegos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Gallery -->
+    <section id="videos" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 space-y-4">
+                <div>
+                    <h2 class="font-orbitron text-4xl font-black italic">CLIPS DESTACADOS</h2>
+                    <p class="text-brand-accent font-bold tracking-widest uppercase text-sm mt-2">Últimos lanzamientos</p>
+                </div>
+                <a href="https://www.tiktok.com/@star10gamer10?_r=1&_t=ZS-95STPUHE1pM" class="text-white border-b-2 border-brand-primary pb-1 hover:text-brand-secondary transition">Ver más en TikTok</a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Video Card 1 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-2xl">
+                    <img src="https://loremflickr.com/1200/800/gaming,pc" alt="Video Thumbnail" class="w-full aspect-video object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-brand-primary text-xs font-bold px-2 py-1 rounded mb-2 inline-block">EPIC MOMENT</span>
+                        <h4 class="font-bold text-lg">La mejor partida de la semana</h4>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center animate-pulse">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M4.5 14V6l11 4-11 4z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Card 2 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-2xl">
+                    <img src="https://loremflickr.com/1200/800/streaming,setup" alt="Video Thumbnail" class="w-full aspect-video object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-brand-secondary text-xs font-bold px-2 py-1 rounded mb-2 inline-block">REVIEW</span>
+                        <h4 class="font-bold text-lg">Mi nuevo setup 2024</h4>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center animate-pulse">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M4.5 14V6l11 4-11 4z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Card 3 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-2xl">
+                    <img src="https://loremflickr.com/1200/800/keyboard,neon" alt="Video Thumbnail" class="w-full aspect-video object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-brand-accent text-slate-900 text-xs font-bold px-2 py-1 rounded mb-2 inline-block">LIVE STREAM</span>
+                        <h4 class="font-bold text-lg">Torneo Star10 Invitacional</h4>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <div class="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center animate-pulse">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M4.5 14V6l11 4-11 4z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Connect Section -->
+    <section id="social" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand-primary/5"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <h2 class="font-orbitron text-4xl font-black mb-8">ÚNETE A LA LEGIÓN</h2>
+            <p class="text-xl text-slate-400 mb-12">No te pierdas ningún directo ni contenido exclusivo. Sígueme en todas mis redes sociales.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="https://www.facebook.com/Star10Gamer10" target="_blank" class="glass p-6 rounded-2xl hover:bg-blue-600 transition group">
+                    <p class="text-3xl font-bold group-hover:scale-110 transition">FB</p>
+                    <p class="text-[10px] uppercase tracking-widest mt-2 opacity-60">Facebook</p>
+                </a>
+                <a href="https://www.tiktok.com/@star10gamer10?_r=1&_t=ZS-95STPUHE1pM" target="_blank" class="glass p-6 rounded-2xl hover:bg-slate-100 hover:text-black transition group">
+                    <p class="text-3xl font-bold group-hover:scale-110 transition">TK</p>
+                    <p class="text-[10px] uppercase tracking-widest mt-2 opacity-60">TikTok</p>
+                </a>
+                <a href="www.youtube.com/@StarGamer-yk3dt" target="_blank" class="glass p-6 rounded-2xl hover:bg-red-600 transition group">
+                    <p class="text-3xl font-bold group-hover:scale-110 transition">YT</p>
+                    <p class="text-[10px] uppercase tracking-widest mt-2 opacity-60">YouTube</p>
+                </a>
+                <a href="https://www.instagram.com/star10gamer10?igsh=NW5peHczMm85cnM1" target="_blank" class="glass p-6 rounded-2xl hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-600 transition group">
+                    <p class="text-3xl font-bold group-hover:scale-110 transition">IG</p>
+                    <p class="text-[10px] uppercase tracking-widest mt-2 opacity-60">Instagram</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/5 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-8 md:mb-0">
+                <img src="https://drive.google.com/thumbnail?sz=w1000&id=" alt="Logo" class="h-8 w-8 rounded-full">
+                <span class="font-orbitron font-bold text-lg tracking-widest">STAR10GAMER10</span>
+            </div>
+            
+            <div class="text-center md:text-right">
+                <p class="text-slate-500 text-sm">&copy; 2024 Star10Gamer10. Todos los derechos reservados.</p>
+                <div class="mt-2 space-x-4 text-xs text-slate-600 uppercase tracking-widest">
+                    <a href="#" class="hover:text-white transition">Privacidad</a>
+                    <a href="#" class="hover:text-white transition">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
