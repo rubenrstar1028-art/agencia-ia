@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecaTaco - Tradición en cada bocado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rojo-chile: #E31B23;
+            --verde-cilantro: #00843D;
+            --blanco-puro: #FFFFFF;
+            --negro-carbon: #1A1A1A;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--blanco-puro);
+            color: var(--negro-carbon);
+        }
+
+        .bg-rojo { background-color: var(--rojo-chile); }
+        .bg-verde { background-color: var(--verde-cilantro); }
+        .text-rojo { color: var(--rojo-chile); }
+        .text-verde { color: var(--verde-cilantro); }
+        .border-verde { border-color: var(--verde-cilantro); }
+        
+        .logo-font {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.2rem;
+            letter-spacing: -1px;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+        }
+
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .shape-divider {
+            fill: var(--blanco-puro);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b-4 border-verde shadow-sm">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- CSS Logo -->
+            <div class="flex items-center space-x-1">
+                <span class="logo-font text-rojo">Teca</span>
+                <span class="logo-font text-verde">Taco</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-widest">
+                <a href="#inicio" class="hover:text-rojo transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-rojo transition-colors">Nosotros</a>
+                <a href="#servicios" class="hover:text-rojo transition-colors">Servicios</a>
+                <a href="#ubicacion" class="hover:text-rojo transition-colors">Ubicación</a>
+            </nav>
+
+            <a href="https://share.google/J89WVQ2NAHoH5rcUT" target="_blank" class="bg-verde text-white px-6 py-2 rounded-full font-bold text-sm btn-hover hidden sm:block">
+                ¡PEDIR AHORA!
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://loremflickr.com/1920/1080/mexican-food" alt="Tacos Mexicanos" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                El Auténtico Sabor de la <span class="text-verde">Tradición</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 font-light italic">
+                De nuestra cocina a tu mesa, vive la experiencia TecaTaco: Tacos con alma, corazón y mucha salsa.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://share.google/J89WVQ2NAHoH5rcUT" target="_blank" class="bg-rojo text-white px-10 py-4 rounded-xl text-lg font-black btn-hover uppercase tracking-tighter">
+                    Ver Ubicación Exacta
+                </a>
+                <a href="#servicios" class="bg-verde text-white px-10 py-4 rounded-xl text-lg font-black btn-hover uppercase tracking-tighter">
+                    Servicio a Domicilio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-rojo mb-4 uppercase">¿Por qué TecaTaco?</h2>
+                <div class="h-1 w-24 bg-verde mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div class="p-8 rounded-3xl bg-gray-50 card-shadow border-t-8 border-verde">
+                    <div class="text-5xl mb-4">🌶️</div>
+                    <h3 class="text-xl font-bold mb-4">Recetas Ancestrales</h3>
+                    <p class="text-gray-600">Sazonamos nuestra carne con una mezcla secreta de chiles y especias que ha pasado de generación en generación.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-gray-50 card-shadow border-t-8 border-rojo">
+                    <div class="text-5xl mb-4">🥬</div>
+                    <h3 class="text-xl font-bold mb-4">Ingredientes Frescos</h3>
+                    <p class="text-gray-600">Desde el cilantro recién cortado hasta nuestras tortillas hechas a mano en el momento.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-gray-50 card-shadow border-t-8 border-verde">
+                    <div class="text-5xl mb-4">🛵</div>
+                    <h3 class="text-xl font-bold mb-4">Entrega Caliente</h3>
+                    <p class="text-gray-600">Contamos con un equipo de entrega rápida para asegurar que tus tacos lleguen como si estuvieras en nuestra barra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery Section -->
+    <section class="grid grid-cols-2 md:grid-cols-4 h-[400px]">
+        <img src="https://loremflickr.com/600/600/tacos,salsa" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" alt="Salsa">
+        <img src="https://loremflickr.com/600/600/guacamole,mexican" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" alt="Guacamole">
+        <img src="https://loremflickr.com/600/600/pastor,meat" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" alt="Pastor">
+        <img src="https://loremflickr.com/600/600/tortilla,handmade" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" alt="Tortillas">
+    </section>
+
+    <!-- Info Section: Delivery & Hours -->
+    <section id="servicios" class="py-20 bg-verde text-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-5xl font-black mb-8 leading-tight uppercase">¡Llevamos la Fiesta a tu Casa!</h2>
+                <p class="text-xl mb-8 font-medium">No importa si es una reunión familiar, una noche de amigos o simplemente antojo. En TecaTaco estamos listos para atenderte con la rapidez y calidez que mereces.</p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center space-x-3">
+                        <span class="bg-white text-verde p-1 rounded-full font-bold">✓</span>
+                        <span class="text-lg">Pedidos por WhatsApp y llamadas directas.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="bg-white text-verde p-1 rounded-full font-bold">✓</span>
+                        <span class="text-lg">Empaques térmicos que conservan el calor.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="bg-white text-verde p-1 rounded-full font-bold">✓</span>
+                        <span class="text-lg">Aceptamos tarjetas y efectivo a domicilio.</span>
+                    </li>
+                </ul>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-rojo p-6 rounded-2xl">
+                        <p class="text-sm uppercase tracking-widest opacity-80">Horario de Servicio</p>
+                        <p class="text-2xl font-bold">Lun - Dom: 2:00 PM - 12:00 AM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://loremflickr.com/800/800/mexican-restaurant-interior" alt="Ambiente TecaTaco" class="rounded-[2rem] shadow-2xl border-8 border-white/20">
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="ubicacion" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-verde mb-6 uppercase">Encuéntranos</h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Estamos ubicados en el corazón del sabor. Haz clic en el mapa para llegar directo a los mejores tacos de la zona.</p>
+            
+            <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-rojo">
+                <!-- Placeholder for map visual integration -->
+                <a href="https://share.google/J89WVQ2NAHoH5rcUT" target="_blank" class="block relative group">
+                    <img src="https://loremflickr.com/1200/500/city,map" alt="Mapa Ubicación" class="w-full h-[400px] object-cover">
+                    <div class="absolute inset-0 bg-rojo/20 group-hover:bg-rojo/10 transition-all flex items-center justify-center">
+                        <div class="bg-white text-rojo font-black px-8 py-4 rounded-full shadow-xl transform group-hover:scale-110 transition-transform">
+                            ABRIR EN GOOGLE MAPS 📍
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-negro-carbon text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-10 mb-10">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start space-x-1 mb-2">
+                        <span class="logo-font text-rojo">Teca</span>
+                        <span class="logo-font text-verde">Taco</span>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">La taquería premium donde cada mordida es una fiesta nacional.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="w-10 h-10 bg-verde rounded-full flex items-center justify-center hover:bg-rojo transition-colors">FB</a>
+                    <a href="#" class="w-10 h-10 bg-verde rounded-full flex items-center justify-center hover:bg-rojo transition-colors">IG</a>
+                    <a href="https://share.google/J89WVQ2NAHoH5rcUT" target="_blank" class="w-10 h-10 bg-verde rounded-full flex items-center justify-center hover:bg-rojo transition-colors">📍</a>
+                </div>
+            </div>
+            
+            <div class="text-center text-gray-500 text-sm">
+                <p>&copy; 2024 TecaTaco. Todos los derechos reservados. Diseñado con pasión por el sabor mexicano.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html></html>
