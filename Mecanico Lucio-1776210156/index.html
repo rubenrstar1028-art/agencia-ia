@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecánico Lucio | Servicio Automotriz Profesional y a Domicilio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --navy: #001e3c;
+            --light-gray: #f1f5f9;
+            --accent-blue: #2563eb;
+            --soft-gray: #e2e8f0;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--navy);
+        }
+        .font-oswald { font-family: 'Oswald', sans-serif; }
+        
+        .bg-navy { background-color: var(--navy); }
+        .text-navy { color: var(--navy); }
+        .bg-light-gray { background-color: var(--light-gray); }
+        .text-light-gray { color: var(--light-gray); }
+        .border-navy { border-color: var(--navy); }
+
+        /* LOGO DESIGN */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: -0.5px;
+        }
+        .logo-icon {
+            background-color: var(--navy);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 800;
+            margin-right: 8px;
+            border-bottom: 3px solid var(--accent-blue);
+        }
+        .logo-text-main {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-transform: uppercase;
+        }
+        .logo-text-sub {
+            color: var(--accent-blue);
+            font-weight: 400;
+        }
+
+        /* HERO OVERLAY */
+        .hero-overlay {
+            background: linear-gradient(rgba(0, 30, 60, 0.85), rgba(0, 30, 60, 0.7));
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            border: 1px solid var(--soft-gray);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--navy);
+        }
+
+        .btn-premium {
+            background-color: var(--navy);
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .btn-premium:hover {
+            background-color: #002d5a;
+            transform: scale(1.05);
+        }
+
+        .floating-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        .floating-wa:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="logo-container">
+                <span class="logo-icon">M</span>
+                <span class="logo-text-main">MECÁNICO <span class="logo-text-sub">LUCIO</span></span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center font-semibold text-sm uppercase tracking-wider">
+                <a href="#inicio" class="hover:text-blue-600 transition">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
+                <a href="#domicilio" class="hover:text-blue-600 transition">A Domicilio</a>
+                <a href="#testimonios" class="hover:text-blue-600 transition">Clientes</a>
+                <a href="tel:222222222222" class="bg-navy text-white px-5 py-2 rounded-full hover:bg-blue-800 transition flex items-center">
+                    <i class="fas fa-phone-alt mr-2 text-xs"></i> 222 222 2222
+                </a>
+            </div>
+            <button class="md:hidden text-navy text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative h-[85vh] flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://loremflickr.com/1920/1080/mechanic,car" alt="Taller Mecánico" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-white">
+            <div class="max-w-3xl">
+                <span class="inline-block px-4 py-1 bg-blue-600 text-xs font-bold uppercase tracking-widest mb-4 rounded">Confianza y Precisión</span>
+                <h1 class="text-5xl md:text-7xl font-oswald font-bold leading-tight mb-6">TU AUTO MERECE UN <span class="text-blue-400">TRATO EXPERTO.</span></h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 font-light">Mecánica integral de alta precisión. Desde un cambio de aceite hasta reparaciones complejas de motor, lo hacemos con garantía y profesionalismo.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/222222222222" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-center transition flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> AGENDA TU CITA AHORA
+                    </a>
+                    <a href="#servicios" class="bg-transparent border-2 border-white hover:bg-white hover:text-navy text-white px-8 py-4 rounded-lg font-bold text-center transition">
+                        VER SERVICIOS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES BAR -->
+    <div class="bg-white py-10 shadow-lg relative z-20 -mt-10 mx-6 md:mx-20 rounded-xl">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex items-center space-x-4 border-b md:border-b-0 md:border-r border-gray-100 pb-6 md:pb-0 md:pr-6">
+                <i class="fas fa-tools text-3xl text-blue-600"></i>
+                <div>
+                    <h4 class="font-bold text-navy">Equipo Moderno</h4>
+                    <p class="text-sm text-gray-500">Diagnóstico computarizado avanzado.</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4 border-b md:border-b-0 md:border-r border-gray-100 pb-6 md:pb-0 md:pr-6">
+                <i class="fas fa-user-check text-3xl text-blue-600"></i>
+                <div>
+                    <h4 class="font-bold text-navy">Técnicos Certificados</h4>
+                    <p class="text-sm text-gray-500">Más de 15 años de experiencia real.</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-shield-alt text-3xl text-blue-600"></i>
+                <div>
+                    <h4 class="font-bold text-navy">Garantía Total</h4>
+                    <p class="text-sm text-gray-500">Seguridad en cada pieza y mano de obra.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section id="servicios" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-oswald font-bold text-navy mb-4">ESPECIALIDADES MECÁNICAS</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Ofrecemos una amplia gama de soluciones para mantener tu vehículo en condiciones óptimas de rendimiento y seguridad.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Service 1 -->
+            <div class="service-card bg-white p-8 rounded-2xl">
+                <div class="w-16 h-16 bg-blue-50 flex items-center justify-center rounded-xl mb-6">
+                    <i class="fas fa-car-crash text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Frenos y Suspensión</h3>
+                <p class="text-gray-500 text-sm mb-6">Rectificado de discos, cambio de balatas y revisión completa de amortiguadores para tu seguridad.</p>
+                <img src="https://loremflickr.com/400/250/car-brakes" alt="Frenos" class="rounded-lg w-full h-32 object-cover">
+            </div>
+            <!-- Service 2 -->
+            <div class="service-card bg-white p-8 rounded-2xl">
+                <div class="w-16 h-16 bg-blue-50 flex items-center justify-center rounded-xl mb-6">
+                    <i class="fas fa-microchip text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Escaneo Full</h3>
+                <p class="text-gray-500 text-sm mb-6">Detección de fallas electrónicas mediante escáner de última generación. Sin adivinanzas.</p>
+                <img src="https://loremflickr.com/400/250/car-engine-check" alt="Escaneo" class="rounded-lg w-full h-32 object-cover">
+            </div>
+            <!-- Service 3 -->
+            <div class="service-card bg-white p-8 rounded-2xl">
+                <div class="w-16 h-16 bg-blue-50 flex items-center justify-center rounded-xl mb-6">
+                    <i class="fas fa-oil-can text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Afinación Mayor</h3>
+                <p class="text-gray-500 text-sm mb-6">Cambio de filtros, bujías y limpieza de inyectores para optimizar el consumo de combustible.</p>
+                <img src="https://loremflickr.com/400/250/car-oil" alt="Aceite" class="rounded-lg w-full h-32 object-cover">
+            </div>
+            <!-- Service 4 -->
+            <div class="service-card bg-white p-8 rounded-2xl">
+                <div class="w-16 h-16 bg-blue-50 flex items-center justify-center rounded-xl mb-6">
+                    <i class="fas fa-cogs text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Motor y Transmisión</h3>
+                <p class="text-gray-500 text-sm mb-6">Reparaciones mayores, ajustes de motor y mantenimiento a transmisiones automáticas y manuales.</p>
+                <img src="https://loremflickr.com/400/250/car-transmission" alt="Motor" class="rounded-lg w-full h-32 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME SERVICE SECTION -->
+    <section id="domicilio" class="bg-navy text-white py-20 overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 mb-12 lg:mb-0 relative">
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-blue-600">
+                    <img src="https://loremflickr.com/800/600/mechanic-working" alt="Mecánico a domicilio" class="w-full">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-blue-600 p-8 rounded-2xl hidden md:block">
+                    <p class="text-4xl font-bold">24/7</p>
+                    <p class="text-xs uppercase">Disponibilidad Emergencias</p>
+                </div>
+            </div>
+            <div class="lg:w-1/2 lg:pl-20">
+                <h2 class="text-4xl font-oswald font-bold mb-6 italic">¿NO PUEDES VENIR AL TALLER? <br><span class="text-blue-400 text-5xl">VAMOS HACIA TI.</span></h2>
+                <p class="text-gray-300 text-lg mb-8">Entendemos que tu tiempo es valioso y que un auto descompuesto es un dolor de cabeza. Ofrecemos servicio de mecánica exprés a domicilio, oficina o donde te encuentres varado.</p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i> Diagnóstico en sitio</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i> Paso de corriente y cambio de batería</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i> Reparaciones menores inmediatas</li>
+                </ul>
+                <a href="tel:222222222222" class="inline-block bg-white text-navy px-10 py-4 rounded-full font-bold hover:bg-blue-400 hover:text-white transition">
+                    LLAMAR AHORA <i class="fas fa-mobile-alt ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOTION -->
+    <section class="py-16 bg-blue-600">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h3 class="text-3xl font-oswald font-bold mb-2">PROMOCIÓN DE TEMPORADA</h3>
+            <p class="text-xl mb-6">Revisión de 25 puntos de seguridad + Escaneo Computarizado <span class="font-bold underline">¡TOTALMENTE GRATIS!</span> al realizar cualquier servicio.</p>
+            <p class="text-sm opacity-80">Menciona que lo viste en nuestra web para hacer válida la promoción.</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonios" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-oswald font-bold text-navy mb-4">LO QUE DICEN NUESTROS CLIENTES</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-blue-600">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Excelente servicio. Me quedé tirado en la avenida y Lucio llegó en 20 minutos. Reparó el alternador ahí mismo. Muy honesto con los precios."</p>
+                    <div class="font-bold text-navy">- Ricardo Mendoza</div>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-blue-600">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Llevo mi camioneta siempre para el servicio preventivo. El taller está muy limpio y son muy profesionales. No te inventan fallas extras."</p>
+                    <div class="font-bold text-navy">- Carla Sánchez</div>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-t-4 border-blue-600">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"El mejor mecánico de la zona. El escaneo que le hicieron a mi BMW fue muy preciso y solucionaron un problema que en la agencia no podían."</p>
+                    <div class="font-bold text-navy">- Ing. Alberto Ruiz</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy text-white pt-20 pb-10">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="logo-container mb-6">
+                    <span class="logo-icon">M</span>
+                    <span class="logo-text-main text-white">MECÁNICO <span class="logo-text-sub">LUCIO</span></span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed">Expertos en mantener tu camino seguro. Pasión por la mecánica y compromiso con nuestros clientes desde hace más de 15 años.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 border-b border-blue-900 pb-2">Enlaces</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="#inicio" class="hover:text-blue-400 transition">Inicio</a></li>
+                    <li><a href="#servicios" class="hover:text-blue-400 transition">Servicios</a></li>
+                    <li><a href="#domicilio" class="hover:text-blue-400 transition">Servicio a Domicilio</a></li>
+                    <li><a href="#testimonios" class="hover:text-blue-400 transition">Testimonios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 border-b border-blue-900 pb-2">Contacto</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-500"></i>
+                        <span>Av. Principal del Automóvil #123, Colonia Industrial.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt mr-3 text-blue-500"></i>
+                        <a href="tel:222222222222">222 222 2222</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fab fa-whatsapp mr-3 text-blue-500"></i>
+                        <a href="https://wa.me/222222222222">WhatsApp Directo</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 border-b border-blue-900 pb-2">Horarios</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li class="flex justify-between"><span>Lunes - Viernes:</span> <span>8:00 - 19:00</span></li>
+                    <li class="flex justify-between"><span>Sábado:</span> <span>9:00 - 15:00</span></li>
+                    <li class="flex justify-between text-blue-400 font-bold"><span>Urgencias:</span> <span>24 Horas</span></li>
+                </ul>
+                <div class="mt-6 flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-10 border-t border-gray-800 text-center text-gray-500 text-xs">
+            <p>&copy; 2023 Mecánico Lucio. Todos los derechos reservados. Diseñado para la excelencia automotriz.</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/222222222222" class="floating-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html></html>
