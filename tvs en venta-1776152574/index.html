@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVS en Venta | Innovación Visual y Calidad Garantizada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-blue: #0A2342;
+            --steel-gray: #2E4057;
+            --light-steel: #A9BCD0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .font-brand { font-family: 'Montserrat', sans-serif; }
+        .bg-deep { background-color: var(--deep-blue); }
+        .bg-steel { background-color: var(--steel-gray); }
+        .text-deep { color: var(--deep-blue); }
+        .text-steel { color: var(--steel-gray); }
+        .text-light-steel { color: var(--light-steel); }
+        .border-light-steel { border-color: var(--light-steel); }
+        
+        .hero-gradient {
+            background: linear-gradient(rgba(10, 35, 66, 0.85), rgba(46, 64, 87, 0.85)), url('https://loremflickr.com/1920/1080/smart-tv,home-cinema');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-premium {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(10, 35, 66, 0.2);
+        }
+        .btn-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(10, 35, 66, 0.4);
+        }
+        .card-hover {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card-hover:hover {
+            transform: scale(1.03);
+        }
+        .custom-shape {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- CSS LOGO -->
+                <div class="flex items-center space-x-2">
+                    <div class="flex flex-col leading-none">
+                        <span class="font-brand text-3xl font-black tracking-tighter text-deep">TVS</span>
+                        <span class="text-[10px] font-bold tracking-[0.2em] text-light-steel uppercase ml-1">en venta</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#catalogo" class="text-steel font-semibold hover:text-deep transition">Catálogo</a>
+                    <a href="#nosotros" class="text-steel font-semibold hover:text-deep transition">Garantía</a>
+                    <a href="#contacto" class="text-steel font-semibold hover:text-deep transition">Sucursales</a>
+                    <a href="https://wa.me/4444444444" class="bg-deep text-white px-6 py-2.5 rounded-full font-bold btn-premium flex items-center gap-2">
+                        WhatsApp 
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.319 1.592 5.548 0 10.058-4.51 10.06-10.06.002-2.69-1.047-5.216-2.951-7.121s-4.432-2.956-7.122-2.957c-5.549 0-10.06 4.51-10.062 10.061-.001 1.932.532 3.813 1.541 5.466l-1.012 3.7 3.792-.994c1.515.824 3.036 1.313 4.435 1.313z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[85vh] flex items-center justify-center text-white custom-shape hero-gradient">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h1 class="font-brand text-5xl md:text-7xl font-black mb-6 leading-tight">
+                LA EXPERIENCIA <span class="text-light-steel">CINEMATOGRÁFICA</span> EN TU HOGAR
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-10 max-w-3xl mx-auto opacity-90">
+                Selección premium de televisores nuevos y seminuevos certificados. Calidad 4K, OLED y Smart Tech para cada espacio.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#nuevo" class="bg-white text-deep px-10 py-4 rounded-xl font-black uppercase tracking-wider btn-premium">Ver Equipos Nuevos</a>
+                <a href="#usado" class="bg-steel border-2 border-light-steel text-white px-10 py-4 rounded-xl font-black uppercase tracking-wider btn-premium">Outlet de Usados</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="p-8">
+                    <div class="w-16 h-16 bg-light-steel/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-deep mb-3">Garantía Extendida</h3>
+                    <p class="text-gray-600">Todos nuestros equipos, nuevos o usados, pasan por un riguroso control de calidad técnica.</p>
+                </div>
+                <div class="p-8">
+                    <div class="w-16 h-16 bg-light-steel/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-deep mb-3">Entrega Inmediata</h3>
+                    <p class="text-gray-600">Contamos con stock físico real. Compra hoy y disfruta de tu nueva pantalla el mismo día.</p>
+                </div>
+                <div class="p-8">
+                    <div class="w-16 h-16 bg-light-steel/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-deep mb-3">Precios Competitivos</h3>
+                    <p class="text-gray-600">El mejor balance entre tecnología de punta y ahorro inteligente en cada categoría.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION (VISUAL ONLY) -->
+    <section id="catalogo" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-light-steel font-bold tracking-widest uppercase text-sm">Nuestro Inventario</span>
+                    <h2 class="text-4xl font-brand font-black text-deep mt-2">EQUIPOS DISPONIBLES</h2>
+                </div>
+                <div class="mt-4 md:mt-0 flex gap-4">
+                    <span class="px-4 py-2 bg-deep text-white rounded-lg text-sm font-bold">Nuevos</span>
+                    <span class="px-4 py-2 bg-white border border-gray-200 text-steel rounded-lg text-sm font-bold">Seminuevos</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- PRODUCT 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all card-hover border border-gray-100">
+                    <div class="relative">
+                        <img src="https://loremflickr.com/800/600/smart-tv,led" alt="Pantalla LED 4K" class="w-full h-64 object-cover">
+                        <span class="absolute top-4 left-4 bg-deep text-white text-xs font-black px-3 py-1 rounded-full uppercase">Nuevo</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-deep mb-2">Smart TV Crystal UHD 4K</h3>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">Procesador de imagen de última generación, HDR10+ y diseño ultra delgado.</p>
+                        <a href="https://wa.me/4444444444" class="block text-center border-2 border-deep text-deep py-3 rounded-xl font-bold hover:bg-deep hover:text-white transition">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all card-hover border border-gray-100">
+                    <div class="relative">
+                        <img src="https://loremflickr.com/800/600/tv,oled" alt="Pantalla OLED" class="w-full h-64 object-cover">
+                        <span class="absolute top-4 left-4 bg-steel text-white text-xs font-black px-3 py-1 rounded-full uppercase">Seminuevo Certificado</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-deep mb-2">Pantalla OLED Master Series</h3>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">Negros perfectos y contraste infinito. Equipo con solo 3 meses de uso, estética 10/10.</p>
+                        <a href="https://wa.me/4444444444" class="block text-center border-2 border-deep text-deep py-3 rounded-xl font-bold hover:bg-deep hover:text-white transition">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all card-hover border border-gray-100">
+                    <div class="relative">
+                        <img src="https://loremflickr.com/800/600/gaming,monitor" alt="Pantalla Gaming" class="w-full h-64 object-cover">
+                        <span class="absolute top-4 left-4 bg-deep text-white text-xs font-black px-3 py-1 rounded-full uppercase">Nuevo</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-deep mb-2">QLED Pro Gaming Edition</h3>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">Tasa de refresco de 120Hz, HDMI 2.1 y modo juego optimizado para consolas.</p>
+                        <a href="https://wa.me/4444444444" class="block text-center border-2 border-deep text-deep py-3 rounded-xl font-bold hover:bg-deep hover:text-white transition">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT BANNER -->
+    <section id="contacto" class="py-20 bg-deep overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-steel/30 backdrop-blur-lg rounded-[3rem] p-12 border border-white/10 text-center">
+                <h2 class="text-4xl md:text-5xl font-brand font-black text-white mb-6">¿BUSCAS UN MODELO EN ESPECÍFICO?</h2>
+                <p class="text-light-steel text-xl mb-10 max-w-2xl mx-auto">Nuestro inventario se actualiza diariamente. Escríbenos y te ayudamos a encontrar la pantalla ideal para tu presupuesto.</p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                    <a href="tel:4444444444" class="text-white font-bold text-2xl hover:text-light-steel transition">
+                        Llamar: 444 444 4444
+                    </a>
+                    <a href="https://wa.me/4444444444" class="bg-white text-deep px-12 py-5 rounded-2xl font-black text-lg btn-premium flex items-center gap-3">
+                        ENVIAR WHATSAPP
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Abstract decor -->
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-light-steel/10 rounded-full blur-3xl"></div>
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-steel/20 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex flex-col leading-none mb-6">
+                        <span class="font-brand text-2xl font-black tracking-tighter text-deep">TVS</span>
+                        <span class="text-[9px] font-bold tracking-[0.2em] text-light-steel uppercase ml-1">en venta</span>
+                    </div>
+                    <p class="text-gray-500 max-w-sm">Especialistas en tecnología visual. Ofrecemos las mejores marcas del mercado con asesoría personalizada y respaldo técnico profesional.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-deep mb-4 uppercase text-xs tracking-widest">Navegación</h4>
+                    <ul class="space-y-2 text-gray-600 font-medium">
+                        <li><a href="#" class="hover:text-deep transition">Inicio</a></li>
+                        <li><a href="#catalogo" class="hover:text-deep transition">Catálogo</a></li>
+                        <li><a href="#nuevo" class="hover:text-deep transition">Nuevos</a></li>
+                        <li><a href="#usado" class="hover:text-deep transition">Outlet</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-deep mb-4 uppercase text-xs tracking-widest">Contacto</h4>
+                    <ul class="space-y-2 text-gray-600 font-medium">
+                        <li>WhatsApp: 4444444444</li>
+                        <li>Venta Directa: 4444444444</li>
+                        <li>Atención: Lunes a Sábado</li>
+                        <li>Ciudad de México, México</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-100 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">&copy; 2024 TVS en Venta. Todos los derechos reservados.</p>
+                <div class="flex space-x-6 text-gray-400">
+                    <a href="#" class="hover:text-deep transition text-xs uppercase font-bold tracking-widest">Privacidad</a>
+                    <a href="#" class="hover:text-deep transition text-xs uppercase font-bold tracking-widest">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html></html>
