@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecanica Lucio | Expertos en Mantenimiento Automotriz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --azul-acero: #274C77;
+            --gris-metalico: #8D99AE;
+            --naranja-accent: #F3722C;
+            --oscuro: #1B263B;
+            --blanco-humo: #EDF2F4;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--blanco-humo);
+            color: var(--oscuro);
+        }
+        .font-brand { font-family: 'Orbitron', sans-serif; }
+        .bg-azul-acero { background-color: var(--azul-acero); }
+        .text-azul-acero { color: var(--azul-acero); }
+        .bg-gris-metalico { background-color: var(--gris-metalico); }
+        .border-naranja { border-color: var(--naranja-accent); }
+        .bg-naranja { background-color: var(--naranja-accent); }
+        .text-naranja { color: var(--naranja-accent); }
+        
+        .hero-overlay {
+            background: linear-gradient(rgba(27, 38, 59, 0.85), rgba(39, 76, 119, 0.7));
+        }
+
+        .custom-shadow {
+            box-shadow: 0 10px 30px -10px rgba(39, 76, 119, 0.3);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 15px var(--naranja-accent);
+        }
+
+        /* Logotipo 100% CSS */
+        .css-logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        .logo-box {
+            background-color: var(--naranja-accent);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 4px;
+            transform: skewX(-10deg);
+        }
+        .logo-text-main {
+            color: var(--azul-acero);
+            font-size: 1.5rem;
+        }
+        .logo-text-sub {
+            color: var(--gris-metalico);
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="css-logo">
+                <span class="logo-box">M</span>
+                <span class="logo-text-main">MECANICA</span>
+                <span class="logo-text-sub ml-2">LUCIO</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#servicios" class="font-semibold hover:text-naranja transition">Servicios</a>
+                <a href="#testimonios" class="font-semibold hover:text-naranja transition">Clientes</a>
+                <a href="#contacto" class="font-semibold hover:text-naranja transition">Contacto</a>
+                <a href="https://wa.me/11111111111" class="bg-naranja text-white px-6 py-2 rounded-full font-bold btn-glow transition flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Agendar Cita
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[85vh] flex items-center overflow-hidden">
+        <img src="https://loremflickr.com/1600/900/mechanic,car-repair" alt="Taller Mecánico" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="container mx-auto px-6 relative z-10 text-white">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-naranja text-xs font-bold uppercase tracking-widest px-3 py-1 rounded mb-4">Servicio Profesional Garantizado</span>
+                <h1 class="text-5xl md:text-7xl font-bold font-brand mb-6 leading-tight">
+                    Tu seguridad comienza en el <span class="text-naranja">motor.</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-200 leading-relaxed">
+                    En Mecanica Lucio combinamos tecnología de diagnóstico avanzada con décadas de experiencia para mantener tu vehículo en perfectas condiciones.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:11111111111" class="bg-white text-azul-acero px-8 py-4 rounded-lg font-bold text-lg hover:bg-azul-acero hover:text-white transition text-center">
+                        <i class="fas fa-phone-alt mr-2"></i> Llamar Ahora
+                    </a>
+                    <a href="https://wa.me/11111111111" class="bg-naranja text-white px-8 py-4 rounded-lg font-bold text-lg btn-glow transition text-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Solicitar Presupuesto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Rápidas -->
+    <section class="bg-azul-acero py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-4xl font-bold text-naranja font-brand">+15</p>
+                    <p class="text-gray-300 text-sm uppercase tracking-wider">Años de Experiencia</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold text-naranja font-brand">5k</p>
+                    <p class="text-gray-300 text-sm uppercase tracking-wider">Clientes Satisfechos</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold text-naranja font-brand">100%</p>
+                    <p class="text-gray-300 text-sm uppercase tracking-wider">Garantía de Trabajo</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold text-naranja font-brand">24/7</p>
+                    <p class="text-gray-300 text-sm uppercase tracking-wider">Soporte por WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold font-brand text-azul-acero mb-4">Servicios Especializados</h2>
+                <div class="w-24 h-1 bg-naranja mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden custom-shadow service-card">
+                    <img src="https://loremflickr.com/600/400/car-engine" alt="Motor" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="text-naranja mb-4"><i class="fas fa-tools text-3xl"></i></div>
+                        <h3 class="text-xl font-bold mb-3">Mecánica General</h3>
+                        <p class="text-gray-600 mb-6">Desde afinaciones hasta reparaciones complejas de motor. Devolvemos el rendimiento original a tu auto.</p>
+                        <a href="https://wa.me/11111111111" class="text-azul-acero font-bold flex items-center hover:text-naranja">
+                            Consultar <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden custom-shadow service-card">
+                    <img src="https://loremflickr.com/600/400/car-diagnostic" alt="Diagnóstico" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="text-naranja mb-4"><i class="fas fa-microchip text-3xl"></i></div>
+                        <h3 class="text-xl font-bold mb-3">Escaneo Computarizado</h3>
+                        <p class="text-gray-600 mb-6">Identificamos fallas electrónicas con equipos de última generación para soluciones precisas y rápidas.</p>
+                        <a href="https://wa.me/11111111111" class="text-azul-acero font-bold flex items-center hover:text-naranja">
+                            Consultar <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden custom-shadow service-card">
+                    <img src="https://loremflickr.com/600/400/car-brakes" alt="Frenos" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="text-naranja mb-4"><i class="fas fa-shield-alt text-3xl"></i></div>
+                        <h3 class="text-xl font-bold mb-3">Frenos y Suspensión</h3>
+                        <p class="text-gray-600 mb-6">Tu seguridad es nuestra prioridad. Revisión y cambio de balatas, discos y amortiguadores de alta calidad.</p>
+                        <a href="https://wa.me/11111111111" class="text-azul-acero font-bold flex items-center hover:text-naranja">
+                            Consultar <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="bg-gris-metalico/10 py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold font-brand text-center text-azul-acero mb-12">Lo que dicen nuestros clientes</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm italic border-l-4 border-naranja">
+                    <p class="text-gray-600 mb-4">"Excelente servicio. Traje mi camioneta por una falla que nadie encontraba y Lucio lo solucionó en una tarde. Muy honestos."</p>
+                    <p class="font-bold text-azul-acero">- Juan Pérez</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm italic border-l-4 border-naranja">
+                    <p class="text-gray-600 mb-4">"Precios justos y atención impecable. Es difícil encontrar un taller de confianza hoy en día, Mecanica Lucio es el lugar."</p>
+                    <p class="font-bold text-azul-acero">- María Rodríguez</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm italic border-l-4 border-naranja lg:col-span-1 md:col-span-2">
+                    <p class="text-gray-600 mb-4">"El diagnóstico por computadora fue exacto. No me hicieron gastar en piezas innecesarias. 100% recomendados."</p>
+                    <p class="font-bold text-azul-acero">- Carlos Méndez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contacto" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-azul-acero rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="p-12 md:w-1/2 text-white">
+                    <h2 class="text-4xl font-bold font-brand mb-6">¿Tu auto hace ruidos extraños?</h2>
+                    <p class="text-xl mb-8 opacity-90">No esperes a que se convierta en una reparación costosa. Agenda una inspección preventiva hoy mismo.</p>
+                    <ul class="space-y-4 mb-8 text-lg">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-naranja mr-3"></i> Diagnóstico sin compromiso</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-naranja mr-3"></i> Refacciones originales</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-naranja mr-3"></i> Entrega puntual</li>
+                    </ul>
+                    <a href="https://wa.me/11111111111" class="inline-block bg-naranja text-white px-10 py-4 rounded-full font-bold text-xl btn-glow transition shadow-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> ¡Quiero agendar ahora!
+                    </a>
+                </div>
+                <div class="md:w-1/2 relative min-h-[300px]">
+                    <img src="https://loremflickr.com/800/800/mechanic-shop" alt="Taller" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-naranja/20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-oscuro text-gray-400 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="css-logo mb-6">
+                        <span class="logo-box">M</span>
+                        <span class="logo-text-main !text-white">MECANICA</span>
+                        <span class="logo-text-sub !text-gris-metalico ml-2">LUCIO</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">Pasión por los motores, compromiso con tu seguridad. El taller mecánico líder en la zona.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest">Contacto</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-naranja mt-1 mr-3"></i>
+                            <span>Av. Principal del Motor #123<br>Ciudad Automotriz</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-naranja mr-3"></i>
+                            <a href="tel:11111111111" class="hover:text-white transition">111-111-1111</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-naranja mr-3"></i>
+                            <a href="https://wa.me/11111111111" class="hover:text-white transition">Enviar Mensaje</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest">Horarios</h4>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between"><span>Lun - Vie:</span> <span class="text-white text-right">8:00 - 18:00</span></li>
+                        <li class="flex justify-between"><span>Sábado:</span> <span class="text-white text-right">9:00 - 14:00</span></li>
+                        <li class="flex justify-between"><span>Domingo:</span> <span class="text-naranja text-right">Cerrado</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-azul-acero flex items-center justify-center hover:bg-naranja transition text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-azul-acero flex items-center justify-center hover:bg-naranja transition text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/11111111111" class="w-10 h-10 rounded-full bg-azul-acero flex items-center justify-center hover:bg-naranja transition text-white">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-xs uppercase tracking-tighter">
+                <p>&copy; 2023 Mecanica Lucio. Todos los derechos reservados. | Diseñado por Directores Web Premium</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html></html>
