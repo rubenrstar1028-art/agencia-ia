@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Star10 | Modelado y Visualización 3D Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --serenity: #5D9CEC;
+            --dark-gray: #23272F;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--white);
+            color: var(--dark-gray);
+        }
+        .bg-serenity { background-color: var(--serenity); }
+        .text-serenity { color: var(--serenity); }
+        .bg-dark-gray { background-color: var(--dark-gray); }
+        .border-serenity { border-color: var(--serenity); }
+        
+        .hero-section {
+            background-image: linear-gradient(rgba(35, 39, 47, 0.8), rgba(35, 39, 47, 0.7)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1776388356/Star10Web_Assets/q8rhyoyzifyp4sjywibj.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .btn-primary {
+            background-color: var(--serenity);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(93, 156, 236, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(93, 156, 236, 0.1);
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+            position: relative;
+        }
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        nav.sticky-nav {
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <nav class="sticky top-0 z-50 w-full px-6 py-3 sticky-nav shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776388357/Star10Web_Assets/ouvd31dkmtugvgpysvtq.png" 
+                     alt="3D Star10 Logo" 
+                     style="max-height: 70px; object-fit: contain;">
+            </div>
+            
+            <div class="hidden md:flex space-x-8 font-semibold">
+                <a href="#inicio" class="hover:text-serenity transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-serenity transition-colors">Servicios</a>
+                <a href="#portafolio" class="hover:text-serenity transition-colors">Portafolio</a>
+                <a href="#contacto" class="hover:text-serenity transition-colors">Contacto</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/555555555" class="btn-primary text-white px-6 py-2 rounded-full text-sm font-bold">
+                    Presupuesto Gratis
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <span class="text-serenity font-bold tracking-widest uppercase mb-4 block">Innovación Visual en 3D</span>
+            <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6">Damos vida a tus <span class="text-serenity">proyectos tridimensionales</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Desde modelado industrial hasta visualización arquitectónica de alta fidelidad. En 3D Star10 transformamos conceptos en realidades digitales impactantes.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#portafolio" class="btn-primary text-white px-10 py-4 rounded-lg font-bold text-lg">Ver Trabajos</a>
+                <a href="#servicios" class="bg-white text-dark-gray px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all">Nuestros Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Servicios Especializados</h2>
+                <div class="w-24 h-1 bg-serenity mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-xl mx-auto">Soluciones tecnológicas adaptadas a la industria, arquitectura y marketing.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border-b-4 border-serenity">
+                    <div class="bg-blue-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-serenity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Modelado 3D Assets</h3>
+                    <p class="text-gray-600 leading-relaxed">Creación de modelos de alta y baja calidad para videojuegos, aplicaciones y visualización de productos comerciales.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border-b-4 border-serenity">
+                    <div class="bg-blue-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-serenity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Render Fotorealista</h3>
+                    <p class="text-gray-600 leading-relaxed">Visualización arquitectónica e interiorismo con acabados hiperrealistas que permiten previsualizar espacios antes de construirlos.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all border-b-4 border-serenity">
+                    <div class="bg-blue-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-serenity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Prototipado Digital</h3>
+                    <p class="text-gray-600 leading-relaxed">Diseño de piezas industriales y mecánicas listas para ser enviadas a impresión 3D o manufactura CNC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section id="portafolio" class="py-24 bg-dark-gray text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Casos de Éxito</h2>
+                    <p class="text-gray-400">Una muestra de nuestra precisión técnica y capacidad artística.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="https://www.facebook.com/3d.star10" target="_blank" class="text-serenity border border-serenity px-6 py-2 rounded-full hover:bg-serenity hover:text-white transition-all font-bold">Ver más en Facebook</a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="gallery-item h-64">
+                    <img src="https://loremflickr.com/800/800/3d-render" alt="Proyecto 3D" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                        <span class="font-bold">Render Industrial</span>
+                    </div>
+                </div>
+                <div class="gallery-item h-64 lg:mt-8">
+                    <img src="https://loremflickr.com/800/800/architecture-model" alt="Arquitectura 3D" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                        <span class="font-bold">Visualización Arq</span>
+                    </div>
+                </div>
+                <div class="gallery-item h-64">
+                    <img src="https://loremflickr.com/800/800/3d-printing" alt="Impresión 3D" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                        <span class="font-bold">Prototipo 3D</span>
+                    </div>
+                </div>
+                <div class="gallery-item h-64 lg:mt-8">
+                    <img src="https://loremflickr.com/800/800/tech-design" alt="Diseño Tecnológico" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                        <span class="font-bold">Diseño Digital</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contacto" class="py-24 bg-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 relative z-10">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-6">Hablemos de tu <span class="text-serenity">próximo nivel</span></h2>
+                <p class="text-gray-600 mb-8 text-lg">¿Tienes una idea que necesita ser modelada? Nuestro equipo está listo para asesorarte en la viabilidad técnica de tu proyecto.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-50 p-4 rounded-full">
+                            <svg class="w-6 h-6 text-serenity" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 uppercase font-bold tracking-wider">Llámanos / WhatsApp</p>
+                            <a href="tel:555555555" class="text-2xl font-bold hover:text-serenity transition-colors">555555555</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-50 p-4 rounded-full">
+                            <svg class="w-6 h-6 text-serenity" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 uppercase font-bold tracking-wider">Siguenos en Redes</p>
+                            <a href="https://www.facebook.com/3d.star10" target="_blank" class="text-2xl font-bold hover:text-serenity transition-colors">3D Star10 Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
+                <form action="#" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Nombre Completo</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:border-serenity transition-all" placeholder="Juan Pérez">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Email de Contacto</label>
+                        <input type="email" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:border-serenity transition-all" placeholder="tu@email.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Descripción del Proyecto</label>
+                        <textarea rows="4" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:border-serenity transition-all" placeholder="Cuéntanos qué necesitas modelar..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary text-white font-bold py-4 rounded-xl text-lg mt-4">
+                        Enviar Solicitud
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Absolute Decorative Background -->
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-serenity opacity-5 rounded-full blur-3xl"></div>
+    </section>
+
+    <footer class="bg-dark-gray py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-8 md:mb-0">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776388357/Star10Web_Assets/ouvd31dkmtugvgpysvtq.png" 
+                     alt="3D Star10 Logo" 
+                     class="h-12 mx-auto md:mx-0 filter brightness-200 contrast-100">
+                <p class="mt-4 text-gray-500 text-sm">&copy; 2023 3D Star10. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex space-x-12 text-gray-400 text-sm font-bold">
+                <a href="#inicio" class="hover:text-serenity">INICIO</a>
+                <a href="#servicios" class="hover:text-serenity">SERVICIOS</a>
+                <a href="#portafolio" class="hover:text-serenity">PORTAFOLIO</a>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="https://wa.me/555555555" class="flex items-center justify-center space-x-2 text-white font-bold">
+                    <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                    <span>Soporte Online</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html></html>
