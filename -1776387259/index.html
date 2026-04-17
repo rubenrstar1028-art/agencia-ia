@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE INTERIORS | Diseño de Interiores de Alta Gama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0A0A0A;
+            --accent: #B8860B;
+            --neutral: #E5E5E5;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--neutral);
+            color: var(--primary);
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-brand-dark { background-color: var(--primary); }
+        .bg-brand-accent { background-color: var(--accent); }
+        .text-brand-accent { color: var(--accent); }
+        .border-brand-accent { border-color: var(--accent); }
+        
+        .hero-overlay {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+        }
+        .custom-shadow {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .nav-blur {
+            backdrop-filter: blur(10px);
+            background-color: rgba(10, 10, 10, 0.8);
+        }
+        .css-logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+        }
+        .css-logo span {
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 0 8px;
+            margin-left: 4px;
+            border-radius: 2px;
+        }
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="css-logo text-2xl text-white">
+                LUXE<span>INTERIORS</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest text-white/80">
+                <a href="#inicio" class="hover:text-brand-accent transition">INICIO</a>
+                <a href="#proyectos" class="hover:text-brand-accent transition">PROYECTOS</a>
+                <a href="#servicios" class="hover:text-brand-accent transition">SERVICIOS</a>
+                <a href="#contacto" class="hover:text-brand-accent transition">CONTACTO</a>
+            </div>
+            <a href="tel:+525512345678" class="bg-brand-accent text-primary px-6 py-2 rounded-full font-bold text-xs btn-hover tracking-tighter">
+                LLAMAR AHORA
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://loremflickr.com/1920/1080/luxury-interior" alt="Luxury Living Room" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
+                Redefiniendo la <span class="text-brand-accent">Elegancia</span> en cada espacio.
+            </h1>
+            <p class="text-xl text-white/80 mb-10 font-light tracking-wide">
+                Creamos atmósferas exclusivas que reflejan tu personalidad y elevan tu estilo de vida. Arquitectura de interiores con sello de autor.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://wa.me/525512345678" class="bg-brand-accent text-black px-10 py-4 rounded-sm font-bold tracking-widest btn-hover">
+                    AGENDA UNA CONSULTA
+                </a>
+                <a href="#proyectos" class="border border-white text-white px-10 py-4 rounded-sm font-bold tracking-widest hover:bg-white hover:text-black transition">
+                    VER PORTAFOLIO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-brand-accent font-bold tracking-[0.3em] text-sm">EXCELENCIA</span>
+                <h2 class="text-4xl font-serif mt-4">Nuestros Servicios Premium</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="group">
+                    <div class="overflow-hidden mb-6">
+                        <img src="https://loremflickr.com/800/600/architecture" alt="Design" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Diseño Arquitectónico</h3>
+                    <p class="text-gray-600 leading-relaxed">Planificación integral de espacios residenciales y comerciales con un enfoque en la funcionalidad y la estética vanguardista.</p>
+                </div>
+                <div class="group">
+                    <div class="overflow-hidden mb-6">
+                        <img src="https://loremflickr.com/800/600/furniture" alt="Interior" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Interiorismo de Autor</h3>
+                    <p class="text-gray-600 leading-relaxed">Selección curada de mobiliario, texturas y arte para crear ambientes únicos que cuentan una historia en cada rincón.</p>
+                </div>
+                <div class="group">
+                    <div class="overflow-hidden mb-6">
+                        <img src="https://loremflickr.com/800/600/decoration" alt="Consultancy" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Consultoría de Estilo</h3>
+                    <p class="text-gray-600 leading-relaxed">Asesoría personalizada en paletas cromáticas e iluminación para transformar la energía de sus propiedades actuales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-brand-dark py-20 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-serif text-white mb-8">¿Listo para transformar tu entorno en una obra de arte?</h2>
+            <p class="text-white/60 mb-10 italic">"El diseño no es solo lo que ves, sino cómo te hace sentir."</p>
+            <a href="https://wa.me/525512345678" class="inline-flex items-center space-x-3 text-brand-accent border-b-2 border-brand-accent pb-2 text-xl font-bold hover:text-white hover:border-white transition">
+                <span>Hablemos de tu proyecto</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-black text-white pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <div class="css-logo text-3xl mb-6">
+                    LUXE<span>INTERIORS</span>
+                </div>
+                <p class="text-white/50 max-w-sm mb-6">
+                    Estudio boutique especializado en crear experiencias espaciales memorables a través del diseño de alta gama.
+                </p>
+                <div class="flex space-x-5">
+                    <a href="https://facebook.com/luxe" class="text-brand-accent hover:text-white"><span class="sr-only">Facebook</span>FB</a>
+                    <a href="https://instagram.com/luxe" class="text-brand-accent hover:text-white"><span class="sr-only">Instagram</span>IG</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 tracking-widest text-sm uppercase">Contacto</h4>
+                <ul class="space-y-4 text-white/60 text-sm">
+                    <li>📍 Av. Reforma 123, Lomas de Chapultepec, CDMX</li>
+                    <li>📞 <a href="tel:+525512345678" class="hover:text-brand-accent">+52 55 1234 5678</a></li>
+                    <li>💬 <a href="https://wa.me/525512345678" class="hover:text-brand-accent">WhatsApp Business</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 tracking-widest text-sm uppercase">Horarios</h4>
+                <ul class="space-y-4 text-white/60 text-sm">
+                    <li>Lun - Vie: 9:00 AM - 7:00 PM</li>
+                    <li>Sáb: 10:00 AM - 2:00 PM</li>
+                    <li>Dom: Previa Cita</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:row justify-between items-center text-xs text-white/40">
+            <p>&copy; 2023 LUXE INTERIORS. Todos los derechos reservados.</p>
+            <p class="mt-2 md:mt-0 tracking-widest uppercase">Diseño por Art Director Senior</p>
+        </div>
+    </footer>
+
+</body>
+</html></html>
