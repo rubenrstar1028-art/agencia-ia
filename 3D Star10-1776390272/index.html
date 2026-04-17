@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Star10 | Innovación y Modelado 3D Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-serenity: #5D9CEC;
+            --gris-oscuro: #23272F;
+            --blanco: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--blanco);
+            color: var(--gris-oscuro);
+        }
+
+        .bg-serenity { background-color: var(--azul-serenity); }
+        .text-serenity { color: var(--azul-serenity); }
+        .border-serenity { border-color: var(--azul-serenity); }
+        .bg-dark { background-color: var(--gris-oscuro); }
+        
+        .hero-section {
+            background-image: linear-gradient(rgba(35, 39, 47, 0.75), rgba(35, 39, 47, 0.75)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1776390276/Star10Web_Assets/wsbjm19q2exsqvjsvugf.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .nav-blur {
+            background-color: rgba(35, 39, 47, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(93, 156, 236, 0.2);
+        }
+
+        .btn-primary {
+            background-color: var(--azul-serenity);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #4a8bd1;
+            transform: scale(1.05);
+        }
+
+        .gallery-img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed w-full z-50 nav-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776390277/Star10Web_Assets/a4bnnoengk3e5pwbehrb.png" 
+                         alt="3D Star10 Logo" 
+                         style="max-height: 70px; object-fit: contain;">
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="text-white hover:text-serenity px-3 py-2 font-medium transition-colors">Inicio</a>
+                        <a href="#servicios" class="text-white hover:text-serenity px-3 py-2 font-medium transition-colors">Servicios</a>
+                        <a href="#galeria" class="text-white hover:text-serenity px-3 py-2 font-medium transition-colors">Portafolio</a>
+                        <a href="#contacto" class="bg-serenity text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-all shadow-lg">Contactar</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section min-h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Damos Vida a tus <span class="text-serenity">Ideas en 3D</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light max-w-2xl mx-auto">
+                Modelado de alta precisión, visualización arquitectónica y prototipado digital con estándares de calidad premium.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#galeria" class="btn-primary text-white px-10 py-4 rounded-xl font-bold text-lg shadow-xl">Ver Portafolio</a>
+                <a href="https://wa.me/52555555555" target="_blank" class="bg-white text-dark px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-xl">Cotizar Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-serenity font-bold tracking-widest uppercase mb-2">Nuestra Especialidad</h2>
+                <h3 class="text-4xl md:text-5xl font-black text-dark">Servicios de Vanguardia</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl card-hover">
+                    <div class="w-16 h-16 bg-serenity/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-serenity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Modelado Orgánico</h4>
+                    <p class="text-gray-600 leading-relaxed">Esculpidos digitales de alta fidelidad para personajes, criaturas y elementos naturales con texturas hiperrealistas.</p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-dark p-8 rounded-3xl shadow-2xl card-hover text-white">
+                    <div class="w-16 h-16 bg-serenity rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Render Arquitectónico</h4>
+                    <p class="text-gray-300 leading-relaxed">Visualización de espacios interiores y exteriores que permiten previsualizar proyectos inmobiliarios antes de su construcción.</p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl card-hover">
+                    <div class="w-16 h-16 bg-serenity/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-serenity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Prototipado Industrial</h4>
+                    <p class="text-gray-600 leading-relaxed">Diseño técnico de piezas y ensambles mecánicos listos para impresión 3D o fabricación CNC de precisión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-serenity font-bold tracking-widest uppercase mb-2">Nuestro Trabajo</h2>
+                    <h3 class="text-4xl font-black text-dark">Portafolio Visual</h3>
+                </div>
+                <a href="#" class="mt-4 md:mt-0 text-serenity font-bold flex items-center hover:underline">
+                    Ver todo en Facebook 
+                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item relative overflow-hidden rounded-2xl aspect-square bg-dark group">
+                    <img src="https://loremflickr.com/800/800/3d-render,tech?random=1" alt="Modelo 3D" class="gallery-img w-full h-full object-cover opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="text-white font-bold text-lg">Visualización de Producto</p>
+                    </div>
+                </div>
+                <div class="gallery-item relative overflow-hidden rounded-2xl aspect-square bg-dark group">
+                    <img src="https://loremflickr.com/800/800/3d-architecture?random=2" alt="Arquitectura 3D" class="gallery-img w-full h-full object-cover opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="text-white font-bold text-lg">Interiorismo Digital</p>
+                    </div>
+                </div>
+                <div class="gallery-item relative overflow-hidden rounded-2xl aspect-square bg-dark group">
+                    <img src="https://loremflickr.com/800/800/robot,3d?random=3" alt="Modelado Robot" class="gallery-img w-full h-full object-cover opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="text-white font-bold text-lg">Prototipado Robótico</p>
+                    </div>
+                </div>
+                <div class="gallery-item relative overflow-hidden rounded-2xl aspect-square bg-dark group">
+                    <img src="https://loremflickr.com/800/800/engine,3d?random=4" alt="Ingeniería 3D" class="gallery-img w-full h-full object-cover opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="text-white font-bold text-lg">Piezas de Ingeniería</p>
+                    </div>
+                </div>
+                <div class="gallery-item relative overflow-hidden rounded-2xl aspect-square bg-dark group">
+                    <img src="https://loremflickr.com/800/800/concept-car?random=5" alt="Concept Art" class="gallery-img w-full h-full object-cover opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="text-white font-bold text-lg">Concept Art Automotriz</p>
+                    </div>
+                </div>
+                <div class="gallery-item relative overflow-hidden rounded-2xl aspect-square bg-dark group">
+                    <img src="https://loremflickr.com/800/800/sculpture,3d?random=6" alt="Escultura Digital" class="gallery-img w-full h-full object-cover opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="text-white font-bold text-lg">Modelado de Personajes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-24 bg-dark text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-serenity opacity-5 skew-x-12 translate-x-20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-serenity font-bold tracking-widest uppercase mb-2">Hablemos de tu idea</h2>
+                    <h3 class="text-4xl md:text-5xl font-black mb-6">¿Listo para empezar tu proyecto?</h3>
+                    <p class="text-gray-400 text-lg mb-10">
+                        Nuestro equipo de expertos está listo para transformar tus conceptos en realidades tridimensionales. Escríbenos y recibe una asesoría personalizada.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center group">
+                            <div class="w-12 h-12 bg-serenity/20 rounded-full flex items-center justify-center mr-4 group-hover:bg-serenity transition-all">
+                                <svg class="w-6 h-6 text-serenity group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <a href="tel:555555555" class="text-xl font-semibold hover:text-serenity transition-colors">555555555</a>
+                        </div>
+                        <div class="flex items-center group">
+                            <div class="w-12 h-12 bg-serenity/20 rounded-full flex items-center justify-center mr-4 group-hover:bg-serenity transition-all">
+                                <svg class="w-6 h-6 text-serenity group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                            </div>
+                            <a href="https://www.facebook.com/3d.star10" target="_blank" class="text-xl font-semibold hover:text-serenity transition-colors">3D Star10 Oficial</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-2xl">
+                    <form action="#" class="space-y-4">
+                        <div>
+                            <label class="block text-dark font-bold mb-2">Nombre Completo</label>
+                            <input type="text" placeholder="Tu nombre" class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 text-dark focus:ring-2 focus:ring-serenity focus:border-transparent outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-dark font-bold mb-2">Correo Electrónico</label>
+                            <input type="email" placeholder="correo@ejemplo.com" class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 text-dark focus:ring-2 focus:ring-serenity focus:border-transparent outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-dark font-bold mb-2">Detalles del Proyecto</label>
+                            <textarea rows="4" placeholder="¿Qué tienes en mente?" class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 text-dark focus:ring-2 focus:ring-serenity focus:border-transparent outline-none transition-all"></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary text-white font-bold py-4 rounded-xl shadow-lg mt-4">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark border-t border-white/10 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776390277/Star10Web_Assets/a4bnnoengk3e5pwbehrb.png" 
+                 alt="Logo Footer" 
+                 class="mx-auto mb-8" 
+                 style="max-height: 50px;">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.facebook.com/3d.star10" class="text-gray-400 hover:text-serenity transition-colors">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                </a>
+                <a href="https://wa.me/52555555555" class="text-gray-400 hover:text-serenity transition-colors">
+                    <span class="sr-only">WhatsApp</span>
+                    <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.012 2c-5.508 0-9.987 4.479-9.987 9.988 0 1.761.462 3.474 1.34 4.988l-1.42 5.185 5.304-1.392c1.449.789 3.076 1.207 4.763 1.207h.001c5.507 0 9.988-4.479 9.988-9.988 0-2.659-1.035-5.16-2.915-7.04s-4.381-2.915-7.074-2.915zm5.556 13.916c-.225.634-1.296 1.212-1.791 1.282-.449.064-1.032.115-3.053-.733-2.583-1.085-4.253-3.714-4.382-3.884-.128-.171-1.042-1.388-1.042-2.648s.655-1.881.889-2.13c.234-.249.51-.311.68-.311h.442c.139 0 .324.004.464.331.144.336.49 1.196.533 1.284.043.088.072.19.014.307-.058.117-.088.19-.175.292-.088.102-.185.228-.264.306-.088.088-.179.184-.077.36.102.175.452.744.97 1.204.667.594 1.23.78 1.405.867.175.088.277.073.38-.044.102-.117.438-.511.555-.686.117-.175.234-.146.395-.088.161.058 1.022.482 1.197.57.175.088.292.131.336.204.044.073.044.424-.181 1.058z"/></svg>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm font-medium">
+                &copy; 2024 3D Star10. Todos los derechos reservados. <br>
+                Diseño Premium para Mentes Creativas.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
