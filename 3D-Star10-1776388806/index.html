@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Star10 | Expertos en Modelado y Visualización 3D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --azul-serenity: #5D9CEC;
+            --gris-oscuro: #23272F;
+            --blanco: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--blanco);
+            color: var(--gris-oscuro);
+            scroll-behavior: smooth;
+        }
+
+        .bg-serenity { background-color: var(--azul-serenity); }
+        .text-serenity { color: var(--azul-serenity); }
+        .bg-dark { background-color: var(--gris-oscuro); }
+        .border-serenity { border-color: var(--azul-serenity); }
+
+        .hero-section {
+            background-image: linear-gradient(rgba(35, 39, 47, 0.75), rgba(35, 39, 47, 0.75)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1776388810/Star10Web_Assets/pld6zxhefej11n29eecm.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 90vh;
+        }
+
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(93, 156, 236, 0.2);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(93, 156, 236, 0.2);
+        }
+
+        .btn-primary {
+            background-color: var(--azul-serenity);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(93, 156, 236, 0.4);
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            background-color: #4a89dc;
+        }
+
+        .gallery-img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-container:hover .gallery-img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="nav-glass fixed w-full z-50 px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776388811/Star10Web_Assets/okhcsc8batbjwznpicvt.png" 
+                 alt="3D Star10 Logo" 
+                 style="max-height: 60px; object-fit: contain;">
+        </div>
+        <div class="hidden md:flex space-x-8 font-semibold uppercase text-sm tracking-widest">
+            <a href="#inicio" class="hover:text-serenity transition">Inicio</a>
+            <a href="#galeria" class="hover:text-serenity transition">Portafolio</a>
+            <a href="#servicios" class="hover:text-serenity transition">Servicios</a>
+            <a href="#contacto" class="hover:text-serenity transition">Contacto</a>
+        </div>
+        <div>
+            <a href="https://wa.me/52555555555" class="btn-primary text-white px-6 py-2 rounded-full font-bold text-sm">
+                COTIZAR AHORA
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <span class="text-serenity font-bold tracking-[0.3em] uppercase mb-4 block">Innovación Visual</span>
+            <h1 class="text-white text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Damos Vida a tus <span class="text-serenity">Proyectos 3D</span>
+            </h1>
+            <p class="text-gray-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
+                En 3D Star10 transformamos conceptos abstractos en modelos tridimensionales de alta precisión. Calidad, realismo y detalle para arquitectura, industria y diseño creativo.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#galeria" class="btn-primary text-white px-10 py-4 rounded-lg font-bold">Ver Portafolio</a>
+                <a href="#servicios" class="bg-white text-dark hover:bg-gray-100 px-10 py-4 rounded-lg font-bold transition">Nuestros Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Servicios Especializados</h2>
+                <div class="h-1 w-20 bg-serenity mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="p-8 border border-gray-100 rounded-2xl card-hover bg-gray-50 text-center">
+                    <div class="w-16 h-16 bg-serenity/10 text-serenity flex items-center justify-center rounded-full mx-auto mb-6">
+                        <i class="fas fa-cube text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Modelado 3D</h3>
+                    <p class="text-gray-600">Creación de piezas complejas y modelos detallados desde cero, listos para cualquier aplicación técnica o visual.</p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="p-8 border border-gray-100 rounded-2xl card-hover bg-gray-50 text-center">
+                    <div class="w-16 h-16 bg-serenity/10 text-serenity flex items-center justify-center rounded-full mx-auto mb-6">
+                        <i class="fas fa-city text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Renders Arquitectónicos</h3>
+                    <p class="text-gray-600">Visualización fotorrealista de espacios interiores y exteriores que permiten previsualizar proyectos inmobiliarios.</p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="p-8 border border-gray-100 rounded-2xl card-hover bg-gray-50 text-center">
+                    <div class="w-16 h-16 bg-serenity/10 text-serenity flex items-center justify-center rounded-full mx-auto mb-6">
+                        <i class="fas fa-print text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Prototipado</h3>
+                    <p class="text-gray-600">Optimización de modelos para impresión 3D y manufactura, asegurando que tus diseños sean funcionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Portafolio -->
+    <section id="galeria" class="py-24 bg-dark text-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-2">Nuestro Trabajo</h2>
+                    <p class="text-gray-400">Una muestra de la precisión y calidad en cada render.</p>
+                </div>
+                <a href="https://www.facebook.com/3d.star10" target="_blank" class="text-serenity font-bold hover:underline mt-4 md:mt-0">Ver más en Facebook →</a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative overflow-hidden rounded-xl gallery-container h-80">
+                    <img src="https://loremflickr.com/1200/800/3d-render" alt="Proyecto 3D" class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="font-bold">Diseño Industrial Premium</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl gallery-container h-80">
+                    <img src="https://loremflickr.com/1200/800/architecture" alt="Arquitectura 3D" class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="font-bold">Visualización Arquitectónica</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl gallery-container h-80">
+                    <img src="https://loremflickr.com/1200/800/gadget" alt="Prototipo" class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="font-bold">Prototipado Digital</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl gallery-container h-80">
+                    <img src="https://loremflickr.com/1200/800/interior-design" alt="Interiores" class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="font-bold">Interiorismo 3D</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl gallery-container h-80">
+                    <img src="https://loremflickr.com/1200/800/abstract" alt="Arte Digital" class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="font-bold">Modelado Orgánico</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-xl gallery-container h-80">
+                    <img src="https://loremflickr.com/1200/800/engine" alt="Mecánica" class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
+                        <p class="font-bold">Ingeniería Visual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-24 bg-gray-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">¿Tienes un proyecto en mente?</h2>
+                    <p class="text-gray-600 mb-8 text-lg">Estamos listos para llevar tus ideas al siguiente nivel. Contáctanos para recibir una asesoría personalizada y un presupuesto ajustado a tus necesidades.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-serenity text-white flex items-center justify-center rounded-full">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase">WhatsApp Directo</p>
+                                <a href="https://wa.me/52555555555" class="text-xl font-bold hover:text-serenity transition">555 555 555</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-serenity text-white flex items-center justify-center rounded-full">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase">Síguenos</p>
+                                <a href="https://www.facebook.com/3d.star10" target="_blank" class="text-xl font-bold hover:text-serenity transition">@3d.star10</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-xl">
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-bold mb-2">Nombre Completo</label>
+                            <input type="text" placeholder="Ej. Juan Pérez" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-serenity/50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2">Correo Electrónico</label>
+                            <input type="email" placeholder="tu@email.com" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-serenity/50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2">Mensaje</label>
+                            <textarea rows="4" placeholder="Cuéntanos sobre tu modelo 3D o proyecto..." class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-serenity/50"></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary text-white py-4 rounded-lg font-bold shadow-lg">ENVIAR SOLICITUD</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12 px-6 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-8 md:mb-0">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776388811/Star10Web_Assets/okhcsc8batbjwznpicvt.png" 
+                     alt="Logo" style="max-height: 50px;" class="mb-4">
+                <p class="text-gray-400 text-sm max-w-xs">Especialistas en la creación de activos digitales 3D para la industria moderna.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://www.facebook.com/3d.star10" target="_blank" class="text-2xl hover:text-serenity transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/52555555555" class="text-2xl hover:text-serenity transition"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:555555555" class="text-2xl hover:text-serenity transition"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-xs">
+            &copy; 2023 3D Star10. Todos los derechos reservados. Diseño y Desarrollo de Alta Gama.
+        </div>
+    </footer>
+
+</body>
+</html></html>
