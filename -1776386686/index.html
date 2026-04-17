@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star10 | Experiencia Gastronómica de Autor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #C5A059;
+            --color-secondary: #121212;
+            --color-accent: #F4F1EA;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color-accent);
+            color: var(--color-secondary);
+        }
+
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .border-primary { border-color: var(--color-primary); }
+        
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1776386690/Star10Web_Assets/ttpnb6qh05njtqzfrpbc.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .nav-glass {
+            background: rgba(18, 18, 18, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .btn-premium {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .btn-premium:hover {
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navbar -->
+    <nav class="nav-glass fixed w-full z-50 px-6 py-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776386691/Star10Web_Assets/ifxhahtgobop2sv3bgpu.png" 
+                     alt="Logo Star10" 
+                     style="max-height: 60px; width: auto; object-fit: contain;">
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-white font-medium uppercase text-xs tracking-widest">
+                <a href="#inicio" class="hover:text-primary transition">Inicio</a>
+                <a href="#experiencia" class="hover:text-primary transition">Experiencia</a>
+                <a href="#menu" class="hover:text-primary transition">Nuestra Carta</a>
+                <a href="#reservas" class="hover:text-primary transition">Reservaciones</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/521234567890" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-tighter btn-premium">
+                    Reservar Mesa
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <span class="text-primary font-bold tracking-[0.5em] uppercase text-sm mb-4 block">Bienvenido a Star10 Gastronomy</span>
+            <h1 class="text-5xl md:text-8xl text-white font-serif mb-6 leading-tight">Sabor que Despierta los Sentidos</h1>
+            <p class="text-white/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Una fusión maestra de técnicas contemporáneas y los ingredientes más selectos de nuestra tierra.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#menu" class="bg-white text-secondary px-10 py-4 font-bold rounded-sm uppercase text-xs tracking-widest hover:bg-primary hover:text-white transition-all">Ver Menú</a>
+                <a href="tel:521234567890" class="border border-white text-white px-10 py-4 font-bold rounded-sm uppercase text-xs tracking-widest hover:bg-white hover:text-secondary transition-all">Llamar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Section -->
+    <section id="experiencia" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="https://loremflickr.com/1200/1600/gourmet-chef" alt="Chef Preparando Platillo" class="rounded-lg shadow-2xl">
+                <div class="absolute -bottom-10 -right-10 hidden lg:block border-8 border-accent">
+                    <img src="https://loremflickr.com/600/600/luxury-restaurant" alt="Interior" class="w-64 h-64 object-cover shadow-xl">
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-4xl md:text-5xl font-serif leading-snug italic">El Arte de la Cocina Elevado a su Máxima Expresión</h2>
+                <div class="w-20 h-1 bg-primary"></div>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    En Star10, cada platillo es una narrativa visual y gustativa. Seleccionamos cuidadosamente a proveedores locales para garantizar frescura absoluta, transformando materias primas en experiencias memorables.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Nuestro equipo, liderado por visionarios de la gastronomía, busca constantemente el equilibrio entre la tradición y la vanguardia, logrando texturas y matices que desafían lo convencional.
+                </p>
+                <div class="pt-6">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-primary text-2xl font-serif italic">01.</span>
+                        <p class="font-bold uppercase text-sm tracking-widest">Ingredientes Orgánicos</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-primary text-2xl font-serif italic">02.</span>
+                        <p class="font-bold uppercase text-sm tracking-widest">Cava de Vinos Internacional</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-primary text-2xl font-serif italic">03.</span>
+                        <p class="font-bold uppercase text-sm tracking-widest">Servicio de Clase Mundial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú Preview -->
+    <section id="menu" class="bg-secondary py-24 px-6 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-serif mb-4 italic">Nuestra Selección</h2>
+                <p class="text-primary tracking-[0.3em] uppercase text-sm">Degustación de Temporada</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="group cursor-pointer card-hover">
+                    <div class="overflow-hidden relative mb-6">
+                        <img src="https://loremflickr.com/800/800/fine-dining-plate" alt="Entrada" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-2 italic">Carpaccio de Wagyu</h3>
+                    <p class="text-white/60 text-sm mb-4">Láminas finas de res Wagyu con emulsión de trufa negra, alcaparras baby y lascas de parmesano de 24 meses.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="group cursor-pointer card-hover">
+                    <div class="overflow-hidden relative mb-6">
+                        <img src="https://loremflickr.com/800/800/seafood-luxury" alt="Plato Fuerte" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-2 italic">Bogavante al Carbón</h3>
+                    <p class="text-white/60 text-sm mb-4">Cola de bogavante rostizada en leña de encino, mantequilla de azafrán y risotto de espárragos frescos.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="group cursor-pointer card-hover">
+                    <div class="overflow-hidden relative mb-6">
+                        <img src="https://loremflickr.com/800/800/dessert-gourmet" alt="Postre" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-2 italic">Esfera de Chocolate Noir</h3>
+                    <p class="text-white/60 text-sm mb-4">Mousse de chocolate al 70% cacao, corazón de frutos rojos y tierra de avellanas tostadas.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="https://wa.me/521234567890" target="_blank" class="border-b-2 border-primary pb-2 text-primary hover:text-white hover:border-white transition-all uppercase text-xs tracking-widest font-bold">Solicitar Menú Completo PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservaciones Section -->
+    <section id="reservas" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-sm flex flex-col md:flex-row overflow-hidden">
+            <div class="md:w-1/2 p-12 bg-primary text-white flex flex-col justify-center">
+                <h2 class="text-4xl font-serif mb-6 italic">Reserve su Lugar</h2>
+                <p class="mb-8 font-light text-white/90">Garantice una experiencia inolvidable. Recomendamos reservar con al menos 48 horas de anticipación para asegurar su mesa preferida.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center">
+                            <span class="text-xs">📞</span>
+                        </div>
+                        <a href="tel:521234567890" class="text-lg font-semibold hover:underline">+52 (123) 456-7890</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center">
+                            <span class="text-xs">📍</span>
+                        </div>
+                        <span class="text-sm">Av. Gastronomía 101, Distrito Gourmet, CDMX.</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center">
+                            <span class="text-xs">🕒</span>
+                        </div>
+                        <span class="text-sm">Mar - Sáb: 1:00 PM - 11:00 PM / Dom: 1:00 PM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 p-12">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest mb-2">Nombre Completo</label>
+                        <input type="text" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition" placeholder="Ej. Alejandro Silva">
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest mb-2">Fecha</label>
+                            <input type="date" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest mb-2">Comensales</label>
+                            <select class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition">
+                                <option>2 Personas</option>
+                                <option>4 Personas</option>
+                                <option>6+ Personas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="w-full bg-secondary text-white py-4 font-bold uppercase text-xs tracking-widest hover:bg-primary transition">Confirmar por WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-16 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 items-start">
+            <div class="col-span-1 md:col-span-1">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776386691/Star10Web_Assets/ifxhahtgobop2sv3bgpu.png" 
+                     alt="Logo Star10" 
+                     class="mb-6" 
+                     style="max-height: 50px; filter: brightness(100);">
+                <p class="text-white/40 text-sm leading-relaxed">
+                    Elevando los estándares de la alta cocina en la ciudad. Una propuesta única de Star10 Group.
+                </p>
+            </div>
+            
+            <div>
+                <h4 class="font-serif italic text-xl mb-6">Navegación</h4>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li><a href="#" class="hover:text-primary transition">Menú Ejecutivo</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Eventos Privados</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Bolsa de Trabajo</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Política de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif italic text-xl mb-6">Síguenos</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-primary hover:border-primary transition">FB</a>
+                    <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-primary hover:border-primary transition">IG</a>
+                    <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-primary hover:border-primary transition">TW</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-serif italic text-xl mb-6">Suscríbete</h4>
+                <p class="text-xs text-white/40 mb-4">Reciba invitaciones exclusivas a nuestras catas y eventos.</p>
+                <div class="flex">
+                    <input type="email" placeholder="E-mail" class="bg-white/5 border border-white/10 px-4 py-2 text-sm w-full focus:outline-none focus:border-primary">
+                    <button class="bg-primary px-4 py-2 text-white">➜</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto border-t border-white/5 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/20 tracking-widest uppercase">
+            <p>© 2024 Star10 Gastronomy. Todos los derechos reservados.</p>
+            <p>Diseño por Art Director Senior</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/521234567890" target="_blank" class="fixed bottom-8 right-8 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg fill="#fff" width="28" height="28" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.316 1.592 5.43.001 9.85-4.417 9.853-9.845.002-2.63-1.025-5.103-2.892-6.971-1.866-1.867-4.338-2.891-6.967-2.892-5.431 0-9.85 4.417-9.853 9.846-.001 2.225.567 3.864 1.579 5.519l-.958 3.501 3.722-.975z"/></svg>
+    </a>
+
+</body>
+</html></html>
