@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard Studios | Innovación Digital Premium</title>
+    <!-- Google Fonts: Poppins for Modern/Dynamic Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#ec4899',
+                        dark: '#0f172a',
+                        accent: '#10b981',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(to r, #6366f1, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-shape {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 top-0 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between glass-effect rounded-full px-8 py-3 shadow-2xl">
+            <!-- LOGO CSS-ONLY -->
+            <div class="flex items-center gap-2 group cursor-pointer">
+                <div class="w-10 h-10 bg-gradient-to-tr from-primary to-secondary rounded-xl flex items-center justify-center text-white font-black text-xl transform group-hover:rotate-12 transition-transform duration-300">V</div>
+                <div class="text-2xl font-extrabold tracking-tighter text-slate-800">
+                    VANGUARD<span class="text-primary">STUDIOS</span>
+                </div>
+            </div>
+
+            <!-- MENU -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm uppercase tracking-widest text-slate-600">
+                <a href="#" class="hover:text-primary transition-colors">Proyectos</a>
+                <a href="#" class="hover:text-primary transition-colors">Servicios</a>
+                <a href="#" class="hover:text-primary transition-colors">Nosotros</a>
+            </div>
+
+            <!-- CTA -->
+            <div>
+                <a href="https://wa.me/525512345678" class="bg-dark text-white px-6 py-2.5 rounded-full font-semibold hover:bg-primary transition-all duration-300 shadow-lg hover:shadow-primary/30">
+                    Contacto
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative min-h-screen flex items-center pt-20 hero-gradient overflow-hidden">
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-8">
+                <span class="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold uppercase tracking-widest border border-primary/20">
+                    Agencia de Élite Digital
+                </span>
+                <h1 class="text-6xl md:text-8xl font-extrabold text-white leading-tight">
+                    Creamos <br>
+                    <span class="text-gradient">Impacto</span> <br>
+                    Digital.
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl max-w-lg leading-relaxed">
+                    Transformamos visiones empresariales en experiencias digitales de clase mundial. Diseño, desarrollo y estrategia con un enfoque disruptivo.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="px-8 py-4 bg-primary text-white rounded-2xl font-bold hover:scale-105 hover:shadow-xl hover:shadow-primary/40 transition-all duration-300">
+                        Iniciar Proyecto
+                    </button>
+                    <button class="px-8 py-4 glass-effect text-white rounded-2xl font-bold hover:bg-white/10 transition-all">
+                        Ver Portafolio
+                    </button>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="relative z-10 rounded-4xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                    <div class="absolute inset-0 bg-dark/40 z-10"></div>
+                    <img src="https://loremflickr.com/1200/800/technology,office" alt="Hero Image" class="w-full h-[600px] object-cover">
+                </div>
+                <!-- Decorative CSS shape -->
+                <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-secondary custom-shape opacity-50 blur-2xl"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICES SECTION -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-black text-dark">Nuestras Soluciones</h2>
+                <div class="h-1.5 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-10 rounded-4xl bg-slate-50 hover:bg-white border border-slate-100 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">🚀</div>
+                    <h3 class="text-2xl font-bold mb-4">Desarrollo Web</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">Interfaces ultra-rápidas, seguras y escalables utilizando las tecnologías más avanzadas del mercado.</p>
+                    <a href="#" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-4 transition-all">Saber más <span>→</span></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-10 rounded-4xl bg-slate-50 hover:bg-white border border-slate-100 hover:shadow-2xl hover:shadow-secondary/10 transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">💎</div>
+                    <h3 class="text-2xl font-bold mb-4">Branding de Lujo</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">Construimos identidades visuales que respiran exclusividad y conectan emocionalmente con tu audiencia.</p>
+                    <a href="#" class="text-secondary font-bold inline-flex items-center gap-2 hover:gap-4 transition-all">Saber más <span>→</span></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-10 rounded-4xl bg-slate-50 hover:bg-white border border-slate-100 hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">📈</div>
+                    <h3 class="text-2xl font-bold mb-4">Growth Strategy</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">Marketing orientado a resultados reales. Escalamos tu facturación mediante pauta inteligente y SEO.</p>
+                    <a href="#" class="text-accent font-bold inline-flex items-center gap-2 hover:gap-4 transition-all">Saber más <span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto rounded-4xl hero-gradient p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-8 relative z-10">¿Listo para dar el gran salto <span class="text-primary italic">digital</span>?</h2>
+            <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto relative z-10">Estamos listos para llevar tu negocio al siguiente nivel con tecnología de vanguardia y diseño impecable.</p>
+            <div class="flex justify-center gap-6 relative z-10">
+                <a href="tel:+525512345678" class="bg-white text-dark px-10 py-4 rounded-2xl font-black text-lg hover:bg-primary hover:text-white transition-all duration-300">
+                    Llamar ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2 space-y-6">
+                <!-- LOGO CSS-ONLY -->
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-gradient-to-tr from-primary to-secondary rounded-lg flex items-center justify-center text-white font-black text-lg">V</div>
+                    <div class="text-xl font-extrabold tracking-tighter">
+                        VANGUARD<span class="text-primary">STUDIOS</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 max-w-sm">La excelencia no es un acto, es un hábito. Diseñamos el futuro de la web, un pixel a la vez.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary transition-colors">FB</a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary transition-colors">IG</a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary transition-colors">TW</a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-6 text-lg">Navegación</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="#" class="hover:text-white transition-colors">Servicios</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Proyectos VIP</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Blog Tech</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Carreras</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-lg">Contacto Directo</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li>📍 Ciudad de México, Polanco</li>
+                    <li><a href="tel:+525512345678" class="hover:text-white transition-colors">📞 +52 55 1234 5678</a></li>
+                    <li>✉️ hello@vanguardstudios.io</li>
+                    <li class="pt-4">
+                        <a href="https://wa.me/525512345678" class="text-accent font-bold flex items-center gap-2">
+                            <span class="w-2 h-2 bg-accent rounded-full animate-ping"></span>
+                            WhatsApp Online
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+            <p>&copy; 2023 Vanguard Studios Digital. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
