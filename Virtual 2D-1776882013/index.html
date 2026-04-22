@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual 2D | Segunda Vida, Nueva Historia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: '#2D5A27',
+                        brandDarkGreen: '#1B3A1A',
+                        brandGrey: '#4A4A4A',
+                        brandLightGrey: '#F8F9FA',
+                        brandGold: '#C5A059'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lora"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: "Lora", serif; }
+        h1, h2, h3, .nav-brand { font-family: "Playfair Display", serif; }
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1776882018/Star10Web_Assets/eixvohupccbsfmrljuqy.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .border-elegant { border-width: 1px; border-color: rgba(45, 90, 39, 0.2); }
+    </style>
+</head>
+<body class="bg-white text-brandGrey leading-relaxed">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776882018/Star10Web_Assets/fvwseviopl4ccwkjifr8.png" 
+                     alt="Virtual 2D Logo" 
+                     style="max-height: 70px; object-fit: contain;">
+            </div>
+            <div class="hidden md:flex space-x-10 text-sm font-medium tracking-widest uppercase italic">
+                <a href="#inicio" class="hover:text-brandGreen transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-brandGreen transition-colors">Nosotros</a>
+                <a href="#coleccion" class="hover:text-brandGreen transition-colors">Colección</a>
+                <a href="#contacto" class="hover:text-brandGreen transition-colors">Contacto</a>
+            </div>
+            <div class="flex items-center">
+                <a href="https://maps.app.goo.gl/j62m6ZhtHuoofy6LA" target="_blank" class="px-6 py-2 bg-brandGreen text-white text-sm uppercase tracking-widest hover:bg-brandDarkGreen transition-all duration-300 shadow-lg">Visítanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="inicio" class="hero-section h-[85vh] flex items-center justify-center text-center text-white px-6">
+        <div class="max-w-4xl">
+            <span class="block uppercase tracking-[0.3em] text-sm mb-4 animate-fade-in">Sostenibilidad & Elegancia</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">Dando una segunda vida a lo extraordinario.</h1>
+            <p class="text-xl md:text-2xl mb-10 font-light italic max-w-2xl mx-auto opacity-90">En Virtual 2D, rescatamos artículos con historia para que encuentren un nuevo hogar en tu espacio.</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="#coleccion" class="bg-brandGreen border border-brandGreen text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-transparent hover:text-white transition-all duration-300">Explorar Catálogo</a>
+                <a href="#contacto" class="bg-transparent border border-white text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-white hover:text-brandGreen transition-all duration-300">Contáctanos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section id="nosotros" class="py-24 bg-brandLightGrey">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-brandGreen mb-6 italic">Nuestra Filosofía</h2>
+                    <p class="text-lg text-brandGrey mb-6 leading-relaxed">
+                        En **Virtual 2D**, creemos que la modernidad no está peleada con la reutilización. Nuestra misión es conectar artículos valiosos que ya no son ocupados con personas que valoran la calidad y el consumo responsable.
+                    </p>
+                    <p class="text-lg text-brandGrey mb-8 leading-relaxed italic border-l-4 border-brandGreen pl-6 py-2">
+                        "Cada objeto tiene una historia; nosotros simplemente ayudamos a que el siguiente capítulo sea memorable."
+                    </p>
+                    <ul class="space-y-4 text-sm uppercase tracking-widest">
+                        <li class="flex items-center"><span class="w-8 h-[1px] bg-brandGreen mr-4"></span> Selección Curada de Calidad</li>
+                        <li class="flex items-center"><span class="w-8 h-[1px] bg-brandGreen mr-4"></span> Compromiso Ecológico Real</li>
+                        <li class="flex items-center"><span class="w-8 h-[1px] bg-brandGreen mr-4"></span> Transparencia en cada Trato</li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="https://loremflickr.com/800/1000/vintage,furniture" alt="Mueble elegante" class="shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute -bottom-6 -left-6 bg-brandGreen p-8 text-white hidden lg:block shadow-xl">
+                        <p class="text-3xl font-serif italic">+500</p>
+                        <p class="text-xs uppercase tracking-tighter">Artículos Renovados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="coleccion" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-brandGreen mb-4 italic">Artículos Destacados</h2>
+                <div class="w-24 h-px bg-brandGreen mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-brandGrey uppercase tracking-widest text-xs">Una muestra de lo que puedes encontrar en nuestra tienda</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group bg-white border-elegant overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2">
+                    <div class="overflow-hidden h-80">
+                        <img src="https://loremflickr.com/800/1000/antiques" alt="Antigüedades" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold mb-2">Reliquias Clásicas</h3>
+                        <p class="text-sm text-gray-500 italic mb-4">Piezas únicas con carácter histórico.</p>
+                        <a href="#contacto" class="text-brandGreen text-xs font-bold uppercase tracking-widest border-b border-brandGreen pb-1 hover:text-brandGold hover:border-brandGold transition-all">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="group bg-white border-elegant overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2">
+                    <div class="overflow-hidden h-80">
+                        <img src="https://loremflickr.com/800/1000/decor" alt="Decoración" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold mb-2">Decoración Moderna</h3>
+                        <p class="text-sm text-gray-500 italic mb-4">Elementos que transforman cualquier espacio.</p>
+                        <a href="#contacto" class="text-brandGreen text-xs font-bold uppercase tracking-widest border-b border-brandGreen pb-1 hover:text-brandGold hover:border-brandGold transition-all">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="group bg-white border-elegant overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2">
+                    <div class="overflow-hidden h-80">
+                        <img src="https://loremflickr.com/800/1000/office" alt="Oficina" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold mb-2">Mobiliario de Oficina</h3>
+                        <p class="text-sm text-gray-500 italic mb-4">Ergonomía y elegancia para tu trabajo.</p>
+                        <a href="#contacto" class="text-brandGreen text-xs font-bold uppercase tracking-widest border-b border-brandGreen pb-1 hover:text-brandGold hover:border-brandGold transition-all">Consultar Disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="py-20 bg-brandGreen text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 italic">¿Tienes artículos que merecen un nuevo propósito?</h2>
+            <p class="text-lg mb-10 opacity-90 font-light">Contáctanos hoy mismo y ayúdanos a fomentar la economía circular. Compramos y vendemos artículos de alta calidad.</p>
+            <a href="https://maps.app.goo.gl/j62m6ZhtHuoofy6LA" target="_blank" class="inline-block bg-white text-brandGreen px-12 py-4 uppercase tracking-widest text-sm font-bold shadow-xl hover:bg-brandLightGrey transition-all">Ubicación Estratégica</a>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <footer id="contacto" class="bg-white pt-24 pb-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
+            <div>
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776882018/Star10Web_Assets/fvwseviopl4ccwkjifr8.png" 
+                     alt="Virtual 2D Logo" 
+                     class="mb-8" style="max-height: 60px; object-fit: contain;">
+                <p class="text-brandGrey text-sm leading-relaxed mb-6 italic">
+                    Líderes en la gestión de artículos de segunda vida. Profesionalismo y seriedad en cada transacción.
+                </p>
+                <div class="flex space-x-4">
+                    <span class="text-brandGreen font-bold">●</span>
+                    <span class="text-brandGreen font-bold">●</span>
+                    <span class="text-brandGreen font-bold">●</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-8 uppercase tracking-widest text-brandGreen">Contacto</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start">
+                        <span class="mr-4 text-brandGreen">Ubicación:</span>
+                        <a href="https://maps.app.goo.gl/j62m6ZhtHuoofy6LA" target="_blank" class="hover:text-brandGreen transition-colors">Ver en Google Maps</a>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-4 text-brandGreen">Email:</span>
+                        <span>contacto@virtual2d.com</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-4 text-brandGreen">Horario:</span>
+                        <span>Lun - Sáb: 9:00 - 19:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-8 uppercase tracking-widest text-brandGreen">Newsletter</h4>
+                <p class="text-xs mb-6 italic text-gray-500 uppercase">Recibe notificaciones de nuevos artículos exclusivos.</p>
+                <div class="flex border-b border-brandGreen pb-2">
+                    <input type="email" placeholder="Tu correo electrónico" class="bg-transparent border-none w-full text-sm focus:outline-none italic">
+                    <button class="text-brandGreen font-bold uppercase text-xs tracking-widest">Enviar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 border-t border-gray-50 text-center">
+            <p class="text-[10px] uppercase tracking-[0.4em] text-gray-400">
+                &copy; 2024 Virtual 2D. Todos los derechos reservados. | <a href="#" class="hover:text-brandGreen">Aviso de Privacidad</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html></html>
