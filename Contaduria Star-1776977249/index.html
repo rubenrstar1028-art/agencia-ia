@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contaduria Star | Excelencia en Análisis Financiero y Estrategia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A', // Navy Corporativo
+                        secondary: '#B89150', // Oro Champagne (Elegancia)
+                        accent: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        body: ['"Lora"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Lora', serif; scroll-behavior: smooth; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .hero-overlay { background: rgba(15, 23, 42, 0.75); }
+        .bg-hero {
+            background-image: url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1776977255/Star10Web_Assets/b0w9dkufgvmylsmqqepu.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .border-gold { border-color: #B89150; }
+        .transition-soft { transition: all 0.4s ease; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 leading-relaxed">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776977255/Star10Web_Assets/rqwdag2aimd6qcdz4uid.jpg" 
+                     alt="Contaduria Star Logo" 
+                     class="h-14 lg:h-16 w-auto object-contain">
+            </div>
+            <div class="hidden md:flex space-x-10 text-sm font-medium tracking-widest uppercase text-primary">
+                <a href="#inicio" class="hover:text-secondary transition-soft">Inicio</a>
+                <a href="#servicios" class="hover:text-secondary transition-soft">Servicios</a>
+                <a href="#nosotros" class="hover:text-secondary transition-soft">Filosofía</a>
+                <a href="#contacto" class="hover:text-secondary transition-soft">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-primary p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center bg-hero overflow-hidden">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <span class="text-secondary tracking-[0.3em] uppercase text-sm mb-4 block font-medium">Excelencia en Gestión Financiera</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl text-white mb-8 leading-tight">
+                Transformamos sus números en <span class="italic">decisiones estratégicas</span>.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Análisis financiero de alta precisión y consultoría contable premium para empresas y personas que buscan una salud económica inquebrantable.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contacto" class="bg-secondary hover:bg-opacity-90 text-white px-10 py-4 text-sm tracking-widest uppercase transition-soft shadow-lg rounded-none">
+                    Agendar Consultoría
+                </a>
+                <a href="#servicios" class="border border-white/30 text-white hover:bg-white hover:text-primary px-10 py-4 text-sm tracking-widest uppercase transition-soft rounded-none">
+                    Nuestros Servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRO/PHILOSOPHY -->
+    <section id="nosotros" class="py-24 bg-light">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="https://loremflickr.com/800/1000/finance,office" alt="Oficina Profesional" class="shadow-2xl relative z-10 border-8 border-white">
+                    <div class="absolute -bottom-6 -right-6 w-64 h-64 border-gold border-2 -z-0"></div>
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-5xl text-primary mb-8 leading-snug">Evaluación Integral para un Crecimiento Sostenible</h2>
+                    <p class="text-slate-600 text-lg mb-6">
+                        En <strong>Contaduria Star</strong>, no solo registramos información; desciframos el ADN financiero de su negocio. Entendemos que cada movimiento contable es una pieza clave en el rompecabezas de su éxito económico.
+                    </p>
+                    <p class="text-slate-600 text-lg mb-8 italic">
+                        "Nuestra misión es proporcionar claridad donde otros ven complejidad, permitiendo que las empresas tomen el control total de su futuro."
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-secondary mr-4 text-xl">✦</span>
+                            <div>
+                                <h4 class="font-bold text-primary uppercase tracking-tighter">Precisión Star</h4>
+                                <p class="text-sm text-slate-500">Clasificación meticulosa bajo estándares internacionales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-secondary mr-4 text-xl">✦</span>
+                            <div>
+                                <h4 class="font-bold text-primary uppercase tracking-tighter">Visión Estratégica</h4>
+                                <p class="text-sm text-slate-500">Reportes de salud económica diseñados para la alta dirección.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center mb-16">
+            <h2 class="text-4xl text-primary mb-4">Nuestras Áreas de Especialidad</h2>
+            <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="p-10 border border-slate-100 shadow-lg hover:shadow-xl transition-soft group bg-white border-t-4 border-t-transparent hover:border-t-secondary">
+                <div class="mb-6 inline-block p-4 bg-light text-secondary group-hover:bg-secondary group-hover:text-white transition-soft">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                </div>
+                <h3 class="text-2xl text-primary mb-4">Análisis Financiero</h3>
+                <p class="text-slate-500 mb-6">Diagnóstico profundo de estados financieros para identificar fortalezas, debilidades y oportunidades de inversión.</p>
+                <img src="https://loremflickr.com/600/400/accounting,analytics" alt="Análisis" class="w-full grayscale group-hover:grayscale-0 transition-soft">
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="p-10 border border-slate-100 shadow-lg hover:shadow-xl transition-soft group bg-white border-t-4 border-t-transparent hover:border-t-secondary">
+                <div class="mb-6 inline-block p-4 bg-light text-secondary group-hover:bg-secondary group-hover:text-white transition-soft">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h3 class="text-2xl text-primary mb-4">Contabilidad Fiscal</h3>
+                <p class="text-slate-500 mb-6">Optimización de la carga tributaria cumpliendo estrictamente con la normativa legal vigente, protegiendo su patrimonio.</p>
+                <img src="https://loremflickr.com/600/400/business,money" alt="Fiscal" class="w-full grayscale group-hover:grayscale-0 transition-soft">
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="p-10 border border-slate-100 shadow-lg hover:shadow-xl transition-soft group bg-white border-t-4 border-t-transparent hover:border-t-secondary">
+                <div class="mb-6 inline-block p-4 bg-light text-secondary group-hover:bg-secondary group-hover:text-white transition-soft">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h3 class="text-2xl text-primary mb-4">Consultoría Estratégica</h3>
+                <p class="text-slate-500 mb-6">Asesoría de alto nivel para la toma de decisiones críticas: fusiones, expansiones y reestructuraciones financieras.</p>
+                <img src="https://loremflickr.com/600/400/consulting,strategy" alt="Estrategia" class="w-full grayscale group-hover:grayscale-0 transition-soft">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contacto" class="py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl mb-8">Hablemos de su Futuro Financiero</h2>
+                    <p class="text-slate-400 mb-12 text-lg">Estamos listos para analizar su situación económica y diseñar un plan que asegure su tranquilidad y crecimiento.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-center space-x-6">
+                            <div class="w-12 h-12 flex items-center justify-center border border-secondary text-secondary">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-slate-500">Ubicación</h4>
+                                <p class="text-lg">calzada minas de arena 45 acuducto</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-6">
+                            <div class="w-12 h-12 flex items-center justify-center border border-secondary text-secondary">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-slate-500">Correo</h4>
+                                <p class="text-lg">contacto@contaduriastar.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-10 shadow-2xl">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-primary text-xs uppercase tracking-widest mb-2 font-bold">Nombre Completo</label>
+                            <input type="text" class="w-full p-4 bg-light border-b border-slate-200 focus:outline-none focus:border-secondary text-primary">
+                        </div>
+                        <div>
+                            <label class="block text-primary text-xs uppercase tracking-widest mb-2 font-bold">Correo Electrónico</label>
+                            <input type="email" class="w-full p-4 bg-light border-b border-slate-200 focus:outline-none focus:border-secondary text-primary">
+                        </div>
+                        <div>
+                            <label class="block text-primary text-xs uppercase tracking-widest mb-2 font-bold">Asunto de Consulta</label>
+                            <select class="w-full p-4 bg-light border-b border-slate-200 focus:outline-none focus:border-secondary text-primary">
+                                <option>Auditoría Financiera</option>
+                                <option>Estrategia Fiscal</option>
+                                <option>Análisis de Inversión</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-primary text-xs uppercase tracking-widest mb-2 font-bold">Mensaje</label>
+                            <textarea rows="4" class="w-full p-4 bg-light border-b border-slate-200 focus:outline-none focus:border-secondary text-primary"></textarea>
+                        </div>
+                        <button class="w-full bg-primary text-white py-4 uppercase tracking-[0.2em] hover:bg-secondary transition-soft">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+            <div class="mb-6 md:mb-0">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776977255/Star10Web_Assets/rqwdag2aimd6qcdz4uid.jpg" 
+                     alt="Contaduria Star Logo" 
+                     class="h-10 opacity-70 hover:opacity-100 transition-soft">
+            </div>
+            <p>&copy; 2024 Contaduria Star. Todos los derechos reservados.</p>
+            <div class="flex space-x-6 mt-6 md:mt-0">
+                <a href="#" class="hover:text-secondary">LinkedIn</a>
+                <a href="#" class="hover:text-secondary">Twitter</a>
+                <a href="#" class="hover:text-secondary">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html></html>
