@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celulares Star10 | Expertos en Tecnología y Reparación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1776965226/Star10Web_Assets/jqlbwsetgcjtf6avvf45.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(to r, #6366f1, #06b6d4, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+        .custom-shape {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#06b6d4',
+                        accent: '#ec4899',
+                        dark: '#0f172a',
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass-effect px-8 py-3 rounded-full">
+            <div class="flex items-center gap-2">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1776965227/Star10Web_Assets/m26gocko8uncxr7edkrz.png" alt="Star10 Logo" class="h-10 md:h-12 w-auto object-contain">
+                <span class="text-xl font-extrabold tracking-tighter gradient-text uppercase">Star10</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-secondary transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-secondary transition-colors">Servicios</a>
+                <a href="#accesorios" class="hover:text-secondary transition-colors">Accesorios</a>
+                <a href="https://wa.me/523333333333" target="_blank" class="gradient-bg px-6 py-2 rounded-full text-white font-bold hover:scale-105 transition-transform">WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+                    Tu Conexión <br>
+                    <span class="gradient-text">Sin Límites</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 max-w-lg">
+                    Expertos en reparación de alta gama, venta de equipos de última generación y los accesorios más exclusivos para potenciar tu estilo digital.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/523333333333" class="gradient-bg px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-[0_0_20px_rgba(99,102,241,0.5)] transition-all flex items-center gap-2">
+                        Cotiza tu reparación
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                    <a href="#servicios" class="px-8 py-4 border border-slate-600 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all">Ver Servicios</a>
+                </div>
+                <div class="flex items-center gap-4 text-sm text-slate-400">
+                    <div class="flex -space-x-2">
+                        <img class="w-8 h-8 rounded-full border-2 border-dark" src="https://loremflickr.com/100/100/person?1" alt="user">
+                        <img class="w-8 h-8 rounded-full border-2 border-dark" src="https://loremflickr.com/100/100/person?2" alt="user">
+                        <img class="w-8 h-8 rounded-full border-2 border-dark" src="https://loremflickr.com/100/100/person?3" alt="user">
+                    </div>
+                    <span>+5,000 reparaciones exitosas</span>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <div class="absolute inset-0 bg-secondary blur-[100px] opacity-20 custom-shape"></div>
+                <img src="https://loremflickr.com/800/800/iphone,repair" alt="Smartphones" class="relative z-10 rounded-4xl shadow-2xl animate-pulse transition-duration-5000">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Servicios <span class="gradient-text">Premium</span></h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg">Ofrecemos soluciones rápidas y garantizadas para que nunca te quedes desconectado.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-effect p-8 rounded-3xl card-hover transition-all duration-300">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Reparación Express</h3>
+                    <p class="text-slate-400 mb-6">Cambio de pantallas, baterías y reparación de puertos de carga en menos de 60 minutos con refacciones originales.</p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2">✅ Micro soldadura avanzada</li>
+                        <li class="flex items-center gap-2">✅ Recuperación de software</li>
+                        <li class="flex items-center gap-2">✅ Limpieza ultrasónica</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-effect p-8 rounded-3xl card-hover transition-all duration-300 border-t-4 border-primary">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Venta de Equipos</h3>
+                    <p class="text-slate-400 mb-6">Contamos con los últimos lanzamientos de Apple, Samsung y Xiaomi. Equipos nuevos y seminuevos certificados.</p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2">✅ Garantía directa</li>
+                        <li class="flex items-center gap-2">✅ Equipos desbloqueados</li>
+                        <li class="flex items-center gap-2">✅ Planes de financiamiento</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-effect p-8 rounded-3xl card-hover transition-all duration-300">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Soporte Técnico</h3>
+                    <p class="text-slate-400 mb-6">Diagnóstico profesional para fallas de placa base, daños por agua y problemas complejos de conectividad.</p>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2">✅ Garantía de 90 días</li>
+                        <li class="flex items-center gap-2">✅ Técnicos certificados</li>
+                        <li class="flex items-center gap-2">✅ Presupuestos sin costo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Showcase -->
+    <section id="accesorios" class="py-24 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Accesorios <span class="gradient-text">Top Tier</span></h2>
+                    <p class="text-slate-400 text-lg">Protección y estilo para tus dispositivos favoritos.</p>
+                </div>
+                <a href="https://wa.me/523333333333" class="px-6 py-3 rounded-xl border border-secondary text-secondary font-bold hover:bg-secondary hover:text-white transition-all">Ver catálogo completo</a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="group relative overflow-hidden rounded-3xl aspect-square">
+                    <img src="https://loremflickr.com/600/600/phone-case" alt="Fundas" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex items-end p-6">
+                        <span class="text-xl font-bold">Fundas Premium</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl aspect-square">
+                    <img src="https://loremflickr.com/600/600/earbuds" alt="Audio" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex items-end p-6">
+                        <span class="text-xl font-bold">Audio & Bluetooth</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl aspect-square">
+                    <img src="https://loremflickr.com/600/600/charger" alt="Cargadores" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex items-end p-6">
+                        <span class="text-xl font-bold">Carga Rápida</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl aspect-square">
+                    <img src="https://loremflickr.com/600/600/smartwatch" alt="Gadgets" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex items-end p-6">
+                        <span class="text-xl font-bold">Wearables</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Contact Section -->
+    <section class="py-24 px-6 relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-primary/10 blur-[120px] -z-10"></div>
+        <div class="max-w-4xl mx-auto glass-effect p-12 rounded-[3rem] text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">¿Problemas con tu celular?</h2>
+            <p class="text-xl text-slate-300 mb-10">Visítanos en nuestra sucursal o escríbenos por WhatsApp para una asesoría inmediata. ¡Tu equipo en las mejores manos!</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white/5 p-6 rounded-2xl flex items-center gap-4 text-left">
+                    <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Ubicación</h4>
+                        <p class="text-slate-400 text-sm">Santana 98, San Miguel Tecamachalco</p>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-6 rounded-2xl flex items-center gap-4 text-left">
+                    <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white">Horario</h4>
+                        <p class="text-slate-400 text-sm">Lun - Sáb: 10:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://wa.me/523333333333" class="inline-flex items-center gap-3 bg-[#25D366] text-white font-black text-2xl px-12 py-6 rounded-full hover:scale-110 hover:shadow-[0_10px_40px_rgba(37,211,102,0.4)] transition-all">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Contáctanos ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 bg-dark text-slate-500 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold gradient-text uppercase">Star10</span>
+            </div>
+            <div class="text-sm text-center md:text-left">
+                <p>&copy; 2024 Celulares Star10. Santana 98, San Miguel Tecamachalco.</p>
+                <p>Reparaciones garantizadas y tecnología de vanguardia.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="tel:3333333333" class="hover:text-primary transition-colors">Tel: 3333333333</a>
+                <span class="hidden md:block">|</span>
+                <span class="text-slate-600">México</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
