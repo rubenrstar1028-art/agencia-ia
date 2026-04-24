@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard Luxury | Servicios Premium de Estilo de Vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#C5A059',
+                        accent: '#E2E8F0',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777051589/Star10Web_Assets/ml4pjjb6rmvrgupurqtq.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #C5A059, #FDE68A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex items-center space-x-2">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777051590/Star10Web_Assets/la0fnpqy0fftkxs1xwnl.png" 
+                         alt="Logo" 
+                         class="h-14 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="hidden text-white font-bold text-2xl tracking-tighter" style="display:none;">VANGUARD<span class="text-secondary">ESTATE</span></span>
+                </div>
+                
+                <div class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-widest text-white/90">
+                    <a href="#inicio" class="hover:text-secondary transition-colors">Inicio</a>
+                    <a href="#servicios" class="hover:text-secondary transition-colors">Servicios</a>
+                    <a href="#experiencia" class="hover:text-secondary transition-colors">Experiencia</a>
+                    <a href="#contacto" class="hover:text-secondary transition-colors">Contacto</a>
+                </div>
+
+                <div class="flex items-center">
+                    <a href="https://wa.me/521234567890" class="bg-secondary hover:bg-yellow-600 text-primary font-bold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-lg">
+                        RESERVAR AHORA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center relative px-6">
+        <div class="max-w-5xl text-center space-y-8 mt-20">
+            <h1 class="text-5xl md:text-8xl font-bold text-white tracking-tight leading-none">
+                Elevando el estándar de <span class="text-gradient italic">Vivir Bien.</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-slate-200 max-w-3xl mx-auto font-light leading-relaxed">
+                Descubra una curaduría exclusiva de servicios premium diseñados para quienes no aceptan menos que la perfección absoluta.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 pt-4">
+                <a href="#servicios" class="w-full md:w-auto px-10 py-5 bg-white text-primary font-bold rounded-full hover:bg-accent transition-all duration-300 transform hover:scale-105">
+                    EXPLORAR SERVICIOS
+                </a>
+                <a href="#contacto" class="w-full md:w-auto px-10 py-5 border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/10 backdrop-blur-sm transition-all duration-300">
+                    SABER MÁS
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
+            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-secondary font-bold tracking-widest text-sm mb-4">NUESTROS SERVICIOS</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold text-primary">Soluciones a Medida para un Estilo de Vida Excepcional.</h3>
+                </div>
+                <p class="text-slate-500 max-w-sm">Gestionamos cada detalle con discreción y excelencia, desde residencias de lujo hasta conserjería privada.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="group card-hover transition-all duration-500 bg-slate-50 rounded-4xl overflow-hidden p-2">
+                    <div class="relative h-72 overflow-hidden rounded-3xl">
+                        <img src="https://loremflickr.com/1200/800/luxury,interior" alt="Residencias" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-4 text-primary">Residencias de Élite</h4>
+                        <p class="text-slate-600 mb-6">Acceso exclusivo a las propiedades más sofisticadas del mercado, gestionadas por expertos en real estate de alto valor.</p>
+                        <a href="#" class="text-secondary font-bold flex items-center group-hover:gap-3 transition-all">
+                            CONOCER MÁS <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group card-hover transition-all duration-500 bg-slate-50 rounded-4xl overflow-hidden p-2">
+                    <div class="relative h-72 overflow-hidden rounded-3xl">
+                        <img src="https://loremflickr.com/1200/800/concierge" alt="Concierge" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-4 text-primary">Conserjería 24/7</h4>
+                        <p class="text-slate-600 mb-6">Desde reservas en restaurantes con estrellas Michelin hasta viajes en jet privado. Su tiempo es nuestro activo más valioso.</p>
+                        <a href="#" class="text-secondary font-bold flex items-center group-hover:gap-3 transition-all">
+                            CONOCER MÁS <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group card-hover transition-all duration-500 bg-slate-50 rounded-4xl overflow-hidden p-2">
+                    <div class="relative h-72 overflow-hidden rounded-3xl">
+                        <img src="https://loremflickr.com/1200/800/wellness,spa" alt="Wellness" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold mb-4 text-primary">Wellness y Bienestar</h4>
+                        <p class="text-slate-600 mb-6">Programas de rejuvenecimiento y entrenamiento personal en la privacidad de su hogar o en los centros más exclusivos.</p>
+                        <a href="#" class="text-secondary font-bold flex items-center group-hover:gap-3 transition-all">
+                            CONOCER MÁS <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Feature Section -->
+    <section id="experiencia" class="py-24 px-6 bg-primary text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary/20 rounded-full blur-3xl"></div>
+                <img src="https://loremflickr.com/1200/1200/architecture,modern" alt="Experience" class="rounded-4xl shadow-2xl relative z-10 w-full object-cover h-[600px]">
+                <div class="absolute -bottom-6 -right-6 bg-secondary p-8 rounded-3xl z-20 shadow-xl hidden md:block">
+                    <p class="text-4xl font-bold text-primary">15+</p>
+                    <p class="text-primary font-medium">Años de Excelencia</p>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight italic">No solo gestionamos propiedades, <span class="text-secondary">creamos legados.</span></h2>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                    Nuestra metodología combina la tecnología de vanguardia con el toque personal que solo la experiencia de décadas puede ofrecer. Cada cliente es único, y cada solución es una obra maestra de logística y diseño.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-4">
+                        <span class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-primary font-bold text-xs">✓</span>
+                        <span class="text-slate-200">Privacidad y Confidencialidad Absoluta</span>
+                    </li>
+                    <li class="flex items-center space-x-4">
+                        <span class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-primary font-bold text-xs">✓</span>
+                        <span class="text-slate-200">Red de Contactos Globales de Alto Nivel</span>
+                    </li>
+                    <li class="flex items-center space-x-4">
+                        <span class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-primary font-bold text-xs">✓</span>
+                        <span class="text-slate-200">Atención Personalizada 24 Horas</span>
+                    </li>
+                </ul>
+                <div class="pt-6">
+                    <a href="tel:+521234567890" class="inline-block px-10 py-5 bg-secondary text-primary font-bold rounded-full hover:scale-105 transition-transform shadow-lg shadow-secondary/20">
+                        LLAMAR A UN ASESOR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contacto" class="bg-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-2 space-y-6">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-3xl font-bold tracking-tighter text-primary">VANGUARD<span class="text-secondary italic">LUXURY</span></span>
+                    </div>
+                    <p class="text-slate-500 max-w-sm">
+                        Redefiniendo el lujo a través de la atención al detalle y el compromiso inquebrantable con la satisfacción del cliente.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-primary hover:bg-secondary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-primary hover:bg-secondary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h5 class="text-primary font-bold uppercase tracking-widest text-sm">Contáctenos</h5>
+                    <ul class="space-y-4 text-slate-500">
+                        <li class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>Av. de la Reforma 250, <br>CDMX, México</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <a href="tel:+521234567890" class="hover:text-secondary">+52 1 234 567 890</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <a href="mailto:contacto@vanguardluxury.com" class="hover:text-secondary">contacto@vanguardluxury.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h5 class="text-primary font-bold uppercase tracking-widest text-sm">Newsletter</h5>
+                    <p class="text-slate-500 text-sm">Subscríbase para recibir actualizaciones sobre exclusivas oportunidades.</p>
+                    <div class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Su correo electrónico" class="bg-slate-100 border-none rounded-full px-6 py-3 focus:ring-2 focus:ring-secondary outline-none transition-all">
+                        <button class="bg-primary text-white font-bold rounded-full py-3 hover:bg-slate-800 transition-colors">SUSCRIBIRSE</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-12 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-400 text-sm">© 2024 Vanguard Luxury. Todos los derechos reservados.</p>
+                <div class="flex space-x-8 text-sm text-slate-400">
+                    <a href="#" class="hover:text-primary">Políticas de Privacidad</a>
+                    <a href="#" class="hover:text-primary">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/521234567890" target="_blank" class="fixed bottom-8 right-8 z-[60] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.402 0 6.556-5.332 11.891-11.893 11.891-2.01 0-3.99-.513-5.746-1.488l-6.25 1.64zM6.502 18.332c1.7 1.018 3.265 1.554 5.402 1.554 5.397 0 9.791-4.393 9.791-9.791 0-5.397-4.394-9.791-9.791-9.791-5.398 0-9.792 4.394-9.792 9.791 0 2.247.603 3.868 1.635 5.564l-.916 3.344 3.671-.921zM17.438 14.382c-.313-.156-1.854-.914-2.141-1.018-.286-.104-.495-.156-.704.156-.208.312-.806 1.018-.989 1.226-.182.208-.364.234-.677.078-.312-.156-1.319-.486-2.512-1.55-1.06-.944-1.745-2.112-1.953-2.424-.208-.312-.022-.481.134-.636.14-.139.312-.364.469-.546.156-.182.208-.312.312-.52.104-.208.052-.39-.026-.546-.078-.156-.704-1.693-.963-2.313-.253-.603-.51-.52-.704-.531-.182-.008-.39-.011-.598-.011-.208 0-.546.078-.832.39-.286.312-1.094 1.067-1.094 2.602 0 1.535 1.119 3.018 1.275 3.226.156.208 2.201 3.362 5.332 4.713.745.321 1.327.513 1.78.657.748.238 1.43.204 1.968.124.6-.09 1.854-.758 2.115-1.488.26-.73.26-1.355.182-1.487-.078-.131-.286-.208-.6-.364z"/></svg>
+    </a>
+
+</body>
+</html>
