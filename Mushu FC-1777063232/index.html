@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushu FC | Pasión en la Cancha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        secondary: '#FACC15',
+                        accent: '#1E293B',
+                        highlight: '#EAB308'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '2xl': '1.5rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-section {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777063238/Star10Web_Assets/xoziuxwuiwqsciypbxyb.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #FACC15, #EAB308);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(250, 204, 21, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-primary text-white font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-primary/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777063239/Star10Web_Assets/ywlbc7x8w2ptykhu1yqr.png" alt="Mushu FC Logo" class="h-14 w-auto object-contain">
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="hover:text-secondary px-3 py-2 font-semibold transition-colors">Inicio</a>
+                        <a href="#nosotros" class="hover:text-secondary px-3 py-2 font-semibold transition-colors">El Equipo</a>
+                        <a href="#valores" class="hover:text-secondary px-3 py-2 font-semibold transition-colors">Valores</a>
+                        <a href="#contacto" class="bg-secondary text-primary px-6 py-2 rounded-full font-bold btn-hover">¡Únete!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section min-h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <h2 class="text-secondary font-extrabold tracking-widest uppercase mb-4 animate-bounce">Mushu FC Amateur</h2>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">MÁS QUE UN EQUIPO, <br><span class="text-gradient">UNA FAMILIA.</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                Llevamos la pasión del soccer amateur a otro nivel. Corazón, garra y una afición que nunca deja de alentar.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contacto" class="bg-secondary text-primary px-10 py-4 rounded-2xl font-extrabold text-lg btn-hover">
+                    VER PRÓXIMO PARTIDO
+                </a>
+                <a href="https://wa.me/?text=Hola%20Mushu%20FC,%20quiero%20más%20información" class="border-2 border-white/30 backdrop-blur-sm hover:bg-white/10 px-10 py-4 rounded-2xl font-extrabold text-lg btn-hover">
+                    CONTACTAR
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats/Highlights -->
+    <section class="py-12 bg-secondary text-primary">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-extrabold">+50</p>
+                <p class="font-semibold uppercase text-sm">Goles este año</p>
+            </div>
+            <div>
+                <p class="text-4xl font-extrabold">100%</p>
+                <p class="font-semibold uppercase text-sm">Entrega en cancha</p>
+            </div>
+            <div>
+                <p class="text-4xl font-extrabold">2k</p>
+                <p class="font-semibold uppercase text-sm">Aficionados</p>
+            </div>
+            <div>
+                <p class="text-4xl font-extrabold">1</p>
+                <p class="font-semibold uppercase text-sm">Solo Corazón</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2">
+                <div class="relative">
+                    <img src="https://loremflickr.com/800/600/soccer,match" alt="Soccer match" class="rounded-2xl shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500">
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-secondary rounded-2xl z-0"></div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2">
+                <h3 class="text-secondary font-bold text-xl mb-2">NUESTRA HISTORIA</h3>
+                <h2 class="text-4xl font-extrabold mb-6">DOMINANDO EL TERRENO DE JUEGO</h2>
+                <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                    En Mushu FC no solo jugamos fútbol; construimos leyendas locales. Nacimos de la pasión por el deporte rey en las ligas amateur, destacando por nuestra estrategia dinámica y un espíritu inquebrantable.
+                </p>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    Nuestra afición es el motor que nos impulsa en cada minuto. Desde Calzada Minas de Arena hasta cada rincón de la ciudad, los colores de Mushu FC se defienden con orgullo.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <span class="bg-secondary p-1 rounded-full text-primary">✓</span>
+                        <span class="font-bold">Entrenamientos de alto nivel</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-secondary p-1 rounded-full text-primary">✓</span>
+                        <span class="font-bold">Comunidad unida y apasionada</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores -->
+    <section id="valores" class="py-24 bg-accent/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4 uppercase tracking-tight">Valores Mushu FC</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-primary p-10 rounded-2xl border border-white/5 hover:border-secondary/50 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
+                        <svg class="w-8 h-8 text-secondary group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Dinamismo</h4>
+                    <p class="text-gray-400 leading-relaxed">Un estilo de juego rápido, ofensivo y moderno que mantiene a la afición al borde del asiento.</p>
+                </div>
+                <div class="bg-primary p-10 rounded-2xl border border-white/5 hover:border-secondary/50 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
+                        <svg class="w-8 h-8 text-secondary group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Comunidad</h4>
+                    <p class="text-gray-400 leading-relaxed">Nuestra afición no es espectadora, es parte fundamental del equipo. Aquí todos somos Mushu.</p>
+                </div>
+                <div class="bg-primary p-10 rounded-2xl border border-white/5 hover:border-secondary/50 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
+                        <svg class="w-8 h-8 text-secondary group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.040L3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622l-.382-3.016z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Lealtad</h4>
+                    <p class="text-gray-400 leading-relaxed">Fieles a nuestros colores y a nuestra sede en Calzada Minas de Arena, ganemos o perdamos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contacto" class="py-24 px-4 bg-primary">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-accent p-8 md:p-16 rounded-3xl overflow-hidden relative border border-white/10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-extrabold mb-8">¿Listo para la <span class="text-secondary">Próxima Jornada?</span></h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-secondary/20 p-3 rounded-lg text-secondary">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-xl">Ubicación</h5>
+                                    <p class="text-gray-400">Calzada Minas de Arena 102</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-secondary/20 p-3 rounded-lg text-secondary">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-xl">Correo Electrónico</h5>
+                                    <a href="mailto:mushu@fc.com" class="text-gray-400 hover:text-secondary transition-colors">mushu@fc.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <a href="https://wa.me/?text=Me%20interesa%20unirme%20a%20la%20afición%20de%20Mushu%20FC" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-bold gap-3 transition-transform hover:scale-105">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.27 9.27 0 01-4.487-1.178l-.322-.19-3.333.874.89-3.246-.208-.332A9.245 9.245 0 013.528 8.392c0-5.105 4.153-9.258 9.26-9.258 2.476 0 4.803.965 6.551 2.716 1.748 1.75 2.712 4.077 2.712 6.553 0 5.108-4.155 9.261-9.26 9.261"></path></svg>
+                                Escríbenos por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-[400px] rounded-2xl overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.504149206263!2d-99.2312!3d19.389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ad1234567%3A0xabcdef123456789!2sCalz.%20Minas%20de%20Arena%20102!5e0!3m2!1ses!2smx!4v1234567890" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777063239/Star10Web_Assets/ywlbc7x8w2ptykhu1yqr.png" alt="Mushu FC Logo" class="h-10 w-auto opacity-80">
+                <span class="ml-4 text-gray-500 font-semibold tracking-tighter">Mushu FC © 2024</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-secondary">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-secondary">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-secondary">TikTok</a>
+            </div>
+            <div class="text-gray-500 text-sm">
+                Diseño Premium para el Deporte Amateur
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html></html>
