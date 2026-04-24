@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audifonos Star10 | Excelencia en Audio y Diseño</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #b08d57;
+            --light: #f8fafc;
+            --dark-gold: #8a6d3b;
+        }
+        body {
+            font-family: 'Lora', serif;
+            color: var(--primary);
+            background-color: #ffffff;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-corporate { background-color: var(--primary); }
+        .text-gold { color: var(--accent); }
+        .bg-gold { background-color: var(--accent); }
+        .border-gold { border-color: var(--accent); }
+        
+        .hero-section {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777052631/Star10Web_Assets/xlpqw52cxnwmszf8ijpm.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .btn-gold {
+            background-color: var(--accent);
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid var(--accent);
+        }
+        .btn-gold:hover {
+            background-color: transparent;
+            color: var(--accent);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            transition: width .3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777052632/Star10Web_Assets/rllq8ioikvnskin0mqcc.png" alt="Audifonos Star10" class="h-14 w-auto object-contain">
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#inicio" class="nav-link text-sm font-medium tracking-widest uppercase text-slate-800">Inicio</a>
+                    <a href="#coleccion" class="nav-link text-sm font-medium tracking-widest uppercase text-slate-800">Colección</a>
+                    <a href="#servicios" class="nav-link text-sm font-medium tracking-widest uppercase text-slate-800">Servicios</a>
+                    <a href="#contacto" class="nav-link text-sm font-medium tracking-widest uppercase text-slate-800">Contacto</a>
+                </nav>
+                <div class="flex items-center">
+                    <a href="tel:111111111111" class="hidden sm:block text-sm font-semibold text-slate-800 mr-6">
+                        <span class="text-gold">LLAMAR:</span> 111111111111
+                    </a>
+                    <a href="https://wa.me/111111111111" class="bg-corporate text-white px-6 py-2.5 rounded-none text-xs tracking-widest uppercase font-bold hover:bg-slate-800 transition shadow-lg">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <span class="text-gold uppercase tracking-[0.3em] text-sm mb-4 block font-bold">Premium Audio Experience</span>
+            <h1 class="text-4xl md:text-7xl text-white mb-6 font-serif leading-tight">La Fidelidad que sus Oídos Merecen</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light italic">
+                En Audifonos Star10, seleccionamos las marcas más prestigiosas del mundo para ofrecerle una acústica impecable y un confort inigualable.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#coleccion" class="btn-gold px-10 py-4 text-sm tracking-widest uppercase font-bold rounded-none shadow-lg">Ver Catálogo</a>
+                <a href="#contacto" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-4 text-sm tracking-widest uppercase font-bold rounded-none hover:bg-white hover:text-primary transition shadow-lg">Ubicar Tienda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section id="coleccion" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-serif mb-4">Nuestra Curaduría</h2>
+                <div class="w-20 h-0.5 bg-gold mx-auto"></div>
+                <p class="mt-6 text-gray-500 max-w-xl mx-auto">Explore nuestra selección exclusiva diseñada para profesionales, audiófilos y amantes de la música.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <div class="bg-white rounded-none shadow-lg overflow-hidden group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://loremflickr.com/1200/800/headphones,professional" alt="Studio Headphones" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-300"></div>
+                    </div>
+                    <div class="p-8 border-b-4 border-gold">
+                        <h3 class="text-xl font-serif mb-3">Línea Studio & Pro</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Claridad absoluta y respuesta de frecuencia plana para mezcla, masterización y producción profesional.</p>
+                        <a href="https://wa.me/111111111111" class="text-xs font-bold tracking-widest uppercase text-gold hover:text-primary transition flex items-center">
+                            Consultar Modelos <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-white rounded-none shadow-lg overflow-hidden group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://loremflickr.com/1200/800/headphones,wireless" alt="Wireless Headphones" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-300"></div>
+                    </div>
+                    <div class="p-8 border-b-4 border-gold">
+                        <h3 class="text-xl font-serif mb-3">Hi-Fi Wireless</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">La libertad de la conexión inalámbrica sin comprometer la calidad del audio de alta definición.</p>
+                        <a href="https://wa.me/111111111111" class="text-xs font-bold tracking-widest uppercase text-gold hover:text-primary transition flex items-center">
+                            Consultar Modelos <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="bg-white rounded-none shadow-lg overflow-hidden group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://loremflickr.com/1200/800/audiophile,tech" alt="Noise Cancelling" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-300"></div>
+                    </div>
+                    <div class="p-8 border-b-4 border-gold">
+                        <h3 class="text-xl font-serif mb-3">Cancelación Activa</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Aísle el mundo exterior y sumérjase en su música con tecnología de cancelación de ruido de vanguardia.</p>
+                        <a href="https://wa.me/111111111111" class="text-xs font-bold tracking-widest uppercase text-gold hover:text-primary transition flex items-center">
+                            Consultar Modelos <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <img src="https://loremflickr.com/1200/1000/luxury,music" alt="Experience" class="shadow-2xl border-8 border-white rounded-sm">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-serif mb-8 leading-snug">Calidad Superior, <br><span class="text-gold italic">Experiencia Inigualable.</span></h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-corporate flex items-center justify-center text-gold">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Garantía de Autenticidad</h4>
+                                <p class="text-gray-600">Solo comercializamos productos 100% originales de marcas líderes mundiales con respaldo directo.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-corporate flex items-center justify-center text-gold">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Asesoría Especializada</h4>
+                                <p class="text-gray-600">Nuestros expertos le ayudarán a elegir el modelo perfecto según sus hábitos de escucha y presupuesto.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-corporate flex items-center justify-center text-gold">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Envíos con Cuidado Pro</h4>
+                                <p class="text-gray-600">Entregamos sus audífonos con empaques reforzados y seguros hasta la puerta de su hogar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 border border-gray-100 shadow-lg">
+                <div class="bg-corporate p-12 text-white flex flex-col justify-center">
+                    <h2 class="text-3xl font-serif mb-6 text-gold">Visite Nuestro Showroom</h2>
+                    <p class="text-gray-400 mb-10">Experimente el sonido en persona. Contamos con estaciones de prueba equipadas con amplificadores de alta gama.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="text-gold mt-1">📍</span>
+                            <div>
+                                <p class="font-bold">Ubicación:</p>
+                                <p class="text-gray-300">santa 89 San miguel tecamachalco</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-gold mt-1">📞</span>
+                            <div>
+                                <p class="font-bold">Teléfono / WhatsApp:</p>
+                                <a href="tel:111111111111" class="text-gray-300 hover:text-gold transition">111111111111</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-gold mt-1">✉️</span>
+                            <div>
+                                <p class="font-bold">Correo Electrónico:</p>
+                                <a href="mailto:asdadda@sdad.com" class="text-gray-300 hover:text-gold transition">asdadda@sdad.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <a href="https://wa.me/111111111111" class="btn-gold inline-block px-8 py-3 text-xs tracking-widest uppercase font-bold shadow-lg">Enviar Mensaje Directo</a>
+                    </div>
+                </div>
+                <div class="h-[500px] lg:h-full min-h-[400px]">
+                    <!-- Google Maps Placeholder / Custom visual -->
+                    <div class="w-full h-full bg-slate-200 relative overflow-hidden">
+                        <img src="https://loremflickr.com/1200/800/city,map" alt="Location Map" class="w-full h-full object-cover opacity-50 grayscale">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white p-6 shadow-2xl text-center">
+                                <p class="text-primary font-bold mb-2">Audifonos Star10</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-widest">San Miguel Tecamachalco</p>
+                                <div class="mt-4 w-10 h-10 bg-gold rounded-full flex items-center justify-center mx-auto text-white">📍</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-corporate py-16 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777052632/Star10Web_Assets/rllq8ioikvnskin0mqcc.png" alt="Star10" class="h-16 mx-auto mb-8 grayscale invert brightness-200">
+            <p class="text-gray-500 text-sm tracking-widest uppercase mb-8">© 2023 Audifonos Star10. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-gold transition uppercase text-xs tracking-widest font-bold">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-gold transition uppercase text-xs tracking-widest font-bold">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-gold transition uppercase text-xs tracking-widest font-bold">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html></html>
