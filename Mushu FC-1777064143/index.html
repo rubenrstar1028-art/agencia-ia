@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushu FC | Mentalidad Ganadora</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#0f172a',    /* Azul Medianoche Profundo */
+                            secondary: '#fbbf24',  /* Dorado Ganador */
+                            accent: '#334155',     /* Gris Pizarra */
+                            light: '#f8fafc'       /* Blanco Humo */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777064148/Star10Web_Assets/bdq3isvvtmxsheg2idfu.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-brand-light font-sans text-brand-primary">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-brand-primary/90 backdrop-blur-md border-b border-brand-accent/30 py-3">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777064149/Star10Web_Assets/syaonvnlcxnzdpxdxz2b.png" 
+                     alt="Mushu FC Logo" 
+                     style="max-height: 60px; object-fit: contain;">
+                <span class="ml-3 text-2xl font-black text-white tracking-tighter">MUSHU <span class="text-brand-secondary">FC</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-white font-medium uppercase text-sm tracking-widest">
+                <a href="#inicio" class="hover:text-brand-secondary transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-brand-secondary transition-colors">Filosofía</a>
+                <a href="#galeria" class="hover:text-brand-secondary transition-colors">Galería</a>
+                <a href="#contacto" class="hover:text-brand-secondary transition-colors">Contacto</a>
+            </div>
+            <a href="https://wa.me/" class="bg-brand-secondary text-brand-primary px-6 py-2 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-lg">ÚNETE AL CLUB</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <span class="inline-block px-4 py-1 bg-brand-secondary text-brand-primary font-bold rounded-full text-xs uppercase tracking-[0.2em] mb-6 animate-bounce">
+                Mentalidad Ganadora
+            </span>
+            <h1 class="text-5xl md:text-8xl font-black text-white mb-6 leading-none">
+                DOMINA EL <br><span class="text-gradient">CAMPO</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                No somos solo un club; somos la cantera de los próximos campeones. Aspiramos a los mejores estadios, enfrentando a los mejores del mundo.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#galeria" class="px-10 py-4 bg-brand-secondary text-brand-primary font-black rounded-2xl hover:bg-white transition-all duration-300 text-lg uppercase shadow-xl">
+                    Ver Trayectoria
+                </a>
+                <a href="#nosotros" class="px-10 py-4 border-2 border-white text-white font-black rounded-2xl hover:bg-white hover:text-brand-primary transition-all duration-300 text-lg uppercase">
+                    Nuestra Visión
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filosofía Section -->
+    <section id="nosotros" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4">FORJANDO <span class="text-brand-secondary">LEYENDAS</span></h2>
+                <div class="w-24 h-2 bg-brand-secondary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-brand-light p-8 rounded-2xl card-hover transition-all duration-300 border-b-4 border-brand-secondary">
+                    <div class="w-16 h-16 bg-brand-primary text-brand-secondary rounded-2xl flex items-center justify-center mb-6 text-3xl font-bold italic">01</div>
+                    <h3 class="text-2xl font-bold mb-4">Excelencia Élite</h3>
+                    <p class="text-brand-accent leading-relaxed">Entrenamos con estándares internacionales. Cada pase, cada tiro y cada jugada está diseñada para competir en el máximo nivel profesional.</p>
+                </div>
+                <div class="bg-brand-light p-8 rounded-2xl card-hover transition-all duration-300 border-b-4 border-brand-secondary">
+                    <div class="w-16 h-16 bg-brand-primary text-brand-secondary rounded-2xl flex items-center justify-center mb-6 text-3xl font-bold italic">02</div>
+                    <h3 class="text-2xl font-bold mb-4">Resiliencia</h3>
+                    <p class="text-brand-accent leading-relaxed">La mentalidad ganadora se construye en la adversidad. En Mushu FC, enseñamos que el fracaso es solo el combustible para la victoria.</p>
+                </div>
+                <div class="bg-brand-light p-8 rounded-2xl card-hover transition-all duration-300 border-b-4 border-brand-secondary">
+                    <div class="w-16 h-16 bg-brand-primary text-brand-secondary rounded-2xl flex items-center justify-center mb-6 text-3xl font-bold italic">03</div>
+                    <h3 class="text-2xl font-bold mb-4">Visión Global</h3>
+                    <p class="text-brand-accent leading-relaxed">Nuestra meta son los grandes estadios del mundo. Preparamos a nuestros jugadores para brillar bajo los reflectores más brillantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="py-24 bg-brand-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-black mb-4">NUESTRA <span class="text-brand-secondary">ESCUADRA</span></h2>
+                    <p class="text-gray-400">Momentos de gloria y preparación intensa.</p>
+                </div>
+                <div class="hidden md:block h-px flex-grow bg-brand-accent/30 mx-10 mb-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Imagen Proporcionada -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-2xl h-80">
+                    <img src="https://files.bpcontent.cloud/2026/04/24/19/20260424191050-XQZXFCNP.png" alt="Mushu FC Acción" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-primary to-transparent opacity-60"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <p class="text-brand-secondary font-bold text-sm tracking-widest uppercase">Competición</p>
+                        <h4 class="text-xl font-bold">Victoria en el Campo</h4>
+                    </div>
+                </div>
+                <!-- Imágenes de Relleno -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-2xl h-80">
+                    <img src="https://loremflickr.com/1200/800/soccer" alt="Entrenamiento" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-primary to-transparent opacity-60"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <p class="text-brand-secondary font-bold text-sm tracking-widest uppercase">Entrenamiento</p>
+                        <h4 class="text-xl font-bold">Disciplina Diaria</h4>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl shadow-2xl h-80">
+                    <img src="https://loremflickr.com/1200/800/stadium" alt="Estadio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-primary to-transparent opacity-60"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <p class="text-brand-secondary font-bold text-sm tracking-widest uppercase">Aspiración</p>
+                        <h4 class="text-xl font-bold">Rumbo a la Cima</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contacto Section -->
+    <section id="contacto" class="py-24 bg-brand-light">
+        <div class="container mx-auto px-6">
+            <div class="bg-brand-secondary rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20"></div>
+                <div class="relative z-10">
+                    <h2 class="text-4xl md:text-6xl font-black text-brand-primary mb-8 uppercase leading-tight">¿Estás listo para<br>pertenecer a la élite?</h2>
+                    <p class="text-xl text-brand-primary/80 mb-10 font-bold">Visítanos o contáctanos para formar parte de Mushu FC.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <div class="flex items-center justify-center bg-white/20 p-6 rounded-2xl backdrop-blur-sm">
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase text-brand-primary/60 tracking-widest">Ubicación</p>
+                                <p class="text-lg font-black">Santana 72, San Miguel Tecamachalco</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center bg-brand-primary p-6 rounded-2xl">
+                            <div class="text-left text-white">
+                                <p class="text-xs font-bold uppercase text-brand-secondary tracking-widest">WhatsApp Directo</p>
+                                <a href="https://wa.me/" class="text-lg font-black hover:text-brand-secondary transition-colors">Contáctanos ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="mailto:" class="inline-block text-brand-primary font-black border-b-2 border-brand-primary pb-1 hover:text-white hover:border-white transition-all text-lg">
+                        mushufc.info@club.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-primary py-12 border-t border-brand-accent/20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-8 md:mb-0">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777064149/Star10Web_Assets/syaonvnlcxnzdpxdxz2b.png" alt="Mushu FC" style="max-height: 50px;">
+                <p class="text-gray-500 mt-4 text-sm">© 2024 Mushu FC. Todos los derechos reservados. <br>Diseñado para ganadores.</p>
+            </div>
+            <div class="flex space-x-6 text-gray-400">
+                <a href="#" class="hover:text-brand-secondary transition-colors">Instagram</a>
+                <a href="#" class="hover:text-brand-secondary transition-colors">Facebook</a>
+                <a href="#" class="hover:text-brand-secondary transition-colors">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html></html>
