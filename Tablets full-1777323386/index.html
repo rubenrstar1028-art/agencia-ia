@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablets full | Tecnología de Vanguardia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#2563eb',
+                            secondary: '#0891b2',
+                            accent: '#1e293b',
+                            light: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777323394/Star10Web_Assets/bbuwk8q1dysx9iagptqz.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans bg-brand-light text-brand-accent">
+
+    <!-- Header / Nav -->
+    <nav class="fixed w-full z-50 px-6 py-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center bg-white/80 backdrop-blur-md rounded-full px-8 py-3 shadow-lg border border-white/20">
+            <div class="flex items-center">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777323395/Star10Web_Assets/eppgzjp3kezdy222w0kr.png" alt="Tablets full Logo" class="h-12 w-auto object-contain">
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-brand-primary transition-colors">Inicio</a>
+                <a href="#productos" class="hover:text-brand-primary transition-colors">Productos</a>
+                <a href="#galeria" class="hover:text-brand-primary transition-colors">Galería</a>
+                <a href="#contacto" class="hover:text-brand-primary transition-colors">Contacto</a>
+            </div>
+            <div>
+                <a href="https://wa.me/33333333" class="bg-brand-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-brand-secondary transition-all transform hover:scale-105 shadow-md">
+                    Cotizar Ahora
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Potencia y Estilo <br><span class="gradient-text">En Tus Manos</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+                Explora nuestra colección exclusiva de tablets. Desde herramientas de productividad profesional hasta dispositivos de entretenimiento para toda la familia.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#productos" class="bg-white text-brand-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-brand-primary hover:text-white transition-all transform hover:scale-105">
+                    Ver Catálogo
+                </a>
+                <a href="tel:33333333" class="glass-effect text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all transform hover:scale-105">
+                    Llamar ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="productos" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Soluciones para cada necesidad</h2>
+            <div class="w-24 h-1 bg-brand-primary mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Basic -->
+            <div class="p-8 rounded-4xl bg-brand-light border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Gama Esencial</h3>
+                <p class="text-gray-600 mb-6">Perfectas para navegación web, redes sociales y lectura. Rendimiento confiable al mejor precio.</p>
+                <ul class="text-sm space-y-2 text-gray-500 mb-6">
+                    <li>✓ Pantallas HD</li>
+                    <li>✓ Batería de larga duración</li>
+                    <li>✓ Diseño ligero</li>
+                </ul>
+            </div>
+            <!-- Mid -->
+            <div class="p-8 rounded-4xl bg-brand-accent text-white shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Gama Pro</h3>
+                <p class="text-gray-300 mb-6">Ideal para estudiantes y multitarea. Potencia fluida para todas tus aplicaciones de estudio y trabajo.</p>
+                <ul class="text-sm space-y-2 text-gray-400 mb-6">
+                    <li>✓ Procesadores Octa-Core</li>
+                    <li>✓ Compatible con Stylus</li>
+                    <li>✓ Almacenamiento expandible</li>
+                </ul>
+            </div>
+            <!-- Premium -->
+            <div class="p-8 rounded-4xl bg-brand-light border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Gama Premium</h3>
+                <p class="text-gray-600 mb-6">Lo último en tecnología. Pantallas OLED, conectividad 5G y potencia de grado desktop para creadores.</p>
+                <ul class="text-sm space-y-2 text-gray-500 mb-6">
+                    <li>✓ Gráficos de alta fidelidad</li>
+                    <li>✓ Multitarea profesional</li>
+                    <li>✓ Acabados en aluminio</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Nuestros Productos Destacados</h2>
+            <p class="text-gray-500">Calidad garantizada en cada detalle</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="overflow-hidden rounded-3xl shadow-xl group">
+                <img src="https://files.bpcontent.cloud/2026/04/27/18/20260427180643-OZ5QU0YI.jpg" alt="Tablet Premium View" class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+            <div class="overflow-hidden rounded-3xl shadow-xl group">
+                <img src="https://files.bpcontent.cloud/2026/04/27/18/20260427180720-UZOOI2XE.jpg" alt="Tablet Professional View" class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why us -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="https://loremflickr.com/1200/800/tech-tablet" alt="Digital Lifestyle" class="rounded-4xl shadow-2xl">
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-8 leading-tight">¿Por qué elegir <span class="text-brand-primary">Tablets full</span>?</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 bg-green-100 p-2 rounded-lg">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Garantía Total</h4>
+                            <p class="text-gray-600">Todos nuestros equipos cuentan con garantía oficial de fábrica.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 bg-blue-100 p-2 rounded-lg">
+                            <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Asesoría Especializada</h4>
+                            <p class="text-gray-600">Te ayudamos a elegir la tablet que mejor se adapte a tu uso diario.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 bg-purple-100 p-2 rounded-lg">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Soporte Técnico</h4>
+                            <p class="text-gray-600">Estamos contigo incluso después de tu compra para cualquier duda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 px-6 bg-brand-accent text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">¿Listo para renovar tu equipo?</h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl">
+                Contáctanos hoy mismo y recibe una asesoría personalizada para encontrar tu tablet ideal.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <a href="https://wa.me/33333333" class="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-full font-bold text-xl transition-all shadow-xl">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412 0 6.556-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.464c1.547.92 3.123 1.403 4.852 1.403 5.403 0 9.8-4.397 9.802-9.8.001-2.618-1.019-5.08-2.872-6.934-1.854-1.855-4.318-2.873-6.93-2.873-5.403 0-9.8 4.398-9.802 9.8 0 1.932.569 3.814 1.645 5.451l-.992 3.626 3.7-.971zm11.374-3.969c-.311-.156-1.845-.91-2.134-1.015-.289-.106-.499-.156-.709.156-.21.312-.813 1.015-1.001 1.224-.188.209-.377.235-.688.079-.311-.156-1.315-.484-2.504-1.544-.925-.824-1.548-1.841-1.729-2.153-.182-.312-.019-.481.136-.635.141-.138.311-.364.467-.546.156-.182.208-.312.311-.52.106-.208.053-.39-.026-.546-.078-.156-.709-1.713-.971-2.338-.255-.608-.515-.526-.709-.536l-.604-.011c-.21 0-.552.079-.841.39-.289.312-1.104 1.079-1.104 2.628 0 1.548 1.129 3.044 1.287 3.252.158.208 2.222 3.394 5.385 4.762.753.325 1.341.519 1.799.665.756.24 1.444.207 1.988.125.606-.091 1.845-.754 2.107-1.482.263-.728.263-1.352.184-1.482-.079-.13-.289-.208-.599-.364z"/></svg>
+                    WhatsApp
+                </a>
+                <a href="mailto:rubenrstar1028@gmail.com" class="flex items-center justify-center gap-3 bg-white text-brand-accent px-10 py-5 rounded-full font-bold text-xl transition-all shadow-xl hover:bg-gray-100">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-light py-12 px-6">
+        <div class="max-w-7xl mx-auto border-t border-gray-200 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col items-center md:items-start">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777323395/Star10Web_Assets/eppgzjp3kezdy222w0kr.png" alt="Tablets full Logo" class="h-10 w-auto mb-4 opacity-80 grayscale hover:grayscale-0 transition-all">
+                <p class="text-gray-500 text-sm">© 2024 Tablets full. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex gap-8 text-sm font-semibold text-gray-600">
+                <a href="#inicio" class="hover:text-brand-primary">Inicio</a>
+                <a href="#productos" class="hover:text-brand-primary">Productos</a>
+                <a href="#contacto" class="hover:text-brand-primary">Contacto</a>
+            </div>
+            <div class="flex flex-col items-center md:items-end">
+                <p class="text-brand-accent font-bold">Tel: 33333333</p>
+                <p class="text-gray-500 text-sm">rubenrstar1028@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html></html>
