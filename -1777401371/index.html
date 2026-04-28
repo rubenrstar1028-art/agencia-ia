@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Architecture & Design | Innovación y Lujo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #C5A059;
+            --secondary: #121212;
+            --accent: #F4F4F4;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: var(--secondary);
+        }
+        .bg-hero-overlay {
+            background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777401377/Star10Web_Assets/flg7bymckbrljxtmlxjs.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .text-gold { color: var(--primary); }
+        .bg-gold { background-color: var(--primary); }
+        .border-gold { border-color: var(--primary); }
+        
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        }
+        
+        .hover-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777401378/Star10Web_Assets/qbbbowgdgzneqobt5pr8.png" 
+                         alt="Logo" 
+                         style="max-height: 60px; width: auto; object-fit: contain;">
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 text-sm font-semibold uppercase tracking-widest">
+                        <a href="#" class="hover:text-gold transition-colors duration-300">Inicio</a>
+                        <a href="#servicios" class="hover:text-gold transition-colors duration-300">Servicios</a>
+                        <a href="#experiencia" class="hover:text-gold transition-colors duration-300">Experiencia</a>
+                        <a href="#contacto" class="bg-gold text-white px-6 py-2 rounded-full hover:bg-black transition-all duration-300">Contacto</a>
+                    </div>
+                </div>
+                <div class="md:hidden text-2xl">
+                    <button id="mobile-menu-button">☰</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-hero-overlay">
+        <div class="text-center px-4 max-w-4xl">
+            <h1 class="text-white text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Diseñamos el Futuro de su <span class="text-gold">Estilo de Vida</span>
+            </h1>
+            <p class="text-gray-200 text-xl md:text-2xl mb-10 font-light tracking-wide">
+                Arquitectura de vanguardia y diseño de interiores exclusivo para quienes exigen perfección en cada detalle.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contacto" class="bg-gold text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-all duration-300">
+                    Iniciar Proyecto
+                </a>
+                <a href="#servicios" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300">
+                    Nuestra Visión
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Excellence Section -->
+    <section class="py-24 bg-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 uppercase tracking-widest">Compromiso con la Excelencia</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="p-8 bg-white rounded-2xl shadow-sm hover-card transition-all duration-300">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Arquitectura Elite</h3>
+                    <p class="text-gray-600">Conceptualización de espacios que fusionan estética moderna con funcionalidad estructural impecable.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm hover-card transition-all duration-300">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Gestión Premium</h3>
+                    <p class="text-gray-600">Control total de obra con los más altos estándares de calidad y tiempos de entrega garantizados.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm hover-card transition-all duration-300">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Interiorismo</h3>
+                    <p class="text-gray-600">Curaduría de materiales y mobiliario de lujo que reflejan la personalidad y estatus de nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Portfolio Section -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16">
+                <div class="max-w-2xl">
+                    <h2 class="text-gold font-bold tracking-widest mb-4">NUESTROS SERVICIOS</h2>
+                    <p class="text-4xl font-bold leading-tight">Soluciones integrales para proyectos de alto impacto.</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group relative overflow-hidden rounded-3xl h-[400px]">
+                    <img src="https://loremflickr.com/1200/800/architecture" alt="Arquitectura" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-10">
+                        <h4 class="text-white text-2xl font-bold mb-2">Residencias de Lujo</h4>
+                        <p class="text-gray-300">Hogares diseñados para la máxima comodidad y elegancia.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl h-[400px]">
+                    <img src="https://loremflickr.com/1200/800/office-design" alt="Corporativo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-10">
+                        <h4 class="text-white text-2xl font-bold mb-2">Espacios Corporativos</h4>
+                        <p class="text-gray-300">Ambientes de trabajo que inspiran productividad y prestigio.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl h-[400px]">
+                    <img src="https://loremflickr.com/1200/800/interior-design" alt="Interiorismo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-10">
+                        <h4 class="text-white text-2xl font-bold mb-2">Diseño de Interiores</h4>
+                        <p class="text-gray-300">Detalles que transforman lo ordinario en extraordinario.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-3xl h-[400px]">
+                    <img src="https://loremflickr.com/1200/800/building" alt="Construcción" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-10">
+                        <h4 class="text-white text-2xl font-bold mb-2">Desarrollo Urbano</h4>
+                        <p class="text-gray-300">Proyectos a gran escala con visión de sostenibilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & CTA Section -->
+    <section id="contacto" class="py-24 bg-secondary text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold mb-8">¿Listo para elevar <br><span class="text-gold">su próximo proyecto?</span></h2>
+                    <p class="text-gray-400 text-lg mb-10">Agende una consultoría privada con nuestro equipo de expertos y descubra cómo podemos hacer realidad su visión.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 border border-gold rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                            </div>
+                            <a href="tel:+521234567890" class="text-xl hover:text-gold transition-colors">+52 (55) 1234 5678</a>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 border border-gold rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                            </div>
+                            <span class="text-xl">contacto@tunegocio.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/5 p-10 rounded-3xl backdrop-blur-sm border border-white/10">
+                    <form action="#" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 uppercase tracking-widest">Nombre Completo</label>
+                            <input type="text" class="w-full bg-transparent border-b border-gray-600 py-3 focus:outline-none focus:border-gold transition-colors" placeholder="Escriba su nombre...">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 uppercase tracking-widest">Correo Electrónico</label>
+                            <input type="email" class="w-full bg-transparent border-b border-gray-600 py-3 focus:outline-none focus:border-gold transition-colors" placeholder="email@ejemplo.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 uppercase tracking-widest">Interés</label>
+                            <select class="w-full bg-transparent border-b border-gray-600 py-3 focus:outline-none focus:border-gold transition-colors">
+                                <option class="bg-secondary">Arquitectura</option>
+                                <option class="bg-secondary">Interiorismo</option>
+                                <option class="bg-secondary">Inversión Inmobiliaria</option>
+                            </select>
+                        </div>
+                        <button class="w-full bg-gold py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777401378/Star10Web_Assets/qbbbowgdgzneqobt5pr8.png" 
+                     alt="Logo Footer" 
+                     class="mx-auto" 
+                     style="max-height: 50px; opacity: 0.8; filter: brightness(0) invert(1);">
+            </div>
+            <p class="text-gray-500 text-sm tracking-widest uppercase mb-4">© 2024 Innovación en Arquitectura & Diseño. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://wa.me/521234567890" class="text-gold hover:text-white transition-colors">WhatsApp</a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html></html>
