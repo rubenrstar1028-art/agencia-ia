@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC's Full | Computadoras de Alto Rendimiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        accent: '#3B82F6',
+                        secondary: '#06B6D4',
+                        tech: '#10B981'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-overlay {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9));
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #3B82F6, #06B6D4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="bg-primary text-slate-100 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed w-full z-50 top-0 left-0 bg-primary/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777403137/Star10Web_Assets/mg5ektu1dwrzfshz82ep.png" 
+                         alt="PC's Full Logo" 
+                         style="max-height: 60px; object-fit: contain;">
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-sm font-medium hover:text-accent transition-colors">Inicio</a>
+                    <a href="#caracteristicas" class="text-sm font-medium hover:text-accent transition-colors">Hardware</a>
+                    <a href="#ventajas" class="text-sm font-medium hover:text-accent transition-colors">Ventajas</a>
+                    <a href="#contacto" class="px-6 py-2 bg-accent hover:bg-blue-600 rounded-full text-white text-sm font-bold transition-all transform hover:scale-105">
+                        Cotizar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 hero-overlay z-10"></div>
+            <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777403136/Star10Web_Assets/fhpvlnr0nvejlfzcb1j4.jpg');"></div>
+        </div>
+        
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block px-4 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold tracking-widest uppercase mb-6">High-End Performance</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                        Potencia que <br>
+                        <span class="text-gradient">No Tiene Límites</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-xl">
+                        En PC's Full ensamblamos las computadoras más poderosas del mercado. Desde estaciones de trabajo profesionales hasta setups de gaming extremo.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/4444444444" class="px-8 py-4 bg-accent hover:bg-blue-600 rounded-2xl font-bold text-center transition-all transform hover:scale-105 shadow-xl shadow-blue-500/20">
+                            WhatsApp Ventas
+                        </a>
+                        <a href="#caracteristicas" class="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl font-bold text-center transition-all backdrop-blur-sm">
+                            Explorar Equipos
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block animate-float">
+                    <img src="https://loremflickr.com/800/800/gaming-pc" alt="PC Gamer High End" class="rounded-3xl shadow-2xl border border-white/10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características Section -->
+    <section id="caracteristicas" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Hardware de Última Generación</h2>
+                <div class="h-1 w-20 bg-accent mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-3xl transition-all hover:translate-y-[-10px] group">
+                    <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Procesadores Top</h3>
+                    <p class="text-slate-400">Equipamos lo último de Intel Core y AMD Ryzen para que tu productividad nunca se detenga.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-3xl transition-all hover:translate-y-[-10px] group">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Gráficos de Infarto</h3>
+                    <p class="text-slate-400">Tarjetas de video NVIDIA RTX para Ray Tracing en tiempo real y renderizado profesional ultra rápido.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-3xl transition-all hover:translate-y-[-10px] group">
+                    <div class="w-16 h-16 bg-tech/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-tech/20 transition-colors">
+                        <svg class="w-8 h-8 text-tech" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Almacenamiento NVMe</h3>
+                    <p class="text-slate-400">Carga tus programas y juegos en segundos con discos de estado sólido de máxima velocidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section id="ventajas" class="py-24 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="w-full md:w-1/2">
+                    <img src="https://loremflickr.com/1000/1000/server,tech" alt="Tecnología Avanzada" class="rounded-3xl shadow-2xl border border-white/5">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-8 leading-tight">La Calidad que tu <br>Trabajo Necesita</h2>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span class="p-2 bg-accent/20 rounded-lg mr-4 mt-1">
+                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            </span>
+                            <div>
+                                <h4 class="font-bold text-lg">Ensamble Profesional</h4>
+                                <p class="text-slate-400">Gestión de cables impecable y flujo de aire optimizado.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="p-2 bg-accent/20 rounded-lg mr-4 mt-1">
+                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            </span>
+                            <div>
+                                <h4 class="font-bold text-lg">Garantía Total</h4>
+                                <p class="text-slate-400">Todos nuestros componentes cuentan con garantía directa y respaldo técnico.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="p-2 bg-accent/20 rounded-lg mr-4 mt-1">
+                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            </span>
+                            <div>
+                                <h4 class="font-bold text-lg">Soporte Personalizado</h4>
+                                <p class="text-slate-400">Te asesoramos para elegir la PC que mejor se adapte a tu presupuesto y metas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 md:p-16 text-center overflow-hidden relative">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">¿Listo para subir de nivel?</h2>
+                    <p class="text-xl text-slate-300 mb-10">Contáctanos ahora y obtén un presupuesto personalizado sin compromiso.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <a href="tel:4444444444" class="flex items-center justify-center gap-4 bg-white/5 hover:bg-white/10 p-6 rounded-2xl border border-white/10 transition-all">
+                            <div class="w-12 h-12 bg-accent rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-xs text-slate-400 uppercase tracking-widest">Llámanos</p>
+                                <p class="text-xl font-bold">444 444 4444</p>
+                            </div>
+                        </a>
+                        <a href="mailto:rubenrstar1028@gmail.com" class="flex items-center justify-center gap-4 bg-white/5 hover:bg-white/10 p-6 rounded-2xl border border-white/10 transition-all">
+                            <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-xs text-slate-400 uppercase tracking-widest">Email</p>
+                                <p class="text-lg font-bold truncate">rubenrstar1028@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <a href="https://wa.me/4444444444" class="inline-flex items-center gap-3 px-10 py-5 bg-tech hover:bg-green-600 text-white rounded-full font-extrabold text-lg transition-all shadow-xl shadow-green-500/20">
+                            Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold">PC's <span class="text-accent">Full</span></h3>
+                    <p class="text-slate-500 mt-2">La élite en computación personal y profesional.</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-slate-400">&copy; 2023 PC's Full. Todos los derechos reservados.</p>
+                    <p class="text-xs text-slate-600 mt-2 italic">Diseño Moderno & Dinámico para Líderes Tecnológicos.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html></html>
