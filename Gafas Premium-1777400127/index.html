@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gafas Premium | Exclusividad y Estilo Visual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        premium: {
+                            gold: '#D4AF37',
+                            dark: '#0A0A0A',
+                            slate: '#1A1A1A',
+                            accent: '#F4F4F4'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '2xl': '1.5rem',
+                        'full': '9999px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777400134/Star10Web_Assets/stqx2nylu1jwh7wfa5ng.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #D4AF37, #FFFFFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-scrolled {
+            background-color: rgba(10, 10, 10, 0.95);
+            padding: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="bg-premium-dark text-white overflow-x-hidden">
+
+    <!-- Navegación -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6 px-6 md:px-12 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777400134/Star10Web_Assets/kp8nvewldx1bgzmxsoub.png" 
+                 alt="Gafas Premium Logo" 
+                 style="max-height: 60px; object-fit: contain;">
+        </div>
+        
+        <div class="hidden md:flex space-x-8 items-center uppercase text-xs tracking-widest font-semibold">
+            <a href="#" class="hover:text-premium-gold transition-colors">Inicio</a>
+            <a href="#experiencia" class="hover:text-premium-gold transition-colors">Experiencia</a>
+            <a href="#galeria" class="hover:text-premium-gold transition-colors">Colección</a>
+            <a href="#contacto" class="bg-white text-black px-6 py-2 rounded-full hover:bg-premium-gold hover:text-white transition-all duration-300 transform hover:scale-105">Contacto</a>
+        </div>
+
+        <button class="md:hidden text-white" id="mobile-menu-btn">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center justify-center text-center px-6">
+        <div class="max-w-4xl transform transition-all duration-1000">
+            <span class="inline-block py-1 px-4 border border-premium-gold text-premium-gold rounded-full text-xs tracking-[0.3em] mb-6 uppercase animate-pulse">Luxury Eyewear Excellence</span>
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-tight uppercase">
+                Redefiniendo <br> <span class="gradient-text">Tu Visión</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
+                Descubre una curaduría exclusiva de las mejores gafas del mercado. Ingeniería de precisión, materiales nobles y el diseño más vanguardista del sector.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#galeria" class="bg-premium-gold text-white px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                    Ver Catálogo
+                </a>
+                <a href="tel:5555555" class="glass-effect text-white px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">
+                    Llamar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios / Experiencia -->
+    <section id="experiencia" class="py-24 bg-premium-slate px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="p-8 rounded-2xl glass-effect hover:bg-premium-dark transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-premium-gold rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Calidad Certificada</h3>
+                    <p class="text-gray-400 leading-relaxed">Trabajamos exclusivamente con materiales premium como acetato italiano y titanio japonés para garantizar durabilidad extrema.</p>
+                </div>
+                <div class="p-8 rounded-2xl glass-effect hover:bg-premium-dark transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-premium-gold rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Protección UV400</h3>
+                    <p class="text-gray-400 leading-relaxed">Nuestros cristales cuentan con la más alta tecnología en filtros solares y tratamientos antirreflejantes de última generación.</p>
+                </div>
+                <div class="p-8 rounded-2xl glass-effect hover:bg-premium-dark transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-premium-gold rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Diseño Exclusivo</h3>
+                    <p class="text-gray-400 leading-relaxed">Piezas únicas que fusionan la elegancia clásica con las tendencias más dinámicas del diseño contemporáneo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-24 px-6 bg-premium-dark">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold uppercase mb-4 tracking-tighter">Nuestra <span class="text-premium-gold">Colección</span></h2>
+            <div class="h-1 w-24 bg-premium-gold mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Imagen Proporcionada -->
+            <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+                <img src="https://files.bpcontent.cloud/2026/04/28/18/20260428180555-6VN9FJHY.png" alt="Producto Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <h4 class="text-2xl font-bold mb-2">Heritage Gold Edition</h4>
+                    <p class="text-premium-gold font-semibold uppercase tracking-widest text-sm">Edición Limitada</p>
+                </div>
+            </div>
+
+            <!-- Relleno LoremFlickr -->
+            <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+                <img src="https://loremflickr.com/800/1000/sunglasses" alt="Estilo Urbano" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <h4 class="text-2xl font-bold mb-2">Modern Urban Polarized</h4>
+                    <p class="text-premium-gold font-semibold uppercase tracking-widest text-sm">Best Seller</p>
+                </div>
+            </div>
+
+            <!-- Relleno LoremFlickr -->
+            <div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+                <img src="https://loremflickr.com/800/1000/luxury-glasses" alt="Alta Gama" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <h4 class="text-2xl font-bold mb-2">Executive Titanium</h4>
+                    <p class="text-premium-gold font-semibold uppercase tracking-widest text-sm">New Arrival</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto glass-effect rounded-3xl p-12 text-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 italic">"La visión es el arte de ver lo invisible."</h2>
+                <p class="text-xl text-gray-400 mb-10">Únete a la élite que elige la excelencia óptica.</p>
+                <a href="https://wa.me/5555555" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-bold transition-all transform hover:scale-110 shadow-lg">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-black py-16 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777400134/Star10Web_Assets/kp8nvewldx1bgzmxsoub.png" alt="Logo" class="h-12 mb-6">
+                <p class="text-gray-500 max-w-sm">Dedicados a ofrecer la mejor selección de gafas premium, combinando estilo, salud visual y una experiencia de compra sin igual.</p>
+            </div>
+            
+            <div>
+                <h4 class="font-bold uppercase tracking-widest mb-6 text-premium-gold">Contacto</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex items-center">
+                        <span class="mr-3">📞</span>
+                        <a href="tel:5555555" class="hover:text-white transition-colors">5555555</a>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3">✉️</span>
+                        <a href="mailto:rubenrstar1028@gmail.com" class="hover:text-white transition-colors">rubenrstar1028@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold uppercase tracking-widest mb-6 text-premium-gold">Horarios</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>Lun - Vie: 9:00 - 20:00</li>
+                    <li>Sábados: 10:00 - 18:00</li>
+                    <li>Domingos: Cerrado</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 text-center text-gray-600 text-sm">
+            <p>&copy; 2023 Gafas Premium. Todos los derechos reservados. Diseñado para la excelencia.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Effect for Navbar
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled', 'shadow-2xl');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.remove('nav-scrolled', 'shadow-2xl');
+                nav.classList.add('py-6');
+            }
+        });
+
+        // Mobile Menu Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        btn.addEventListener('click', () => {
+            const menu = document.querySelector('.hidden.md\\:flex');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-full');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('bg-black');
+            menu.classList.toggle('p-8');
+            menu.classList.toggle('space-y-4');
+        });
+    </script>
+</body>
+</html></html>
