@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC's Full | Potencia y Rendimiento sin Límites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #38bdf8;
+            --accent-dark: #0284c7;
+            --tech-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --electric-blue: #0ea5e9;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://res.cloudinary.com/dlg87zqxh/image/upload/v1777402055/Star10Web_Assets/xfln6xgqpmj6eflxqml2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to r, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-shadow {
+            box-shadow: 0 20px 40px -15px rgba(56, 189, 248, 0.3);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://res.cloudinary.com/dlg87zqxh/image/upload/v1777402056/Star10Web_Assets/ioqfxs1oc8isxtiiagdp.png" 
+                         alt="PC's Full Logo" 
+                         style="max-height: 60px; width: auto; object-fit: contain;">
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-white hover:text-sky-400 transition-colors font-medium">Inicio</a>
+                    <a href="#servicios" class="text-white hover:text-sky-400 transition-colors font-medium">Equipos</a>
+                    <a href="#contacto" class="px-6 py-2 bg-sky-500 hover:bg-sky-400 text-white rounded-full font-bold transition-all transform hover:scale-105 custom-shadow">Cotizar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <span class="inline-block px-4 py-1 border border-sky-400 text-sky-400 rounded-full text-sm font-bold tracking-widest uppercase mb-6 animate-pulse">
+                Tecnología de Próxima Generación
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Domina el Mundo con <br><span class="text-gradient">Potencia Absoluta</span>
+            </h1>
+            <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Expertos en ensambles de alto rendimiento, estaciones de trabajo profesionales y equipos de gaming extremo. En PC's Full, el límite lo pones tú.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/524444444444" class="px-10 py-4 bg-sky-500 hover:bg-sky-400 text-white rounded-2xl font-extrabold text-lg transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center">
+                    Ver Catálogo vía WhatsApp
+                </a>
+                <a href="#servicios" class="px-10 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-2xl font-bold text-lg backdrop-blur-sm transition-all">
+                    Nuestros Servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories / Features -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">¿Qué estás buscando?</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Ofrecemos soluciones personalizadas para cada necesidad técnica y creativa.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Gaming Card -->
+                <div class="group p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:border-sky-300 transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-500 transition-colors">
+                        <img src="https://loremflickr.com/100/100/gaming-pc" alt="Gaming" class="rounded-lg opacity-80">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-900">Gaming Extremo</h3>
+                    <p class="text-slate-600 mb-6">Equipos configurados para FPS máximos y resoluciones 4K. Vive la experiencia definitiva.</p>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-8">
+                        <li>• GPUs de última generación</li>
+                        <li>• Refrigeración líquida avanzada</li>
+                        <li>• Estética RGB personalizable</li>
+                    </ul>
+                </div>
+
+                <!-- Workstation Card -->
+                <div class="group p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:border-sky-300 transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-500 transition-colors">
+                        <img src="https://loremflickr.com/100/100/workstation" alt="Workstation" class="rounded-lg opacity-80">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-900">Workstations</h3>
+                    <p class="text-slate-600 mb-6">Poder de procesamiento para edición de video 8K, renderizado 3D y diseño arquitectónico.</p>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-8">
+                        <li>• Procesadores Multi-núcleo</li>
+                        <li>• Memorias RAM de alta frecuencia</li>
+                        <li>• Almacenamiento NVMe Gen4</li>
+                    </ul>
+                </div>
+
+                <!-- Upgrade Card -->
+                <div class="group p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:border-sky-300 transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-500 transition-colors">
+                        <img src="https://loremflickr.com/100/100/tech-hardware" alt="Upgrades" class="rounded-lg opacity-80">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-900">Mantenimiento</h3>
+                    <p class="text-slate-600 mb-6">Optimización y actualizaciones de hardware para que tu equipo actual vuele como nuevo.</p>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-8">
+                        <li>• Limpieza profunda</li>
+                        <li>• Cambio de pasta térmica</li>
+                        <li>• Diagnóstico especializado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why PC's Full -->
+    <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-8">¿Por qué elegir <span class="text-sky-400">PC's Full</span>?</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 bg-sky-500 rounded-full flex-shrink-0"></div>
+                            <div>
+                                <h4 class="text-xl font-bold">Garantía Real</h4>
+                                <p class="text-slate-400">Todos nuestros ensambles cuentan con garantía directa y soporte técnico especializado.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 bg-sky-500 rounded-full flex-shrink-0"></div>
+                            <div>
+                                <h4 class="text-xl font-bold">Componentes Premium</h4>
+                                <p class="text-slate-400">Solo trabajamos con marcas líderes: ASUS, MSI, NVIDIA, Intel y AMD.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 bg-sky-500 rounded-full flex-shrink-0"></div>
+                            <div>
+                                <h4 class="text-xl font-bold">Configuración a Medida</h4>
+                                <p class="text-slate-400">Analizamos tu flujo de trabajo o tus juegos favoritos para darte el hardware exacto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://loremflickr.com/800/600/computer-internal" alt="Interior de PC" class="rounded-2xl shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                    <div class="absolute -bottom-6 -left-6 bg-sky-500 p-8 rounded-2xl custom-shadow">
+                        <p class="text-4xl font-black italic">100%</p>
+                        <p class="text-sm font-bold uppercase tracking-tighter">Calidad Garantizada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact -->
+    <section id="contacto" class="py-24 bg-sky-50">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="bg-white rounded-[3rem] p-8 md:p-16 shadow-xl text-center border border-sky-100">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-6">¿Listo para el siguiente nivel?</h2>
+                <p class="text-xl text-slate-600 mb-10">Agenda una asesoría gratuita hoy mismo y hablemos de tu próximo equipo ideal.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                    <a href="tel:4444444444" class="flex items-center justify-center gap-3 p-6 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors border border-slate-200">
+                        <span class="text-sky-500 text-2xl font-bold">📞</span>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-500 uppercase font-bold">Llámanos</p>
+                            <p class="text-lg font-bold text-slate-900">4444444444</p>
+                        </div>
+                    </a>
+                    <a href="mailto:rubenrstar1028@gmail.com" class="flex items-center justify-center gap-3 p-6 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors border border-slate-200">
+                        <span class="text-sky-500 text-2xl font-bold">✉️</span>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-500 uppercase font-bold">Correo Electrónico</p>
+                            <p class="text-lg font-bold text-slate-900">rubenrstar1028@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="https://wa.me/524444444444" class="inline-flex items-center gap-3 px-12 py-5 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full font-bold text-xl transition-all transform hover:scale-105 shadow-lg">
+                    Chatear por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-white text-2xl font-black mb-2">PC's FULL</h3>
+                    <p class="text-sm">Venta de computadoras de alta calidad y alto rendimiento.</p>
+                </div>
+                <div class="flex gap-8 text-sm">
+                    <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                    <a href="#" class="hover:text-white transition-colors">Términos</a>
+                    <a href="#inicio" class="hover:text-white transition-colors">Volver Arriba</a>
+                </div>
+            </div>
+            <hr class="my-8 border-white/5">
+            <div class="text-center text-xs tracking-widest uppercase">
+                &copy; 2024 PC's FULL. Todos los derechos reservados. Diseñado para la excelencia tecnológica.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
